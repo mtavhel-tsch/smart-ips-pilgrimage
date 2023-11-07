@@ -1,3 +1,4 @@
-# SMART
+This page provides a list of changes to the Implementation Guide since its initial release.
 
-Feel free to modify this index page with your own awesome content!
+
+Technical changes can be tracked in each resource or in the history page, when published.
