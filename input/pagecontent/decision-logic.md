@@ -1,4 +1,4 @@
-TAhis page describes the decision support logic.
+This page describes the decision support logic.
 
 The decision-support logic component provides the decision logic and
 algorithms, as well as the scheduling of services, in accordance with
