@@ -1,4 +1,5 @@
-Component 3 in the Digital Adaptation Kit (link forthcoming) includes user scenarios, which are narratives that describe how the different personas may interact with each other. The user scenarios are only illustrative and are intended to give an idea of a typical workflow.
+
+The user scenarios are only illustrative and are intended to give an idea of a typical workflow.
 
 **How to interpret user scenarios**
 

@@ -64,8 +64,7 @@ The following table describes the workflows of the included processes.
       <td>4.0</td>
       <td>Break The Glass Clinical Encounter </td>
       <td>IPS.PILGRIMAGE.4.0</td>
-      <td>Health worker</td>
-      <td><p>National Pilgrimage Authority</p><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE<p></td>
+      <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
       <td>Retrieve a Pilgrim's patient summary for an emergency unplanned clinicial encounter</td>
     </tr>
   </tbody>
