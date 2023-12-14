@@ -2,7 +2,7 @@ Logical: 	SmartHealthLinkPayload
 Title: 		"Smart Health Link Payload (DRAFT)"
 Description:	"Smart Health Link Payload (DRAFT)"
 
-* ^url = "http://smart.who.int/ddcc/StructureDefinition/SmartHealthLinkPayload"
+* ^url = "http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload"
 * ^version = "RC2"
 * ^status = #draft
 *  url 1..1 string "url" "Manifest URL for this SHLink"
