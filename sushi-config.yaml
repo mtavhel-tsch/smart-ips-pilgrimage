@@ -256,4 +256,4 @@ menu:
 #
 #   setId: always # always | standalone-only
 dependencies:
-  who.fhir.base: current
+  who.base: current
