@@ -76,7 +76,7 @@ The workflows that follow depict processes that have been generalized across dif
 #### Overview of key immunization process flows
 
   <div> 
-    <img src="back-of-napkin-workflow.jpeg" alt="Overview of key clinical process flows" style="width:85%"/>
+    <img src="workflow.jpeg" alt="Overview of key clinical process flows" style="width:85%"/>
   </div>
 <br/>
 
