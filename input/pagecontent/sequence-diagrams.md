@@ -1,1 +1,1 @@
-This page will include sequence diagrams with Actors and Fast Healthcare Interoperability Resources (FHIR) references.
+ {% include sequence.svg %}
