@@ -2,7 +2,12 @@
 
 Logical: 	SmartHealthLink
 Title: 		"Smart Health Link (DRAFT)"
-Description:	"Smart Health Link URI (DRAFT)"
+Description:	"Smart Health Link URI (DRAFT)
+
+Logical Model to represent a SMART Health Link as its URI.  It is generated from the content of the SMART Health Link Payload.
+
+
+"
 
 * ^url = "http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLink"
 * ^version = "RC2"

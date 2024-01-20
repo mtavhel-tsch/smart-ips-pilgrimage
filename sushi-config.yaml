@@ -256,4 +256,5 @@ menu:
 #
 #   setId: always # always | standalone-only
 dependencies:
-  who.base: current
+  who.base: dev
+#  who.base: current

@@ -1,6 +1,14 @@
 Logical: 	SmartHealthLinkPayload
 Title: 		"Smart Health Link Payload (DRAFT)"
-Description:	"Smart Health Link Payload (DRAFT)"
+Description:	"Smart Health Link Payload (DRAFT)
+
+This logical model was taken from the SMART Health Link documentation <https://docs.smarthealthit.org/smart-health-links/spec#construct-a-shlink-payload> as if 30 November 2023.
+
+A [[ SMART Health Link]] is generated from this payload according to the algorithm documented here <https://docs.smarthealthit.org/smart-health-links/spec#example-shlink-generation> to create a 
+
+It is generated 
+
+"
 
 * ^url = "http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload"
 * ^version = "RC2"
