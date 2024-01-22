@@ -12,6 +12,7 @@
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: https://github.com/WorldHealthOrganization/smart-ips-pilgrimage
+
 Canonical / permanent URL: https://smart.who.int/ips-pilgrimage
 
 This framework is published under a Creative Commons - IGO [license](LICENSE.md).
