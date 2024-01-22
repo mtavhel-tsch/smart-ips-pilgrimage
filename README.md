@@ -7,9 +7,12 @@
 ![QA hints](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fworldhealthorganization.github.io%2Fsmart-ips-pilgrimage%2Fqa.json&query=%24.hints&logoColor=yellow&label=QA%20hints&color=yellow)
 
 
-# WHO SMART GUIDELINES - EMPTY IG
+# WHO SMART IPS PILGRIMAGE
 
-This is an empty framework, to be used to create SMART Implementation Guides.
+This ImplementationGuide is published in the following locations:
+
+Continuous Build: https://github.com/WorldHealthOrganization/smart-ips-pilgrimage
+Canonical / permanent URL: https://smart.who.int/ips-pilgrimage
 
 This framework is published under a Creative Commons - IGO [license](LICENSE.md).
 
