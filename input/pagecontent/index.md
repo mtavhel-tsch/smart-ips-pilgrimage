@@ -7,7 +7,7 @@ This Implementation Guide is intended to support the utilization of veriable Int
 
 
 ### Summary 
-This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Impelementation Guide leverage the [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network).
+This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Implementation Guide leverages the [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network).
 
 The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines) to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology based on the WHO Immunization Digital Adaptation Kit (link forthcoming). 
 
@@ -23,19 +23,6 @@ This implementation guide is broken into the following levels of [knowledge repr
 - <a href="business-requirements.html">Business Requirements</a> - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.      
 - <a href="data-models-and-exchange.html">Data Models and Exchange</a> - contains the data models and data exchange protocols with actors and transactions defined.
 - <a href="deployment.html">Deployment Guidance </a> - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.
-
-This guide is prepared to facilitate digital implementation of WHO Immunization guidelines by providing FHIR-based computable representations of and implementation guidance for using the key components of the WHO Immunization digital adaptation kit (DAK):
-
-* Health Interventions & Recommendations
-* Generic Personas
-* User Scenarios
-* Business Processes & Workflows
-* Core Data Elements
-* Decision Support Logic
-* Indicators & Monitoring
-* Functional & Non-functional Requirements
-
-This guide is a companion to the Digital Adaptation Kit (DAK) and should be used side-by-side with it. Implementers are strongly encouraged to make use of the Digital Adaptation Kit. The focus of this guide is on the explanation and use of the computable artifacts.
 
 This guide assumes use of the following resources: 
 * [IPS Patient](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)

@@ -1,31 +1,15 @@
 @startuml
-skinparam svgDimensionStyle false
 
-title Religious Pilgrimage and IPS
-
+title Clinical Encounter for Unplanned Care
+!include ./style.iuml
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
-participant "WHO GDHCN" as WHO
 participant "Host Country\nHIE" as HCHIE
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
 
 autonumber "<b>00:</b>"
-
-
-loop routine synchronization 
-  OC -> OC : generate public-private key pairs\nfor issuing health documents
-  OCHIE -> WHO: send public keys\nfor IPS verification
-  HCEMR -> WHO : retrieves and caches all public keys\nfor IPS and SHL verification
-end
-destroy WHO
-
-P -> OC  : request health document\nwith selective disclosure,\ntime limits and passcode
-OC -> OCHIE : request health document
-
-OCHIE  -> OCHIE : generate health document\ncreate signature with private key\nattach signature and keyid
-OCHIE -> OC : issue verifiable health document\n(IPS via SHL)
 
 P --> HW: travels to Host Country and seeks care,\nshares verifiable health document from\nhealth wallet (IPS via SHL),\nshares pilgrimage number
 HW --> HCEMR: registers patient with pilgrimage number
@@ -44,6 +28,6 @@ HCEMR->HW: display contents of health document
  
 HW --> P: provides appropriate care
 HW -> HCEMR: updates local record of care
-HCEMR->HCHIE: [optional] updates national record of care
+HCEMR->HCHIE:[optional] updates national record of care
 
 @enduml

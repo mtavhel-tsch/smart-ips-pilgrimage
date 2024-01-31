@@ -1,0 +1,19 @@
+@startuml
+
+title Issuance of Health Document
+!include ./style.iuml
+
+actor "Pilgrim from\nOrigin Country" as P
+participant "Origin Country\nHealth Wallet" as OC
+participant "Origin Country\nHIE" as OCHIE
+
+autonumber "<b>00:</b>"
+
+
+P -> OC  : request health document\nwith selective disclosure,\ntime limits and passcode
+OC -> OCHIE : request health document
+
+OCHIE  -> OCHIE : generate health document\ncreate signature with private key\nattach signature and keyid
+OCHIE -> OC : issue verifiable health document\n(IPS via SHL)
+
+@enduml
