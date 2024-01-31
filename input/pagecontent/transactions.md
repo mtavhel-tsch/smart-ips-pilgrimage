@@ -6,8 +6,8 @@
 
 <h3 id="unplanned_care_encounter">Clinical Encounter for Unplanned Care</h3>
 
-<h4 id="unplanned_care_encounter_hie">with HIE</h3>
+<h4 id="unplanned_care_encounter_hie">with HIE</h4>
  {% include unplanned_care_encounter_hie.svg %}
 
-<h4 id="unplanned_care_encounter_nohie">without HIE</h3>
+<h4 id="unplanned_care_encounter_nohie">without HIE</h4>
  {% include unplanned_care_encounter.svg %}
