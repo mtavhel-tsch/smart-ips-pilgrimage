@@ -1,10 +1,11 @@
 @startuml
 
-title Clinical Encounter for Unplanned Care without HIE
+title Clinical Encounter for Unplanned Care with HIE
 !include ./style.iuml
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
+participant "Host Country\nHIE" as HCHIE
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
 
@@ -22,9 +23,11 @@ destroy OCHIE
 
 HCEMR-> HCEMR: verifies health document signature\n using cached keys
 HCEMR -> HCEMR: saves local copy of health document
+HCEMR-> HCHIE: upload health document\nassociated with pilgrimage number
 HCEMR->HW: display contents of health document
  
 HW --> P: provides appropriate care
 HW -> HCEMR: updates local record of care
+HCEMR->HCHIE: updates national record of care
 
 @enduml
