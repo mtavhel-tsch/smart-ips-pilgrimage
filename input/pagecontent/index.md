@@ -1,4 +1,4 @@
-This Implementation Guide is intended to support the utilization of veriable International Patient Summary (IPS)  documents during pilgrimage leveraging  [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network) global public health infrastructure.
+This Implementation Guide is intended to support the utilization of variable International Patient Summary (IPS)  documents during pilgrimage leveraging  [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network) global public health infrastructure.
 
 <div>
 <p> This implementation guide and set of artifacts are still undergoing development. </p>
@@ -33,7 +33,7 @@ This guide assumes use of the following resources:
 - For a complete listing of the artifacts defined in this implementation guide, refer to the [Artifact Index](artifacts.html).
 - A complete offline copy of this implementation guide can be found on the [Downloads](downloads.html) page.
 - This guide utilizes the [International Patient Summary(IPS)](https://hl7.org/fhir/uv/ips/) as a base for defining immunizations and expects that most data captured will be presented in conformance with the resources defined as part of that implementation guide. 
-- This Implementation Guide makes use of [Clinical Quality Language](https://cql.hl7.org/) for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Speciciation, and other helpful resources can be found in the Support dropdown.
+- This Implementation Guide makes use of [Clinical Quality Language](https://cql.hl7.org/) for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Specification, and other helpful resources can be found in the Support dropdown.
 
 ### Disclaimer
 The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.

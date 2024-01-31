@@ -16,7 +16,7 @@ HW --> HCEMR: scans QR code within EMR
 HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
 destroy OC
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys
-HCEMR  -> OCHIE : retrieves health document
+HCEMR  -> OCHIE : retrieves health document\n*document might be pregenerated or generated on request
 destroy OCHIE
 
 

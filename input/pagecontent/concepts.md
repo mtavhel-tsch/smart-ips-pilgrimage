@@ -15,8 +15,8 @@ Key concepts and abbreviations are described here. Additional terms are defined 
     <td>A unique code assigned to a medicine according to the organ or system it works on and how it works.</td>
   </tr>
   <tr>
-    <td>Pilgim Registration Number</td>
-    <td>Reistration number provided by Host Country uniquely associated to a Pilgrim during a pilgrimage event</td>
+    <td>Pilgrim Registration Number</td>
+    <td>Registration number provided by Host Country uniquely associated to a Pilgrim during a pilgrimage event</td>
   </tr>
   <tr>
     <td><a href="http://hl7.org/fhir/uv/cpg/">Clinical practice guidelines (CPG)</a></td>

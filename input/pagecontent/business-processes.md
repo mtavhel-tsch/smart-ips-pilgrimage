@@ -46,7 +46,7 @@ The following table describes the workflows of the included processes.
     </tr>
     <tr class="odd">
       <td>2.0</td>
-      <td>Publication of National Terminolgies </td>
+      <td>Publication of National Terminologies </td>
       <td>IPS.PILGRIMAGE.2.0</td>
       <td> <p>WHO TS</p><p>National HIE</p><p>Host Country EMR</p><p>Host Country HIE</p></td>
       <td>
@@ -55,17 +55,17 @@ The following table describes the workflows of the included processes.
     </tr>
     <tr class="odd">
       <td>3.0</td>
-      <td>Clinical Encoutner for Unplanned Care</td>
+      <td>Clinical Encounter for Unplanned Care</td>
       <td>IPS.PILGRIMAGE.3.0</td>
       <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE<p></td>
-      <td>Retrieve a Pilgrim's patient summary for a unplanned clinicial encounter</td>
+      <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
    <tr class="even">
       <td>4.0</td>
       <td>Break The Glass Clinical Encounter </td>
       <td>IPS.PILGRIMAGE.4.0</td>
       <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
-      <td>Retrieve a Pilgrim's patient summary for an emergency unplanned clinicial encounter</td>
+      <td>Retrieve a Pilgrim's patient summary for an emergency unplanned clinical encounter</td>
     </tr>
   </tbody>
 </table>

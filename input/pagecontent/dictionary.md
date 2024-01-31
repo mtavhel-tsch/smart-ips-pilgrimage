@@ -1,7 +1,7 @@
-Component 5 in the Digital Adaptation Kit (DAK): SMART GAuidelines for Immunizations 
+Component 5 in the Digital Adaptation Kit (DAK): SMART Guidelines for Immunizations 
 (link forthcoming) outlines the minimum set of data corresponding to different 
 points of the workflow within the identified business processes. This data set 
-can be used on any softwaresystem and lists the data elements relevant for 
+can be used on any software system and lists the data elements relevant for 
 service delivery and executing decision-support logic, as well as for populating 
 indicators and performance metrics. 
 
@@ -68,7 +68,7 @@ The following table includes data elements for the registration workflow.
       <tr>
         <td>IPS.PILGRIMAGE.4.0 Break the Glass Clinical Encounter </td>
         <td>IMMZ.C1.DE1</td>
-        <td>Pilgrimage Registartion Number</td>
+        <td>Pilgrimage Registration Number</td>
         <td>Unique identifier for the Pilgrim provided by the Host Country to the Pilgrim via the National Pilgrimage Authority</td>
         <td>N/A</td>
         <td>ID</td>

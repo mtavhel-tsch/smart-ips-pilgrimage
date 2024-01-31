@@ -22,7 +22,7 @@ In the clinical flows, generic personas are represented using profiles of the va
 
     <tr>
       <td>Pilgrim</td>
-      <td>Person undergoing a pilgrimage to a piligrimage host country.  During an unplanned care encounter they would provide explict consent to access a patient summary information to a Host Country Health Worker.  In case of emergencey, they may have provided consent during a "break the glass" scenario.</td>
+      <td>Person undergoing a pilgrimage to a pilgrimage host country.  During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker.  In case of emergency, they may have provided consent during a "break the glass" scenario.</td>
       <td>Patient, client, health system user</td>
       <td></td>
     </tr>
@@ -37,7 +37,7 @@ In the clinical flows, generic personas are represented using profiles of the va
 
     <tr>
       <td>Host Country</td>
-      <td>Country hosting pilgrimage events.  Repsonsible for approving applications from Pilgrims</td>
+      <td>Country hosting pilgrimage events.  Responsible for approving applications from Pilgrims</td>
       <td>Pilgrimage Host Country</td>
       <td></td>
     </tr>
@@ -45,9 +45,9 @@ In the clinical flows, generic personas are represented using profiles of the va
 
     <tr>
       <td>National Pilgrimage Authority</td>
-      <td>Organiation that manages the application of a Pilgrim as they apply to make piligrime to a pilgrimage host country.  Responsilbe for providing a Piligrim with a Piligrimage Registration Number and assessing health status of Pilgrim before approval is granted by the Piligrimge Host Country.
+      <td>Organization that manages the application of a Pilgrim as they apply to make pilgrim to a pilgrimage host country.  Responsible for providing a Pilgrim with a Pilgrimage Registration Number and assessing health status of Pilgrim before approval is granted by the Pilgrimage Host Country.
 
-Optionally responsible for ensuring consent in case of "break the glass" scenario when a Pilgrim is not able to provide explicit consent in an emergency care setting due to, for example, unconsciousness. In this case, the National Piligrimage Auhtority should collect consent from the Pilgrim for potential future "break the glass scenrario", associate a Piligrimage Registration Number to a patient summary document, and provide access means to the Host Country HIE to the patient summary document by association to the Pilgrimage Registration Number</td> 
+Optionally responsible for ensuring consent in case of "break the glass" scenario when a Pilgrim is not able to provide explicit consent in an emergency care setting due to, for example, unconsciousness. In this case, the National Pilgrimage Authority should collect consent from the Pilgrim for potential future "break the glass scenario", associate a Pilgrimage Registration Number to a patient summary document, and provide access means to the Host Country HIE to the patient summary document by association to the Pilgrimage Registration Number</td> 
       <td>Pilgrimage Authority</td>
       <td></td>
     </tr>
@@ -73,15 +73,15 @@ Optionally responsible for ensuring consent in case of "break the glass" scenari
 
     <tr>
       <td>National Health Information Exchange</td>
-      <td>Health information exhange of origin country of a Pilgrim.  Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach.</td>
+      <td>Health information exchange of origin country of a Pilgrim.  Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach.</td>
       <td>HIE</td>
       <td></td>
     </tr>
 
 
     <tr>
-      <td>National Helath Wallet App</td>
-      <td>Health Wallet App linked to the National HIE that manages access to  patient summary information of a Pilgrim, particularly the IPS.   The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" secnario.
+      <td>National Health Wallet App</td>
+      <td>Health Wallet App linked to the National HIE that manages access to  patient summary information of a Pilgrim, particularly the IPS.   The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" scenario.
       <td>HIE</td>
       <td></td>
     </tr>
@@ -114,7 +114,7 @@ Optionally responsible for ensuring consent in case of "break the glass" scenari
 
     <tr>
       <td>Host Country HIE</td>
-      <td>Health Information Exchange of the Host Country which contains ingested patient summary information during a Pilgrim's care encoutner or manages access to their patient summary during a "break the glass" scenario.
+      <td>Health Information Exchange of the Host Country which contains ingested patient summary information during a Pilgrim's care encounter or manages access to their patient summary during a "break the glass" scenario.
       <td>Host HIE</td>
       <td></td>
     </tr>
