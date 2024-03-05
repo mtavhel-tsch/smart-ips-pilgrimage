@@ -7,7 +7,6 @@ actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
 participant "WHO GDHCN" as WHO
-participant "Host Country\nHIE" as HCHIE
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
 

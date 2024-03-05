@@ -1,19 +1,21 @@
 @startuml
 
-title Clinical Encounter for Unplanned Care with HIE
+title Agreed IPS workflow for 'Clinical Encounter for Unplanned Care' between KSA and Indonesia
 !include ./style.iuml
 actor "Pilgrim from\nOrigin Country" as P
+actor "Accompanying Clinician\nfrom\nOrigin Country" as C
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
-participant "Host Country\nHIE" as HCHIE
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
+actor "Bar code scanner" as Scanner
 
 autonumber "<b>00:</b>"
-
-P --> HW: travels to Host Country and seeks care,\nshares verifiable health document from\nhealth wallet (IPS via SHL),\nshares pilgrimage number
-HW --> HCEMR: registers patient with pilgrimage number
-HW --> HCEMR: scans QR code within EMR
+HCEMR -> HCEMR: Upload pilgrims demographic information few weeks before Hajj
+P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via SHL),\nshares pilgrimage number
+HW --> HCEMR: identifies pilgrim with demographics and registers patient with pilgrimage number
+HW --> Scanner: uses scanner to scan QR code
+P --> HCEMR: enters PIN
 HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
 destroy OC
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys
@@ -21,13 +23,11 @@ HCEMR  -> OCHIE : retrieves health document\n(document might be pregenerated\n o
 destroy OCHIE
 
 
-HCEMR-> HCEMR: verifies health document signature\n using cached keys
-HCEMR -> HCEMR: saves local copy of health document
-HCEMR-> HCHIE: upload health document\nassociated with pilgrimage number
+HCEMR-> HCEMR: verifies health document (IPS) signature\n using cached keys
+HCEMR -> HCEMR: saves local copy of health document (IPS)
 HCEMR->HW: display contents of health document
  
 HW --> P: provides appropriate care
 HW -> HCEMR: updates local record of care
-HCEMR->HCHIE: updates national record of care
 
 @enduml
