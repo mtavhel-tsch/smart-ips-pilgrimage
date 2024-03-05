@@ -16,6 +16,11 @@ P --> HW: travels to Host Country and seeks care,\nshares verifiable health docu
 HW --> HCEMR: identifies pilgrim with demographics and registers patient with pilgrimage number
 HW --> Scanner: uses scanner to scan QR code
 P --> HCEMR: enters PIN
+loop opt
+    C --> HCEMR: [optional] enters PIN if Pilgrim is unable to do so
+end
+
+
 HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
 destroy OC
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys

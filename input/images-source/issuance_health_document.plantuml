@@ -6,7 +6,7 @@ title Issuance of Health Document
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
-
+actor "Jamaah Haji Indonesia Card" as QRCard
 autonumber "<b>00:</b>"
 
 
@@ -15,5 +15,5 @@ OC -> OCHIE : request health document
 
 OCHIE  -> OCHIE : generate health document\ncreate signature with private key\nattach signature and keyid
 OCHIE -> OC : issue verifiable health document\n(IPS via SHL)
-
+OCHIE -> QRCard: issue Jamaah Haji Indonesia Card with QR code printed
 @enduml
