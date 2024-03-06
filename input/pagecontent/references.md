@@ -6,13 +6,7 @@ This implementation guide is meant to facilitate operationalization of the IPS f
 - [Smart Health Links](https://docs.smarthealthit.org/smart-health-links/)
 
 
-For additional resources, see the <a href="dependencies.html">Dependencies</a> page, which includes the standards referenced in this implementation guide and the references section in the published DAK for Immunizations.
-
-### WHO Digital Adaptation Kit (DAK): SMART Guidelines for Immunizations
-
-> The Digital Adaptation Kit was published on \[publication date\]:
->
-> \[Link to the DAK and accompanying web annexes when available\]
+For additional resources, see the <a href="dependencies.html">Dependencies</a>.
 
 ### WHO guideline development
     

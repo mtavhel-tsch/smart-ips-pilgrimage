@@ -4,11 +4,14 @@ skinparam svgDimensionStyle false
 title Religious Pilgrimage and IPS
 
 actor "Pilgrim from\nOrigin Country" as P
+actor "Accompanying Clinician\nfrom\nOrigin Country" as C
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
 participant "WHO GDHCN" as WHO
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
+participant "Jamaah Haji Indonesia Card" as QRCard
+participant "Bar code scanner" as Scanner
 
 autonumber "<b>00:</b>"
 
@@ -25,24 +28,31 @@ OC -> OCHIE : request health document
 
 OCHIE  -> OCHIE : generate health document\ncreate signature with private key\nattach signature and keyid
 OCHIE -> OC : issue verifiable health document\n(IPS via SHL)
+OCHIE -> QRCard: issue Jamaah Haji Indonesia Card with QR code printed
 
-P --> HW: travels to Host Country and seeks care,\nshares verifiable health document from\nhealth wallet (IPS via SHL),\nshares pilgrimage number
-HW --> HCEMR: registers patient with pilgrimage number
-HW --> HCEMR: scans QR code within EMR
+
+HCEMR -> HCEMR: Upload pilgrims demographic information few weeks before Hajj
+P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via SHL),\nshares pilgrimage number
+HW --> HCEMR: identifies pilgrim with demographics and registers patient with pilgrimage number
+HW --> Scanner: uses scanner to scan QR code
+P --> HCEMR: enters PIN
+loop opt
+    C --> HCEMR: [optional] enters PIN if Pilgrim is unable to do so
+end
+
+
 HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
 destroy OC
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys
-HCEMR  -> OCHIE : retrieves health document
+HCEMR  -> OCHIE : retrieves health document (IPS)\n(document might be pregenerated\n or generated on request)
 destroy OCHIE
 
 
-HCEMR-> HCEMR: verifies health document signature\n using cached keys
-HCEMR -> HCEMR: saves local copy of health document
-HCEMR-> HCHIE: [optional] upload health document\nassociated with pilgrimage number
+HCEMR-> HCEMR: verifies health document (IPS) signature\n using cached keys
+HCEMR -> HCEMR: saves local copy of health document (IPS)
 HCEMR->HW: display contents of health document
  
 HW --> P: provides appropriate care
 HW -> HCEMR: updates local record of care
-HCEMR->HCHIE: [optional] updates national record of care
 
 @enduml

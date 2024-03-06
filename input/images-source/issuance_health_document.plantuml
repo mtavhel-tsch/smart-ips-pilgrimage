@@ -6,7 +6,7 @@ title Issuance of Health Document
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
-actor "Jamaah Haji Indonesia Card" as QRCard
+participant "Jamaah Haji Indonesia Card" as QRCard
 autonumber "<b>00:</b>"
 
 

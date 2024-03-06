@@ -8,7 +8,7 @@ participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
-actor "Bar code scanner" as Scanner
+participant "Bar code scanner" as Scanner
 
 autonumber "<b>00:</b>"
 HCEMR -> HCEMR: Upload pilgrims demographic information few weeks before Hajj
@@ -24,7 +24,7 @@ end
 HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
 destroy OC
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys
-HCEMR  -> OCHIE : retrieves health document\n(document might be pregenerated\n or generated on request)
+HCEMR  -> OCHIE : retrieves health document (IPS)\n(document might be pregenerated\n or generated on request)
 destroy OCHIE
 
 

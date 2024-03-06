@@ -1,4 +1,4 @@
-Key concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the WHO Digital Adaptation Kit: SMART Guidelines for Immunizations (link forthcoming), as well as in the [WHO Digital Documentation of COVID-19 Certificates FHIR Implementation Guide](https://worldhealthorganization.github.io/ddcc/concepts.html).
+Key concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the [WHO Digital Documentation of COVID-19 Certificates FHIR Implementation Guide](https://worldhealthorganization.github.io/ddcc/concepts.html).
 
 ### Concepts 
 
