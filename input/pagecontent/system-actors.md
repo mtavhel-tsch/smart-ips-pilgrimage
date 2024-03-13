@@ -37,12 +37,6 @@ In the clinical flows, generic personas are represented using profiles of the va
       <td></td>
     </tr>
     <tr>
-      <td>Host Country</td>
-      <td>Country hosting pilgrimage events.Responsible for approving applications from Pilgrims</td>
-      <td>Pilgrimage Host Country</td>
-      <td></td>
-    </tr>
-    <tr>
       <td>National Pilgrimage Authority</td>
       <td>Organization that manages the application of a Pilgrim as they apply to make pilgrim to a pilgrimage host country.  Responsible for providing a Pilgrim with a Pilgrimage Registration Number and assessing health status of Pilgrim before approval is granted by the Pilgrimage Host Country. Optionally responsible for ensuring consent in case of "break the glass" scenario when a Pilgrim is not able to provide explicit consent in an emergency care setting due to, for example, unconsciousness. In this case, the National Pilgrimage Authority should collect consent from the Pilgrim for potential future "break the glass scenario", associate a Pilgrimage Registration Number to a patient summary document, and provide access means to the Host Country HIE to the patient summary document by association to the Pilgrimage Registration Number</td> 
       <td>Pilgrimage Authority</td>
@@ -53,7 +47,7 @@ In the clinical flows, generic personas are represented using profiles of the va
 
 
 
-### Digital Services
+### Digital Services 
   
   
 
@@ -107,3 +101,5 @@ In the clinical flows, generic personas are represented using profiles of the va
     </tr>
   </tbody>
 </table>
+
+### External Hardware and 
