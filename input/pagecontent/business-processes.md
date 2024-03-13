@@ -56,14 +56,14 @@ The following table describes the workflows of the included processes.
       <td>3.0</td>
       <td>Issuance of Health Document at Origin Country</td>
       <td>IPS.PILGRIMAGE.3.0</td>
-      <td><p>Pilgrim</p><p>National IHE<p></td>
+      <td><p>Pilgrim</p><p>National IHE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
     <tr class="odd">
       <td>4.0</td>
       <td>Clinical Encounter for Unplanned Care</td>
       <td>IPS.PILGRIMAGE.4.0</td>
-      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE<p></td>
+      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
    <tr class="even">
@@ -95,33 +95,9 @@ The workflows that follow depict processes that have been generalized across dif
 <br/>
 
 
+<br clear="all"/>
 
-#### 1.0 Publication of National Public Keys for Verification
-
-<b>TO DO: Insert diagram</b>
-  <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
-  </div> 
-<br/> 
-
-
-#### 2.0 Publication of National Terminologies
-
-<b>TO DO: Insert diagram</b>
-  <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
-  </div> 
-<br/> 
-
-#### 3.0 Issuance of Health Document at Origin Country
-
-<b>TO DO: Insert diagram</b>
-  <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
-  </div> 
-<br/> 
-
-#### 4.0 Clinical Encounter for Unplanned Care
+#### 1.0 Publication of National Public Keys for Verification   
 
 <b>TO DO: Insert diagram</b>
   <div> 
@@ -130,7 +106,32 @@ The workflows that follow depict processes that have been generalized across dif
 <br/> 
 
 
-#### 5.0 Break The Glass Clinical Encounter
+#### 2.0 Publication of National Terminologies  
+
+<b>TO DO: Insert diagram</b>
+  <div> 
+<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  </div> 
+<br/> 
+
+#### 3.0 Issuance of Health Document at Origin Country  
+
+<b>TO DO: Insert diagram</b>
+  <div> 
+<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  </div> 
+<br/> 
+
+#### 4.0 Clinical Encounter for Unplanned Care  
+
+<b>TO DO: Insert diagram</b>
+  <div> 
+<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  </div> 
+<br/> 
+
+
+#### 5.0 Break The Glass Clinical Encounter  
 
 <b>TO DO: Insert diagram</b>
   <div> 
