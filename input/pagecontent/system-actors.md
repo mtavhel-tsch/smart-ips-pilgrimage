@@ -4,7 +4,7 @@ Systems managing clinical and patient information are expected to interact with 
 
 Integrating the Healthcare Enterprise (IHE) maintains a [repository with common actors](https://profiles.ihe.net/GeneralIntro/ch-A.html) used in IHE profiles.
 
-### Key generic personas interacting with the system 
+### Key generic personas interacting with the system  
 In the clinical flows, generic personas are represented using profiles of the various entity resources in HL7 FHIR, such as [Patient](http://hl7.org/fhir/patient), [Practitioner](http://hl7.org/fhir/practitioner), [PractitionerRole](http://hl7.org/fhir/practitionerrole), and [RelatedPerson](http://hl7.org/fhir/relatedperson).
 
 
@@ -47,7 +47,7 @@ In the clinical flows, generic personas are represented using profiles of the va
 
 
 
-### Digital Services 
+### Digital Services  
   
   
 
@@ -102,4 +102,5 @@ In the clinical flows, generic personas are represented using profiles of the va
   </tbody>
 </table>
 
-### External Hardware and 
+
+### External Hardware and   
