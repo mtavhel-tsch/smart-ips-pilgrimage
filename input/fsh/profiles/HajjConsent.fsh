@@ -1,11 +1,19 @@
 Profile: HajjConsent
 Parent: Consent
-Description: "A profile of the consent resource to track consent of a pilgrim to participate"
+Description: "A profile of the consent resource to track consent of a pilgrim to participate
+
+FHIR R5 upgrade notes (need this implemented as a structure map):
+ * make cardinality of decision 1.. and should stop using it in lieu of verification.verified
+ * use verification.verifiedBy instead of Consent.organization
+ * the period extenion should be replaced by Consent.period
+ * the Consent.patient should be replaced by Consent.subject
+ * Consent.verification.verifiedBy should be used instead of Consent.organization
+"
 * category 1.. MS
 * category from IPS.HAJJ.CONSENT
 
 // NOTE:
-// in FHIR R5 should use make cardinality of decision 1..
+// in FHIR R5 should  make cardinality of decision 1..
 // * decision 1..
 
 // NOTE:
