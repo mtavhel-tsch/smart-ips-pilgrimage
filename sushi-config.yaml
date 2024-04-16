@@ -262,4 +262,5 @@ menu:
 dependencies:
   who.base: dev
   ihe.iti.mcsd: current
+  hl7.fhir.uv.ips: 1.1.0
 #  who.base: current
