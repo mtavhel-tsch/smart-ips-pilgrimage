@@ -50,7 +50,7 @@ group Issue Smart Health Link
  	      Badge is printed prior to health assessment
 	   end note
 	   OCHIE -> OCHIE : generate SHL\nUse present passcode.\n
-	   OCHIE -> OHCE : Send SHL to printer
+	   OCHIE -> OCHIE : Send SHL to printer
 	   C -> P :   issue Jamaah Haji Indonesia Card with\nVerifiable Smart Health Link printed on back
 	else Malaysia
 	   P -> HW : Pilgrim configures Smart Health Link\nwith selective disclosure and time limits.\nUse preset passcode
