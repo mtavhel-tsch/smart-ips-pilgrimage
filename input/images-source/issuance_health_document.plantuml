@@ -1,6 +1,6 @@
 @startuml
 
-title Issuance of Health Document
+title Health Assessment, Consent Counselling,  and Issuance of Smart Health Link
 !include ./style.iuml
 
 actor "Hajj Counselor" as C
@@ -24,7 +24,7 @@ end
 
 
 
-group Record Consent
+group Counseling and Consent
 	alt Indonesia
 	   C -> P : explains use of ID Badge with SMART Health Link\nincluding consent policy
 	   OCHIE -> OCHIE : create a FHIR Consent resource with\ncode #CONSENT-KSA and #CONSENT-IDN
