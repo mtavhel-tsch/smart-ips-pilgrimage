@@ -13,6 +13,8 @@ The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/tea
 
 Supporting guidance, recommendations, resources, and standards are included in the <a href="references.html">References</a> and <a href="dependencies.html">Dependencies</a>.
 
+Eligible Participants may request to join through the <a href ="Letter_of_Application_IPS_Pilgrimage.docx">The Letter of Application</a>
+
 ### About this implementation guide
 
 This implementation guide is broken into the following levels of [knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
