@@ -17,8 +17,8 @@ group Asessment
 	   C -> P : Jamaah Haji conducts health assessment
         else Malaysia
 	   C -> P : conduct health assessment\nutilize FHIR Questionniare resource for UI
-	   C -> OCHIE : store Assesment Questionnaire as FHIR Questionnaire resource
-	   OCHIE -> OCHIE : Assessment Questionaire extracted to Health Record using ?
+	   C -> OCHIE : store Assesment Questionnaire as\nFHIR Questionnaire resource
+	   OCHIE -> OCHIE : Assessment Questionaire extracted to\nHealth Record using ?
 	end
 end
 
@@ -26,30 +26,39 @@ end
 
 group Record Consent
 	alt Indonesia
-	   C -> P : explains use of ID Badge with SMART Health Link including consent policy
-	   OCHIE -> OCHIE : create a FHIR Consent resource with code #CONSENT-KSA and #CONSENT-IDN
+	   C -> P : explains use of ID Badge with SMART Health Link\nincluding consent policy
+	   OCHIE -> OCHIE : create a FHIR Consent resource with\ncode #CONSENT-KSA and #CONSENT-IDN
 	else Malaysia
-  	   C -> P : explain utilization of digital health wallet during Hajj including consent policy
-	   P -> HW : Consent questionnaire  is displayed to Pilgrim\nand consent ascertained as FHIR Questionnaire resource
+  	   C -> P : explain utilization of digital health wallet\nduring Hajj including consent policy
+	   P -> HW : Consent questionnaire  is displayed\nto Pilgrim and consent ascertained\nas FHIR Questionnaire resource
 	end 
 end
 
 
 group Issue Smart Health Link
-	note right: Verifiable Smart Health Links: create Smart Health Link for the IPS\ngenerate digital signature\ncapture signed SHL as HCERT claim\nHCERT is rendered as QR code
+	note right of QR #aqua
+   	  Verifiable Smart Health Links:
+	  create Smart Health Link for the IPS
+	  generate digital signature\ncapture signed SHL as HCERT claim
+	  HCERT is rendered as QR code
+	end note
+
+
 
 	alt Indonesia
- 	   note right: Badge is printed prior to health assessment
+ 	   note right of OCHIE #yellow
+ 	      Badge is printed prior to health assessment
+	   end note
 	   OCHIE -> OCHIE : generate SHL\nUse present passcode.\n
 	   OCHIE -> OHCE : Send SHL to printer
-	   C -> P :   issue Jamaah Haji Indonesia Card with Verifiable Smart Health Link printed on back
+	   C -> P :   issue Jamaah Haji Indonesia Card with\nVerifiable Smart Health Link printed on back
 	else Malaysia
 	   P -> HW : Pilgrim configures Smart Health Link\nwith selective disclosure and time limits.\nUse preset passcode
 	   HW -> HW : display Consent Questionniare
 	   HW -> OCHIE : request verifiable HCERT SHL for  IPS\nSend Consent Questionniare
-	   OCHIE -> OCHIE : extract FHIR Consent resource from Consent Questionnaire with code #CONSENT-KSA and #CONSENT-MYS
+	   OCHIE -> OCHIE : extract FHIR Consent resource from\nConsent Questionnaire with codes\n#CONSENT-KSA and #CONSENT-MYS
 	   OCHIE -> OCHIE : generate Verifiable Smart Health Link
-	end 
+	end
 end
 
 
