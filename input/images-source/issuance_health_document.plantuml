@@ -36,7 +36,7 @@ end
 
 
 group Issue Smart Health Link
-	note right of QR #aqua
+	note left of QR #aqua
    	  Verifiable Smart Health Links:
 	  create Smart Health Link for the IPS
 	  generate digital signature\ncapture signed SHL as HCERT claim
