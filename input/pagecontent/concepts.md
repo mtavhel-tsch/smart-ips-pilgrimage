@@ -1,73 +1,77 @@
 Key concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the [WHO Digital Documentation of COVID-19 Certificates FHIR Implementation Guide](https://worldhealthorganization.github.io/ddcc/concepts.html).
+# Key Concepts and Definitions
 
-### Concepts 
+## **Pilgrim**
+- A person who undertakes the Hajj pilgrimage to Mecca. In the context of the healthcare system, the pilgrim is the primary user, receiving healthcare services and interacting with various healthcare providers.
 
-<table class="list">
-<thead>
-  <tr>
-    <th>Term</th>
-    <th>Description</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><a href="https://build.fhir.org/ig/HL7/fhir-ips/ValueSet-whoatc-uv-ips.html">Anatomical Therapeutic Chemical code (ATC)</a></td>
-    <td>A unique code assigned to a medicine according to the organ or system it works on and how it works.</td>
-  </tr>
-  <tr>
-    <td>Pilgrim Registration Number</td>
-    <td>Registration number provided by Host Country uniquely associated to a Pilgrim during a pilgrimage event</td>
-  </tr>
-  <tr>
-    <td><a href="http://hl7.org/fhir/uv/cpg/">Clinical practice guidelines (CPG)</a></td>
-    <td>Clinical practice guidelines are statements that include recommendations intended to optimize patient care that are informed by a systematic review of evidence and an assessment of the benefits and harms of alternative care options.</td>
-  </tr>
-  <tr>
-    <td><a href="https://cql.hl7.org/">Clinical Quality Language (CQL)</a></td>
-    <td>This is a HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains.</td>
-  </tr>
-  <tr>
-    <td>Data dictionary</td>
-    <td>A centralized repository of information about the data elements that contains their definition, relationships, origin, usage, and type of data. For this digital adaptation kit, the data dictionary is provided as a spreadsheet.</td>
-  </tr>
-  <tr>
-    <td>Data element</td>
-    <td>A unit of data that has specific and precise meaning.</td>
-  </tr>
-  <tr>
-    <td>Defaulter</td>
-    <td>A person who has missed the scheduled dose of a vaccine.</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.hl7.org/fhir/overview.html">Fast Healthcare Interoperability Resources (FHIR)</a></td>
-    <td>A standard describing data formats and elements and an application programming interface for exchanging electronic health records.</td>
-  </tr>
-  <tr>
-    <td>Functional requirement</td>
-    <td>Capabilities the system must have in order to meet the end-users’ needs and achieve tasks within the business process.</td>
-  </tr>
-  <tr>
-    <td><a href="https://build.fhir.org/implementationguide.html">Implementation Guide (IG)</a></td>
-    <td>A set of rules about how FHIR resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage. This IG is based on WHO guidance, as it is represented in the Digital Adaptation Kit: SMART Guidelines for Immunizations, to support the adoption of open standards for interoperability.</td>
-  </tr>
-  <tr>
-    <td>Indicator</td>
-    <td>Summary measures that capture relevant information on different attributes and dimensions of health status and performance of a health system.</td>
-  </tr>
-  <tr>
-    <td><a href="http://hl7.org/fhir/uv/ips/">International Patient Summary (IPS)</a></td>
-    <td>An electronic health record extract containing essential healthcare information about a client.</td>
-  </tr>
-  <tr>
-    <td>Non-functional requirement</td>
-    <td>General attributes and features of the digital system to ensure usability and overcome technical and physical constraints. Examples of non-functional requirements include ability to work offline, multiple language settings, and password protection.</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.snomed.org/gps">Systemized Nomenclature of Medicine – Clinical Terms Global Patient Set (SNOMED CT GPS)</a></td>
-    <td>A systematically organized computer-processable collection of medical terms providing codes, terms, synonyms and definitions used in clinical documentation and reporting.</td>
-  </tr>
-</tbody>
-</table>
+## **Origin Country**
+- The country from which the pilgrim originates or holds citizenship. This is significant in the context of healthcare as health information and preparatory measures might be initiated in the origin country before the pilgrimage.
+
+## **Host Country**
+- The country hosting the pilgrimage, which in the case of the Hajj is the Kingdom of Saudi Arabia (KSA). The host country provides healthcare and other services to pilgrims during their stay.
+
+## **Hajj Health Facility**
+- A medical facility set up to cater specifically to the needs of Hajj pilgrims. These facilities can range from clinics to hospitals and are equipped to handle both routine health checks and emergency services.
+
+## **Registration Nurse**
+- A healthcare professional responsible for the initial registration of pilgrims at Hajj health facilities. This includes collecting and verifying pilgrim information and initiating the health service process.
+
+## **Clinician**
+- A medical professional, such as a doctor or nurse, who provides clinical care to the pilgrim. Clinicians use the pilgrim's health information, accessed via the healthcare system, to offer appropriate medical treatments.
+
+## **International Patient Summary (IPS)**
+- A digital document that contains essential healthcare information about a patient, designed to support the continuity of care and patient safety. For Hajj pilgrims, the IPS includes basic demographics, medical history, medications, allergies, and other critical health information that can be shared across borders and healthcare systems.
+
+## **QR Code**
+- A machine-readable optical label that contains information about the item to which it is attached. In this context, it holds encrypted data that allows healthcare providers access to a pilgrim's IPS when scanned.
+
+## **PIN (Personal Identification Number)**
+- A security feature that adds an extra layer of protection to the pilgrim's health information. The default PIN is often the pilgrim's birthdate, and it is used in conjunction with the QR code to access the IPS.
+
+## **EMR (Electronic Medical Record)**
+- A digital version of a patient's paper chart, used by healthcare providers for diagnosis and treatment. In the context of the Hajj, EMRs are used by host country medical facilities to manage pilgrim care.
+
+## **HIE (Health Information Exchange)**
+- The electronic sharing of health information among different organizations. In the context of the Hajj, it refers to the system that allows origin countries and the host country to exchange pilgrim health information securely.
+
+## **Anatomical Therapeutic Chemical code (ATC)**
+- A unique code assigned to a medicine according to the organ or system it works on and how it works.
+
+## **Pilgrim Registration Number**
+- Registration number provided by the Host Country uniquely associated with a Pilgrim during a pilgrimage event.
+
+## **Clinical Practice Guidelines (CPG)**
+- Clinical practice guidelines are statements that include recommendations intended to optimize patient care, informed by a systematic review of evidence and an assessment of the benefits and harms of alternative care options.
+
+## **Clinical Quality Language (CQL)**
+- This is a HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains.
+
+## **Data Dictionary**
+- A centralized repository of information about data elements that contains their definition, relationships, origin, usage, and type of data. For this digital adaptation kit, the data dictionary is provided as a spreadsheet.
+
+## **Data Element**
+- A unit of data that has specific and precise meaning.
+
+## **Defaulter**
+- A person who has missed the scheduled dose of a vaccine.
+
+## **Fast Healthcare Interoperability Resources (FHIR)**
+- A standard describing data formats and elements and an application programming interface for exchanging electronic health records.
+
+## **Functional Requirement**
+- Capabilities the system must have in order to meet the end-users’ needs and achieve tasks within the business process.
+
+## **Implementation Guide (IG)**
+- A set of rules about how FHIR resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage. This IG is based on WHO guidance, as represented in the Digital Adaptation Kit: SMART Guidelines for Immunizations, to support the adoption of open standards for interoperability.
+
+## **Indicator**
+- Summary measures that capture relevant information on different attributes and dimensions of health status and performance of a health system.
+
+## **Non-functional Requirement**
+- General attributes and features of the digital system to ensure usability and overcome technical and physical constraints. Examples include the ability to work offline, multiple language settings, and password protection.
+
+## **Systemized Nomenclature of Medicine – Clinical Terms Global Patient Set (SNOMED CT GPS)**
+- A systematically organized computer-processable collection of medical terms providing codes, terms, synonyms, and definitions used in clinical documentation and reporting.
 
 ### Abbreviations
 
