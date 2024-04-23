@@ -1,16 +1,11 @@
-This page describes the specific transactions that are referenced in the [sequence diagrams](sequence-diagrams.html).
+This page describes the specific transactions that are referenced in the [sequence diagrams](sequence-diagrams.html) defined by this implementatio guide.
+
+Other transactions utilized by this implementaiton guide my be found:
+- [Publish Verification Keys](https://smart.who.int/trust/transactions.html#put_keys)
+- [Retreive Verification Keys](https://smart.who.int/trust/transactions.html#get_keys)
 
 
-<h3 id="pub_keys">Publish Verification Keys</h3>
 
-Publication of verification public keys should be with in the <b>IPS-PILGRIMAGE</b> Trust Domain for the [GDHCN](https://smart.who.int/trust) following the [onboarding processes](https://smart.who.int/trust/concepts_onboarding.html).   Public keys for verifcation should be uploaded using the Trust Network Gateway API
-
-<h3 id="get_keys">Retreive Verification Keys</h3>
-
-Keys should be retrieved using the [GDHCN](https://smart.who.int/trust) framework.  There are two methods for retrieval:
-<h4 id="get_keys_did">Retreive Verification Keys - DID </h4>
-
-<h4 id="get_keys_api">Retreive Verification Keys - API </h4>
 
 <h3 id="sign_shl">Sign Smart Health Link</h3>
 
