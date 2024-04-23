@@ -15,7 +15,8 @@ Thumbs.db
 
 # Plantuml generated #
 ######################
-input/images-sources/*png
+input/images-source/*png
+
 
 # OS generated files #
 ######################
