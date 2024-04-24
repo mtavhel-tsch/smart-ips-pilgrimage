@@ -90,7 +90,7 @@ The workflows that follow depict processes that have been generalized across dif
 #### Overview of key process flows
 
   <div> 
-    <img src="workflow.jpg" alt="Overview of key clinical process flows" style="width:85%"/>
+    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%"/>
   </div>
 <br/>
 
