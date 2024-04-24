@@ -3,17 +3,20 @@ This page describes the specific transactions that are referenced in the [sequen
 Other transactions utilized by this implementation guide my be found:
 
 <h3 id="put_keys">Publish Verification Keys</h3>
+<h4>Trigger Events</h4>
+<h4>Message Semantics</h4>
 The OCHIE SHALL use one of the following transactions:
-- [Publish Verification Keys - DID](https://smart.who.int/trust/transactions.html#put_keys_did)
 - [Publish Verification Keys - API](https://smart.who.int/trust/transactions.html#put_keys_api)
+<h4>Expected Actions</h4>
 
-
-<h3 id="sign_shl">Retrieve Verification Keys</h3>
+<h3 id="get_keys">Retrieve Verification Keys</h3>
+<h4>Trigger Events</h4>
+<h4>Message Semantics</h4>
 The HCEMR SHALL use one of the following transactions:
 - [Retrieve Verification Keys - DID](https://smart.who.int/trust/transactions.html#get_keys_did)
 - [Retrieve Verification Keys  - API](https://smart.who.int/trust/transactions.html#get_keys_api)
-
-
+<h4>Expected Actions</h4>
+The HCEMR shall use the verificaiton keys to verify the provance of the Verificable Smart Health Link and the Verifable IPS
 
 
 <h3 id="sign_shl">Sign Smart Health Link</h3>

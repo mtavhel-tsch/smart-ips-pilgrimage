@@ -25,6 +25,9 @@ AKey concepts and abbreviations are described here. Additional terms are defined
 ## **QR Code**
 - A machine-readable optical label that contains information about the item to which it is attached. In this context, it holds encrypted data that allows healthcare providers access to a pilgrim's IPS when scanned.
 
+## **Verifiable Smart Health Link (SHL)
+- A Smart Health Link is a special link that provides time-bound, password and cryptographically restricted access to a health certificate or document.
+
 ## **PIN (Personal Identification Number)**
 - A security feature that adds an extra layer of protection to the pilgrim's health information. The default PIN is often the pilgrim's birthdate, and it is used in conjunction with the QR code to access the IPS.
 
@@ -36,3 +39,7 @@ AKey concepts and abbreviations are described here. Additional terms are defined
 
 ## **Verifiable International Patient Summary (Verifiable IPS)**
 - An IPS document together with a digital signature that can be used to verify the provenance of the IPS within a Trust Network.
+
+
+## **Verifiable Smart Health Link (Verifiable SHL)
+- A Smart Health Link together with a digital signature embedded as a HCERT
