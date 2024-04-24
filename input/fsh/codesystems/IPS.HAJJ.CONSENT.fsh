@@ -1,10 +1,10 @@
-CodeSystem: IPS.HAJJ
-Title:        "IPS.HAJJ CodeSystem"
-Description:  "CodeSystem for IPS.HAJJ CodeSystem for utilization of IPS during Hajj"
+CodeSystem: IPS.HAJJ.CONSENT
+Title:        "IPS.HAJJ.CONSENT CodeSystem"
+Description:  "CodeSystem for IPS.HAJJ.CONSENT CodeSystem for utilization of IPS during Hajj"
 
 * ^experimental = true
 * ^caseSensitive = false
-* ^name = "IPS_HAJJ"
+* ^name = "IPS_HAJJ.CONSENT"
 * ^status = #active
 
 * #CONSENT-KSA "Consent for Kingdom of Saudi Arabia"  "<INSERT TEXT FROM KSA: discuss pilgrim's consent to share their IPS during provision of clinical care during the Hajj event as well as any follow-up care that may be needed.>"
