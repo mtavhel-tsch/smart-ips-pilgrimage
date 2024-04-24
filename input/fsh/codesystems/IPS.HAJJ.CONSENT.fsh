@@ -4,7 +4,7 @@ Description:  "CodeSystem for IPS.HAJJ.CONSENT CodeSystem for utilization of IPS
 
 * ^experimental = true
 * ^caseSensitive = false
-* ^name = "IPS_HAJJ.CONSENT"
+* ^name = "IPS_HAJJ_CONSENT"
 * ^status = #active
 
 * #CONSENT-KSA "Consent for Kingdom of Saudi Arabia"  "<INSERT TEXT FROM KSA: discuss pilgrim's consent to share their IPS during provision of clinical care during the Hajj event as well as any follow-up care that may be needed.>"
