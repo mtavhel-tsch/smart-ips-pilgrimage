@@ -9,4 +9,4 @@ Usage: #example
 * title = "Scanner"
 * experimental = false
 * description = "2D/QR code Scanner"
-* extension[code] = $IPSHajjActor#scanner
+* extension[code].valueCoding = $IPSHajjActor#scanner

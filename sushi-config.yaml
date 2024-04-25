@@ -16,7 +16,14 @@ publisher:
   url: http://who.int
   email: smart@who.int
 
+dependencies:
+  who.base: current
+  ihe.iti.mcsd: current
+  ihe.iti.pcf: current
+  hl7.fhir.uv.ips: current
+#  who.base: current
 
+  
 meta:
   profile:
     - SMARTImplementationGuide
@@ -259,8 +266,3 @@ menu:
 #   if InstanceOf references a profile:
 #
 #   setId: always # always | standalone-only
-dependencies:
-  who.base: dev
-  ihe.iti.mcsd: current
-  hl7.fhir.uv.ips: 1.1.0
-#  who.base: current

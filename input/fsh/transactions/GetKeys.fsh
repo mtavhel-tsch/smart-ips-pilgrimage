@@ -12,18 +12,21 @@ The HCEMR SHALL use one of the following transactions:
 - [Retrieve Verification Keys  - API](https://smart.who.int/trust/transactions.html#get_keys_api)
 """
 * link[=].extension[expectedActions].valueMarkdown = """The HCEMR shall use the verificaiton keys to verify the provance of the Verificable Smart Health Link and the Verifable IPS"""
+* link[=].extension[code].valueCoding = $IPSHajjTrans#keys-get
+* link[=].sourceId = "keys-get-source"
+* link[=].targetId = "keys-get-target"
 
 * node[+].nodeId = "keys-get-source"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)    
-* node[=].extension[sourceActor].valueReference = Reference($GDHCN)
+* node[=].profile = $SGActor    
+* node[=].extension[actor].valueReference = Reference($GDHCN)
 
 * node[+].nodeId = "keys-get-target"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)     
-* node[=].extension[targetActor].valueReference = Reference(OCHIE)
+* node[=].profile = $SGActor     
+* node[=].extension[actor].valueReference = Reference(OCHIE)
 
-* extension[code] = $IPSHajjTrans#keys-get
+
 * status = #active
 * experimental = false
 

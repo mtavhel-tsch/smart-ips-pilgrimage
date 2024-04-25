@@ -7,18 +7,21 @@ InstanceOf: $SGTransactionDef
 * link[+].extension[triggerEvents].valueMarkdown = """ """
 * link[=].extension[messageSemantics].valueMarkdown = """ """
 * link[=].extension[expectedActions].valueMarkdown = """ """
+* link[=].extension[code].valueCoding = $IPSHajjTrans#shl-doc-view
+* link[=].sourceId = "shl-doc-view-source"
+* link[=].targetId = "shl-doc-view-target"
 
 * node[+].nodeId = "shl-doc-view-source"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)
-* node[=].extension[sourceActor].valueReference = Reference(HCEMR)
+* node[=].profile = $SGActor
+* node[=].extension[actor].valueReference = Reference(HCEMR)
 
 * node[+].nodeId = "shl-doc-view-target"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)
-* node[=].extension[targetActor].valueReference = Reference(OCHIE)
+* node[=].profile = $SGActor
+* node[=].extension[actor].valueReference = Reference(OCHIE)
 
-* extension[code] = $IPSHajjTrans#shl-doc-view
+
 * status = #active
 * experimental = false
 

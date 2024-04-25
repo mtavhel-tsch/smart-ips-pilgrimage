@@ -9,4 +9,4 @@ Usage: #example
 * title = "Origin Country HIE"
 * experimental = false
 * description = "Origin Country Health Information Exchange (HIE) which is responsible for issuance of Verifiable IPS and Verifiable SMART Health Links"
-* extension[code] = $IPSHajjActor#ochie
+* extension[code].valueCoding = $IPSHajjActor#ochie

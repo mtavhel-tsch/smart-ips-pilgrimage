@@ -10,18 +10,22 @@ InstanceOf: $SGTransactionDef
 - the IHE Document Digital Signature - JSON (DSGj)(forthcoming) profile for JSON-singatures
 """
 * link[=].extension[expectedActions].valueMarkdown = """ Once the IPS has been signed it is now a Verififable Digital Health Certificate and SHALL be available for retrieval via a Smart Health Link.  """
+* link[=].extension[code].valueCoding = $IPSHajjTrans#doc-sign
+* link[=].sourceId = "doc-sign-source"
+* link[=].targetId = "doc-sign-target"
+
 
 * node[+].nodeId = "doc-sign-source"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)  
-* node[=].extension[sourceActor].valueReference = Reference(OCHIE)
+* node[=].profile = $SGActor  
+* node[=].extension[actor].valueReference = Reference(OCHIE)
 
 * node[+].nodeId = "doc-sign-target"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)  
-* node[=].extension[targetActor].valueReference = Reference(OCHIE)
+* node[=].profile = $SGActor  
+* node[=].extension[actor].valueReference = Reference(OCHIE)
 
-* extension[code] = $IPSHajjTrans#doc-sign
+
 * status = #active
 * experimental = false
 

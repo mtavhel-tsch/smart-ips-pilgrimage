@@ -10,18 +10,20 @@ InstanceOf: $SGTransactionDef
 * link[=].extension[expectedActions].valueMarkdown = """
 The OCHIE SHALL act as  [IHE PCF Consent Recorder](https://profiles.ihe.net/ITI/PCF/volume-1.html#153111-consent-recorder)
 """
+* link[=].extension[code].valueCoding = $IPSHajjTrans#consent-wallet
+* link[=].sourceId = "consent-wallet-source"
+* link[=].targetId = "consent-wallet-target"
 
 * node[+].nodeId = "consent-wallet-source"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)    
-* node[=].extension[sourceActor].valueReference = Reference(OCHW)
+* node[=].profile = $SGActor    
+* node[=].extension[actor].valueReference = Reference(OCHW)
 
 * node[+].nodeId = "consent-wallet-target"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)    
-* node[=].extension[targetActor].valueReference = Reference(OCHIE)
+* node[=].profile = $SGActor    
+* node[=].extension[actor].valueReference = Reference(OCHIE)
 
-* extension[code] = $IPSHajjTrans#consent-wallet
-* kind = #operation
+
 * experimental = false
 * status = #active

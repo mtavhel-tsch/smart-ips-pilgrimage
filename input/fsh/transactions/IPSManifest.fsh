@@ -12,18 +12,21 @@ See the [Smart Health Link - Manifest](https://docs.smarthealthit.org/smart-heal
 - The *contentType* entry MAY also include the value "text/html" in the case that the corresponding *location* entry of the Smart Health Link is a Verifiable Digital Health Certificate (e.g. Verifiable IPS).
 """
 * link[=].extension[expectedActions].valueMarkdown = """  """
+* link[=].extension[code].valueCoding = $IPSHajjTrans#shl-get-manifest
+* link[=].sourceId = "shl-get-manifest-source"
+* link[=].targetId = "shl-get-manifest-target"
 
 * node[+].nodeId = "shl-get-manifest-source"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)
+* node[=].profile = $SGActor
 * node[=].extension[actor].valueReference = Reference(HCEMR)  
 
 * node[+].nodeId = "shl-get-manifest-target"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)
+* node[=].profile = $SGActor
 * node[=].extension[actor].valueReference = Reference(OCHIE)
 
-* extension[code] = $IPSHajjTrans#shl-get-manifest
+
 * experimental = false
 * status = #active
 

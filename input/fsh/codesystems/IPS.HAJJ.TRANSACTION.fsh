@@ -7,7 +7,7 @@ Description:  "CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of
 * ^name = "IPS_HAJJ_TRANSACTION"
 * ^status = #active
 
-* #key-put "Publish Verification Keys"
+* #keys-put "Publish Verification Keys"
 * #keys-get "Retrieve Verification Keys"
 * #doc-sign "Sign IPS"
 * #doc-get "Retrieve IPS"

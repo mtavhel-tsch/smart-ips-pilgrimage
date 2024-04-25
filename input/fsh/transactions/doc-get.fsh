@@ -7,18 +7,21 @@ InstanceOf: $SGTransactionDef
 * link[+].extension[triggerEvents].valueMarkdown = """SHL Manifest was retrieved and refers to IPS or other document"""
 * link[=].extension[messageSemantics].valueMarkdown = """Same for retrieving a FHIR Document Bundle such as IPS using GET"""
 * link[=].extension[expectedActions].valueMarkdown = """ Return the requested bundle assuming access controls and jurisidictional policies are met"""
+* link[=].extension[code].valueCoding = $IPSHajjTrans#doc-get
+* link[=].sourceId = "doc-get-source"
+* link[=].targetId = "doc-get-target"
 
 * node[+].nodeId = "doc-get-source"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)  
-* node[=].extension[sourceActor].valueReference = Reference(HCEMR)
+* node[=].profile = $SGActor
+* node[=].extension[actor].valueReference = Reference(HCEMR)
 
 * node[+].nodeId = "doc-get-target"
 * node[=].type = #ActorDefinition
-* node[=].profile = canonical(SGActor)
-* node[=].extension[targetActor].valueReference = Reference(OCHIE)
+* node[=].profile = $SGActor
+* node[=].extension[actor].valueReference = Reference(OCHIE)
 
-* extension[code] = $IPSHajjTrans#doc-get
+
 * status = #active
 * experimental = false
 
