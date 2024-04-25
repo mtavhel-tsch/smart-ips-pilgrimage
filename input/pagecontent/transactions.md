@@ -41,12 +41,12 @@ The OCHIE SHALL use one of the following:
 Once the IPS has been signed it is now a Verififable Digital Health Certificate and SHALL be available for retrieval via a Smart Health Link.
 
 
-### Retrieve SHL IPS Viewer {#ips_view}
+### Access SHL Document Viewer {#ips_view}
 #### Trigger Events
 #### Message Semantics
 #### Expected Actions
 
-### Retrieve SHL IPS Manifest {#ips_manifest}
+### Retrieve SHL Document Manifest {#ips_manifest}
 #### Trigger Events
 Initatied by the HCEMR once a Smart Health Link provided by a Pilgrim has been scanned.
 #### Message Semantics

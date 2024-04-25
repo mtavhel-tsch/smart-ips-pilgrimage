@@ -9,3 +9,4 @@ Usage: #example
 * title = "Host Country EMR"
 * experimental = false
 * description = "Host Country EMR"
+* extension[code] = $IPSHajjActor#hcemr

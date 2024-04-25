@@ -9,3 +9,4 @@ Usage: #example
 * title = "Pilgrim"
 * experimental = false
 * description = "Pilgrim"
+* extension[code] = $IPSHajjActor#pilgrim

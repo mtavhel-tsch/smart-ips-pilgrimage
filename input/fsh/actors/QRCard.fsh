@@ -9,3 +9,4 @@ Usage: #example
 * title = "QRCard"
 * experimental = false
 * description = "Pilgrim Card containing QR code of SMART Health Link"
+* extension[code] = $IPSHajjActor#qrcode

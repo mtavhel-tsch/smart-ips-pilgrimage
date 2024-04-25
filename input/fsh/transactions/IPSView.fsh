@@ -1,19 +1,24 @@
+Instance: shl-doc-view
+InstanceOf: $SGTransactionDef
+* title = "Use SHL to access Document Viewer"
+* description =  "Use SHL to access Document Viewer"
+* name =  "shl-doc-view"
 
-Instance: IPSView
-InstanceOf: $SGTransaction
-* title = "Retrieve SHL for IPS Viewer"
-* description =  "Retrieve SHL for IPS Viewer"
-* name =  "IPSView"
-* extension[triggerEvents].valueMarkdown = """ """
-* extension[messageSemantics].valueMarkdown = """ """
-* extension[expectedActions].valueMarkdown = """ """
-* extension[sourceActor].valueReference = Reference(HCEMR)
-* extension[targetActor].valueReference = Reference(OCHIE)
-* instance = false
-* type = false
-* system = true
-* code = #IPSView
-* kind = #operation
+* link[+].extension[triggerEvents].valueMarkdown = """ """
+* link[=].extension[messageSemantics].valueMarkdown = """ """
+* link[=].extension[expectedActions].valueMarkdown = """ """
+
+* node[+].nodeId = "shl-doc-view-source"
+* node[=].type = #ActorDefinition
+* node[=].profile = canonical(SGActor)
+* node[=].extension[sourceActor].valueReference = Reference(HCEMR)
+
+* node[+].nodeId = "shl-doc-view-target"
+* node[=].type = #ActorDefinition
+* node[=].profile = canonical(SGActor)
+* node[=].extension[targetActor].valueReference = Reference(OCHIE)
+
+* extension[code] = $IPSHajjTrans#shl-doc-view
 * status = #active
 * experimental = false
 

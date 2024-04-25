@@ -9,3 +9,4 @@ Usage: #example
 * title = "Origin Country Health Wallet"
 * experimental = false
 * description = "Origin Country Health Wallet held by the Pilgrim"
+* extension[code] = $IPSHajjActor#ochw
