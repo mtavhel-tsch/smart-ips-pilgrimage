@@ -1,5 +1,5 @@
 Instance: HCEMR
-InstanceOf: ActorDefinition
+InstanceOf: $SGActor
 Usage: #example
 * meta.profile = "http://smart.who.int/smart-base/StructureDefinition/SGPersona"
 * type = #system

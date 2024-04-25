@@ -1,5 +1,5 @@
 Instance: Pilgrim
-InstanceOf: ActorDefinition
+InstanceOf: $SGActor
 Usage: #example
 * meta.profile = "http://smart.who.int/smart-trust/StructureDefinition/Credential.Holder"
 * type = #person
