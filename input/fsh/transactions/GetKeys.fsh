@@ -4,7 +4,7 @@ InstanceOf: $SGTransaction
 * title = "Retrieve Verification Keys"
 * description = "Retrieve Verification Keys"
 * name = "GetKeys"
-* extension[triggerEvent].valueMarkdown = """ """
+* extension[triggerEvents].valueMarkdown = """ """
 * extension[messageSemantics].valueMarkdown = """
 The HCEMR SHALL use one of the following transactions:
 - [Retrieve Verification Keys - DID](https://smart.who.int/trust/transactions.html#get_keys_did)

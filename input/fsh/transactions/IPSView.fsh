@@ -4,7 +4,7 @@ InstanceOf: $SGTransaction
 * title = "Retrieve SHL for IPS Viewer"
 * description =  "Retrieve SHL for IPS Viewer"
 * name =  "IPSView"
-* extension[triggerEvent].valueMarkdown = """ """
+* extension[triggerEvents].valueMarkdown = """ """
 * extension[messageSemantics].valueMarkdown = """ """
 * extension[expectedActions].valueMarkdown = """ """
 * extension[sourceActor].valueReference = Reference(HCEMR)

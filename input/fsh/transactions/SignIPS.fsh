@@ -4,7 +4,7 @@ InstanceOf: $SGTransaction
 * title = "Sign IPS"
 * description = "Sign IPS"
 * name = "SignIPS"
-* extension[triggerEvent].valueMarkdown = """Once the OCHIE has generated an International Patient Summary (IPS) document."""
+* extension[triggerEvents].valueMarkdown = """Once the OCHIE has generated an International Patient Summary (IPS) document."""
 * extension[messageSemantics].valueMarkdown = """The OCHIE SHALL use one of the following:
 - the [IHE Document Digital Signature (DSG)](https://profiles.ihe.net/ITI/TF/Volume1/ch-37.html) profile for XML-singatures
 - the IHE Document Digital Signature - JSON (DSGj)(forthcoming) profile for JSON-singatures
