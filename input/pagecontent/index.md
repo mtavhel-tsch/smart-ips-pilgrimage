@@ -17,7 +17,7 @@ The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/tea
 
 Supporting guidance, recommendations, resources, and standards are included in the <a href="references.html">References</a> and <a href="dependencies.html">Dependencies</a>.
 
-Eligible Participants may request to join through the <a href ="Letter_of_Application_IPS_Pilgrimage.docx">The Letter of Application</a>
+Eligible Participants may request to join through the <a href ="Letter_of_Application_IPS_Pilgrimage_1.0.docx">The Letter of Application</a>
 <br/>
   </div>
   <div style="float: right; width: 38%">
