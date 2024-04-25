@@ -11,7 +11,7 @@
 
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: https://github.com/WorldHealthOrganization/smart-ips-pilgrimage
+Continuous Build: https://WorldHealthOrganization.github.io/smart-ips-pilgrimage
 
 Canonical / permanent URL: https://smart.who.int/ips-pilgrimage
 
