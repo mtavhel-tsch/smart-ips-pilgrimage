@@ -2,7 +2,7 @@ Instance: IPSManifest
 InstanceOf: $SGTransaction
 * title = "Retrieve SHL for IPS Manifest"
 * description = "Retrieve SHL for IPS Manifest"
-* name = "SHLIPSManifest"
+* name = "IPSManifest"
 * extension[triggerEvents].valueMarkdown = """Initatied by the HCEMR once a Smart Health Link provided by a Pilgrim has been scanned."""
 * extension[messageSemantics].valueMarkdown = """
 See the [Smart Health Link - Manifest](https://docs.smarthealthit.org/smart-health-links/spec/#shlink-manifest-request) specifcation with the following modifications:
