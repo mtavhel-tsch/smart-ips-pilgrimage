@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="8c4dae7" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
   <bpmn:collaboration id="pcf-send-request-response" name="Health Check and Issue SHL">
-    <bpmn:participant id="Participant_0uiz6xe" name="Health Check and Counseling" processRef="Process_1weot2c" />
+    <bpmn:participant id="Participant_0uiz6xe" name="Health Check and Counseling" processRef="health-check-and-shl-issuance" />
   </bpmn:collaboration>
-  <bpmn:process id="Process_1weot2c" isExecutable="true">
+  <bpmn:process id="health-check-and-shl-issuance" name="Health Check and SHL Issuance" isExecutable="true">
     <bpmn:laneSet id="LaneSet_1308ahs">
       <bpmn:lane id="person" name="Human Actor">
         <bpmn:extensionElements>
@@ -28,10 +28,12 @@
         <bpmn:flowNodeRef>start</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>end</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_0c6j9ft">
-          <bpmn:lane id="Lane_1kqd05k" name="Counselor">
+          <bpmn:lane id="counselor" name="Counselor">
+            <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
               </zeebe:properties>
             </bpmn:extensionElements>
             <bpmn:flowNodeRef>Activity_1jht4ag</bpmn:flowNodeRef>
@@ -41,10 +43,12 @@
             <bpmn:flowNodeRef>Gateway_176634l</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_1snfpmi</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_1cqu3jb" name="Pilgrim">
+          <bpmn:lane id="pilgrim" name="Pilgrim">
+            <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
               </zeebe:properties>
             </bpmn:extensionElements>
             <bpmn:flowNodeRef>Activity_1n6cwq1</bpmn:flowNodeRef>
@@ -71,10 +75,12 @@
         <bpmn:flowNodeRef>Activity_09oy5wb</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0kvk608</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_0ude7xg">
-          <bpmn:lane id="Lane_1p8tylt" name="Origin Country  Wallet">
+          <bpmn:lane id="ochw" name="Origin Country  Wallet">
+            <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="actorType" value="system" />
+                <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
               </zeebe:properties>
             </bpmn:extensionElements>
             <bpmn:flowNodeRef>Activity_0x69am1</bpmn:flowNodeRef>
@@ -85,10 +91,12 @@
             <bpmn:flowNodeRef>Activity_09oy5wb</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_0kvk608</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_199ojgt" name="Origin Country  HIE">
+          <bpmn:lane id="ochie" name="Origin Country  HIE">
+            <bpmn:documentation>The pilgrim's origin country's HIE or national system</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="actorType" value="system" />
+                <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
               </zeebe:properties>
             </bpmn:extensionElements>
             <bpmn:flowNodeRef>Activity_1hhzmu2</bpmn:flowNodeRef>
@@ -283,11 +291,11 @@
         <dc:Bounds x="186" y="761" width="1694" height="409" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_199ojgt_di" bpmnElement="Lane_199ojgt" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_199ojgt_di" bpmnElement="ochie" isHorizontal="true">
         <dc:Bounds x="216" y="971" width="1664" height="199" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1p8tylt_di" bpmnElement="Lane_1p8tylt" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_1p8tylt_di" bpmnElement="ochw" isHorizontal="true">
         <dc:Bounds x="216" y="761" width="1664" height="210" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
@@ -295,11 +303,11 @@
         <dc:Bounds x="186" y="80" width="1694" height="681" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1cqu3jb_di" bpmnElement="Lane_1cqu3jb" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_1cqu3jb_di" bpmnElement="pilgrim" isHorizontal="true">
         <dc:Bounds x="216" y="431" width="1664" height="330" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1kqd05k_di" bpmnElement="Lane_1kqd05k" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_1kqd05k_di" bpmnElement="counselor" isHorizontal="true">
         <dc:Bounds x="216" y="80" width="1664" height="351" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
