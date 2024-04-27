@@ -12,18 +12,23 @@
   
   
   <xsl:template match="/bpmn:definitions">
+    <!-- just throwing everything in a bundle so we can validate easily. really each should ouput to own file under input/resources -->
     <Bundle>
 
       <xsl:variable name="actors" select="/bpmn:definitions/bpmn:process//bpmn:lane"/>
       <xsl:variable name="innerActors" select="$actors[not(child::bpmn:childLaneSet)]"/>
-
-      
       <xsl:variable name="collab" select="bpmn:collaboration[1]"/>
       <xsl:variable name="ig-slug" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='ig-slug'][1]/@value"/>
       <xsl:variable name="ig-base-url" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='ig-base-url'][1]/@value"/>
-      <xsl:variable name="transCS" select="concat($ig-base-url,$ig-slug,'/CodeSystem/Transactions')"/>
-      <xsl:variable name="actorCS" select="concat($ig-base-url,$ig-slug,'/CodeSystem/Actors')"/>
+      <xsl:variable name="version" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='version'][1]/@value"/>
+      <xsl:variable name="publisher" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='publisher'][1]/@value"/>
       <xsl:variable name="processes" select="bpmn:process"/>
+
+      <xsl:variable name="ig-url" select="concat($ig-base-url,$ig-slug)"/>
+      <xsl:variable name="trans-CS" select="concat($ig-url,'/CodeSystem/Transaction')"/>
+      <xsl:variable name="actor-CS" select="concat($ig-url,'/CodeSystem/Actor')"/>
+      <xsl:variable name="quest-CS" select="concat($ig-url,'/CodeSystem/UserTask')"/>
+      
 
 
       <!-- get unique actors across all processes by @id -->
@@ -55,7 +60,7 @@
 		  <type><xsl:attribute name="value"><xsl:value-of select="$actorType"/></xsl:attribute></type>
 		  <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
 		    <valueCoding>
-		      <system><xsl:attribute name="value"><xsl:value-of select="$actorCS"/></xsl:attribute></system>
+		      <system><xsl:attribute name="value"><xsl:value-of select="$actor-CS"/></xsl:attribute></system>
 		      <code><xsl:attribute name="value"><xsl:value-of select="$actorId"/></xsl:attribute></code>
 		    </valueCoding>
 		  </extension>
@@ -87,11 +92,51 @@
 	  <xsl:variable name="processName" select="@name"/>
 	  <xsl:variable name="processDesc" select="bpmn:documentation/text()"/>
 	  <xsl:variable name="processActors" select=".//bpmn:lane"/>
+	  <xsl:variable name="userTasks" select="bpmn:userTask"/>
 	  <xsl:variable name="sendTasks" select="bpmn:sendTask"/>
 	  <xsl:variable name="receiveTasks" select="bpmn:receiveTask"/>
 	  <xsl:variable name="arrows" select="bpmn:sequenceFlow"/>
 
-
+	  <!-- loop through the userTasks and stub out a SGQuestionnaire profile and associated activityDef'n (maybe) -->
+	  <xsl:for-each select="$userTasks">
+	    <xsl:variable name="taskId" select="@id"/>
+	    <xsl:variable name="taskName" select="@name"/>
+	    <xsl:variable name="formId" select="bpmn:extensionElements/zeebe:formDefinition/@formId"/>
+	    <xsl:variable name="qId" select="concat('SGQuestionaire-',$taskId)"/>
+	    
+	    <StructureDefinition>
+	      <id><xsl:attribute name="value"><xsl:value-of select="$taskId"/></xsl:attribute></id>
+	      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-implements">
+		<valueUri value="http://hl7.org/fhir/StructureDefinition/CanonicalResource"/>
+	      </extension>
+	      <url><xsl:attribute name="value"><xsl:value-of select="concat($ig-url,'/StructureDefinition/',$qId)"/></xsl:attribute></url>
+	      <version><xsl:attribute name="value"><xsl:value-of select="$version"/></xsl:attribute></version>
+	      <name value="SGGraphDefinition"/>
+	      <status value="draft"/>
+	      <publisher><xsl:attribute name="value"><xsl:value-of select="$publisher"/></xsl:attribute></publisher>
+	      <name><xsl:value-of select="$taskName"/></name>
+	      <baseDefinition value="http://smart.who.int/base/StructureDefinition/SGGraphDefinition"/>
+	      <derivation value="constraint"/>
+	      <differential>
+		<element id="Questionnaire">
+		  <path value="Questionnaire"/>
+		</element>
+		<element id="Questionnaire.name">
+		  <path value="Questionnaire.name"/>
+		  <patternCode><xsl:attribute name="value"><xsl:value-of select="$taskName"/></xsl:attribute></patternCode>
+		</element>
+		<element id="Questionnaire.code">
+		  <path value="Questionnaire.code"/>
+		  <patternCoding>
+		    <xsl:attribute name="code"><xsl:value-of select="$taskId"/></xsl:attribute>
+		    <xsl:attribute name="system"><xsl:value-of select="$quest-CS"/></xsl:attribute>
+		  </patternCoding>
+		</element>
+	      </differential>
+	    </StructureDefinition>
+	  </xsl:for-each>
+	  
+	  
 	  <!-- loop through arrows looking for sendTask receiveTask pairs to use for SGtransactions a-->
 	  <xsl:for-each select="$arrows">
 
@@ -128,9 +173,7 @@
 
 		      <resource>
 			<GraphDefinition>
-			  <id>
-			    <xsl:attribute name="value"><xsl:value-of select="$processId"/></xsl:attribute> 
-			  </id>
+			  <id><xsl:attribute name="value"><xsl:value-of select="$processId"/></xsl:attribute></id>
 			  <meta>
 	      		    <profile value="http://smart.who.int/base/StructureDefinition/SGTransaction"/>
 			  </meta>
@@ -143,7 +186,7 @@
 			    <type>ActorDefinition</type>
 			    <extension url="http://smart.who.int/base/StructureDefinition/Sgactor">
 			      <valueCoding>
-				<system><xsl:attribute name="value"><xsl:value-of select="$actorCS"/></xsl:attribute></system>
+				<system><xsl:attribute name="value"><xsl:value-of select="$actor-CS"/></xsl:attribute></system>
 				<code><xsl:attribute name="value"><xsl:value-of select="$actorSrcId"/></xsl:attribute></code>
 			      </valueCoding>
 			    </extension>
@@ -153,7 +196,7 @@
 			    <type>ActorDefinition</type>
 			    <extension url="http://smart.who.int/base/StructureDefinition/Sgactor">
 			      <valueCoding>
-				<system><xsl:attribute name="value"><xsl:value-of select="$actorCS"/></xsl:attribute></system>
+				<system><xsl:attribute name="value"><xsl:value-of select="$actor-CS"/></xsl:attribute></system>
 				<code><xsl:attribute name="value"><xsl:value-of select="$actorTgtId"/></xsl:attribute></code>
 			      </valueCoding>
 			    </extension>
@@ -161,11 +204,11 @@
 
 			  <link>
 			    <sourceId><xsl:value-of select="$actorSrcId"/></sourceId>
-			    <targetId><xsl:value-of select="$actorTgtId/@id"/></targetId>
+			    <targetId><xsl:value-of select="$actorTgtId"/></targetId>
 
 			    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
 			      <valueCoding>
-				<system><xsl:attribute name="value"><xsl:value-of select="$transCS"/></xsl:attribute></system>
+				<system><xsl:attribute name="value"><xsl:value-of select="$trans-CS"/></xsl:attribute></system>
 				<code><xsl:attribute name="value"><xsl:value-of select="$linkId"/></xsl:attribute></code>
 			      </valueCoding>
 			    </extension>
