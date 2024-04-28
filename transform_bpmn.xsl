@@ -13,7 +13,10 @@
   
   <xsl:variable
       name="actors"
-      select="/bpmn:definitions/bpmn:process//bpmn:lane[bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value != '']"/>  
+      select="/bpmn:definitions/bpmn:process//bpmn:lane[
+	      bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value != ''
+	      and bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-actor-type']/@value != ''
+	      ]"/>  
   <xsl:variable
       name="innerActors"
       select="$actors[not(child::bpmn:childLaneSet)]"/>  
@@ -39,13 +42,39 @@
       name="uniqueArrows"
       select="$arrows[ count(. | key('indexArrowCode',bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value)[1]) = 1]"/>  
 
+
+
+  <xsl:variable
+      name="questionnaires"
+      select="/bpmn:definitions/bpmn:process/bpmn:userTask[bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value != '']"/>
+  
+  <xsl:key
+      name="indexQuestCode"
+      match="bpmn:userTask"
+      use="bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value"/>
+  <xsl:variable
+      name="uniqueQuestionnaires"
+      select="$questionnaires[ count(. | key('indexArrowCode',bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value)[1]) = 1]"/>  
+
+
+
   <xsl:variable name="collab" select="/bpmn:definitions/bpmn:collaboration[1]"/>
   <xsl:variable name="ig-slug" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='ig-slug'][1]/@value"/>
   <xsl:variable name="ig-base-url" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='ig-base-url'][1]/@value"/>
   <xsl:variable name="ig-version" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='ig-version'][1]/@value"/>
   <xsl:variable name="ig-publisher" select="$collab/bpmn:extensionElements/zeebe:properties/zeebe:property[@name='ig-publisher'][1]/@value"/>
 
+  <xsl:variable name="ig-url" select="concat($ig-base-url,$ig-slug)"/>
+  <xsl:variable name="trans-CS-id" select="'bp-transactions'"/>
+  <xsl:variable name="actors-CS-id" select="'bp-actors'"/>
+  <xsl:variable name="quest-CS-id" select="'bp-user-tasks'"/>
+  <xsl:variable name="trans-CS" select="concat($ig-url,'/CodeSystem/',$trans-CS-id)"/>
+  <xsl:variable name="actors-CS" select="concat($ig-url,'/CodeSystem/',$actors-CS-id)"/>
+  <xsl:variable name="quest-CS" select="concat($ig-url,'/CodeSystem/',$quest-CS-id)"/>
+  
 
+
+  
   <xsl:template match="/bpmn:definitions">
     <xsl:message>#!/bin/bash</xsl:message>
     
@@ -88,22 +117,69 @@ EOF
     <xsl:for-each select="$uniqueArrows"><xsl:message><xsl:value-of select="concat('#   transaction code: ', bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value)"/></xsl:message></xsl:for-each>
 
 
+    <xsl:message># Found User Tasks:</xsl:message>
+    <xsl:for-each select="$questionnaires"><xsl:message><xsl:value-of select="concat('#   questionniare code: ', bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value)"/></xsl:message></xsl:for-each>
+
+    <xsl:message># Found Unique User Tasks:</xsl:message>
+    <xsl:for-each select="$uniqueQuestionnaires"><xsl:message><xsl:value-of select="concat('#   questionniare code: ', bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value)"/></xsl:message></xsl:for-each>
+
+    
+
     <!-- we will use xsl:message to generate a shell script to create page content -->
     <!-- just throwing everything in a bundle so we can validate easily. really each should ouput to own file under input/resources -->
     <Bundle>
       <xsl:variable name="processes" select="bpmn:process"/>
 
-      <xsl:variable name="ig-url" select="concat($ig-base-url,$ig-slug)"/>
-      <xsl:variable name="trans-CS" select="concat($ig-url,'/CodeSystem/bp-transactions')"/>
-      <xsl:variable name="actor-CS" select="concat($ig-url,'/CodeSystem/bp-actors')"/>
-      <xsl:variable name="quest-CS" select="concat($ig-url,'/CodeSystem/bp-user-tasks')"/>
-      
 
 
-    <!-- get unique actors across all processes by @value in zeebee:proprty@ -->
-    <!--    use="bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value"/> -->
-
+    
     <xsl:message># Looking at actors</xsl:message>
+
+    <entry>
+      <resource>
+	<CodeSystem>
+	  <id><xsl:value-of select="$actors-CS-id"/></id>
+	  <url><xsl:value-of select="$actors-CS"/></url>
+	  <version><xsl:value-of select="$ig-version"/></version>
+	  <publisher><xsl:value-of select="$ig-publisher"/></publisher>
+	  <description value="Actors"/>
+	  <xsl:for-each select="$uniqueActors">
+	    <xsl:variable name="actorCode" select="bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value[1]"/>
+	    <xsl:variable name="actorName" select="@name"/>
+	    <xsl:variable name="actorDescription" select="bpmn:documentation/text()"/>
+	    <concept>
+	      <code><xsl:attribute name="value"><xsl:value-of select="$actorCode"/></xsl:attribute></code>
+	      <display><xsl:attribute name="value"><xsl:value-of select="$actorName"/></xsl:attribute></display>
+	      <definition><xsl:attribute name="value"><xsl:value-of select="$actorDescription"/></xsl:attribute></definition>
+	    </concept>
+	  </xsl:for-each>		
+	</CodeSystem>
+      </resource>
+    </entry>
+
+
+    <entry>
+      <resource>
+	<CodeSystem>
+	  <id><xsl:value-of select="$trans-CS-id"/></id>
+	  <url><xsl:value-of select="$trans-CS"/></url>
+	  <version><xsl:value-of select="$ig-version"/></version>
+	  <publisher><xsl:value-of select="$ig-publisher"/></publisher>
+	  <description value="Transactions"/>
+	  <xsl:for-each select="$uniqueArrows">
+	    <xsl:variable name="transCode" select="bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value[1]"/>
+	    <xsl:variable name="transName" select="@name"/>
+	    <xsl:variable name="transDescription" select="bpmn:documentation/text()"/>
+	    <concept>
+	      <code><xsl:attribute name="value"><xsl:value-of select="$transCode"/></xsl:attribute></code>
+	      <display><xsl:attribute name="value"><xsl:value-of select="$transName"/></xsl:attribute></display>
+	      <definition><xsl:attribute name="value"><xsl:value-of select="$transDescription"/></xsl:attribute></definition>
+	    </concept>
+	  </xsl:for-each>		
+	</CodeSystem>
+      </resource>
+    </entry>
+
     <xsl:for-each select="$uniqueActors">
 	<xsl:variable name="actorCode" select="bpmn:extensionElements/zeebe:properties/zeebe:property[@name = 'ig-code']/@value[1]"/>
 	<xsl:variable name="actorName" select="@name"/>
@@ -113,9 +189,7 @@ EOF
 	
 	<xsl:message># Unique actor: <xsl:value-of select="$actorName"/></xsl:message>
 
-	<xsl:choose>
-	  <xsl:when test="$actorType!= '' ">
-	    <xsl:message>
+	<xsl:message>
 #  Found actorType (<xsl:value-of select="$actorType"/>) for role (<xsl:value-of select="$actorName"/>) with code (<xsl:value-of select="$actorCode"/>) 
 
 touch input/pagecontent/<xsl:value-of select="$actor-page-slug"/>.md 
@@ -130,54 +204,51 @@ Description: <xsl:value-of select="$actorDescription"/>
 
 
 EOF
-	    </xsl:message>	    
-	    <entry>
-	      <resource>
-		<ActorDefinition >
-		  <id>
-		    <xsl:attribute name="value"><xsl:value-of select="$actorCode"/></xsl:attribute> 
-		  </id>
-		  <meta>
-		    <xsl:choose>
-		      <xsl:when test="$actorType!= 'system'">
-			<profile value="http://smart.who.int/base/StructureDefinition/SGPersona"/>
-		      </xsl:when>
-		      <xsl:otherwise>
-			<profile value="http://smart.who.int/base/StructureDefinition/SGActor"/>
-		      </xsl:otherwise>
-		    </xsl:choose>
-		  </meta>
-		  <type><xsl:attribute name="value"><xsl:value-of select="$actorType"/></xsl:attribute></type>
-		  <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
-		    <valueCoding>
-		      <system><xsl:attribute name="value"><xsl:value-of select="$actor-CS"/></xsl:attribute></system>
-		      <code><xsl:attribute name="value"><xsl:value-of select="$actorCode"/></xsl:attribute></code>
-		    </valueCoding>
-		  </extension>
-		  <identifier>
-		    <value><xsl:attribute name="value"><xsl:value-of select="$actorCode"/></xsl:attribute></value>
-		  </identifier>
-		  <name><xsl:attribute name="value"><xsl:value-of select="$actorName"/></xsl:attribute></name>
-		  <title><xsl:attribute name="value"><xsl:value-of select="$actorName"/></xsl:attribute></title>
-		  <status value="draft"/>
-		  <experimental value="false"/>
-		  <description><xsl:attribute name="value">
-		    <xsl:value-of select="$actorDescription"/>
-		    <p>
-		      More details of this transaction may be found on the 
-		      <a><xsl:attribute name="href">actors.html#<xsl:value-of select="$actorCode"/></xsl:attribute></a>
-		      page.
-		    </p>
-		    </xsl:attribute>
-		  </description>
-		</ActorDefinition>
-	      </resource>
-	    </entry>
-	  </xsl:when>
-	  <xsl:otherwise>
-	    <xsl:message>#  No actorType or codesystem extension found for Lane (<xsl:value-of select="@name"/>)</xsl:message>
-	  </xsl:otherwise>
-	</xsl:choose>
+	</xsl:message>	    
+	<entry>
+	  <resource>
+	    <ActorDefinition >
+	      <id>
+		<xsl:attribute name="value"><xsl:value-of select="$actorCode"/></xsl:attribute> 
+	      </id>
+	      <version><xsl:value-of select="$ig-version"/></version>
+	      <publisher><xsl:value-of select="$ig-publisher"/></publisher>
+	      <meta>
+		<xsl:choose>
+		  <xsl:when test="$actorType!= 'system'">
+		    <profile value="http://smart.who.int/base/StructureDefinition/SGPersona"/>
+		  </xsl:when>
+		  <xsl:otherwise>
+		    <profile value="http://smart.who.int/base/StructureDefinition/SGActor"/>
+		  </xsl:otherwise>
+		</xsl:choose>
+	      </meta>
+	      <type><xsl:attribute name="value"><xsl:value-of select="$actorType"/></xsl:attribute></type>
+	      <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+		<valueCoding>
+		  <system><xsl:attribute name="value"><xsl:value-of select="$actors-CS"/></xsl:attribute></system>
+		  <code><xsl:attribute name="value"><xsl:value-of select="$actorCode"/></xsl:attribute></code>
+		</valueCoding>
+	      </extension>
+	      <identifier>
+		<value><xsl:attribute name="value"><xsl:value-of select="$actorCode"/></xsl:attribute></value>
+	      </identifier>
+	      <name><xsl:attribute name="value"><xsl:value-of select="$actorName"/></xsl:attribute></name>
+	      <title><xsl:attribute name="value"><xsl:value-of select="$actorName"/></xsl:attribute></title>
+	      <status value="draft"/>
+	      <experimental value="false"/>
+	      <description><xsl:attribute name="value">
+		<xsl:value-of select="$actorDescription"/>
+		<p>
+		  More details of this transaction may be found on the 
+		  <a><xsl:attribute name="href">actors.html#<xsl:value-of select="$actorCode"/></xsl:attribute></a>
+		  page.
+		</p>
+	      </xsl:attribute>
+	      </description>
+	    </ActorDefinition>
+	  </resource>
+	</entry>
       </xsl:for-each>
 
       
@@ -185,6 +256,9 @@ EOF
 	<!-- loop through all the process named in the collaboration and create a graph for each -->
 	<xsl:variable name="processId" select="@processRef"/>
 	<xsl:message># Processing collab process: <xsl:value-of select="$processId"/></xsl:message>
+
+
+
 
 	<xsl:for-each select="$processes[@id = $processId]">
 	  <xsl:variable name="processName" select="@name"/>
@@ -207,6 +281,8 @@ EOF
 	    
 	    <StructureDefinition>
 	      <id><xsl:attribute name="value"><xsl:value-of select="$taskId"/></xsl:attribute></id>
+	      <version><xsl:value-of select="$ig-version"/></version>
+	      <publisher><xsl:value-of select="$ig-publisher"/></publisher>
 	      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-implements">
 		<valueUri value="http://hl7.org/fhir/StructureDefinition/CanonicalResource"/>
 	      </extension>
@@ -285,9 +361,13 @@ EOF
 		      <resource>
 			<GraphDefinition>
 			  <id><xsl:attribute name="value"><xsl:value-of select="$linkCode"/></xsl:attribute></id>
+			  <version><xsl:value-of select="$ig-version"/></version>
+			  <publisher><xsl:value-of select="$ig-publisher"/></publisher>
+					      
 			  <meta>
 	      		    <profile value="http://smart.who.int/base/StructureDefinition/SGTransaction"/>
 			  </meta>
+			  
 			  <name><xsl:attribute name="value"><xsl:value-of select="$linkName"/></xsl:attribute></name>
 			  <description>
 			    <xsl:attribute name="value">
@@ -337,7 +417,7 @@ EOF
 			    <type>ActorDefinition</type>
 			    <extension url="http://smart.who.int/base/StructureDefinition/Sgactor">
 			      <valueCoding>
-				<system><xsl:attribute name="value"><xsl:value-of select="$actor-CS"/></xsl:attribute></system>
+				<system><xsl:attribute name="value"><xsl:value-of select="$actors-CS"/></xsl:attribute></system>
 				<code><xsl:attribute name="value"><xsl:value-of select="$actorSrcCode"/></xsl:attribute></code>
 			      </valueCoding>
 			    </extension>
@@ -347,7 +427,7 @@ EOF
 			    <type>ActorDefinition</type>
 			    <extension url="http://smart.who.int/base/StructureDefinition/Sgactor">
 			      <valueCoding>
-				<system><xsl:attribute name="value"><xsl:value-of select="$actor-CS"/></xsl:attribute></system>
+				<system><xsl:attribute name="value"><xsl:value-of select="$actors-CS"/></xsl:attribute></system>
 				<code><xsl:attribute name="value"><xsl:value-of select="$actorTgtCode"/></xsl:attribute></code>
 			      </valueCoding>
 			    </extension>

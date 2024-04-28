@@ -59,6 +59,16 @@ EOF
 #   transaction code: shl-request
 #   transaction code: record-consent-response
 #   transaction code: record-consent-request
+# Found User Tasks:
+#   questionniare code: shl-configure-privacy-settings
+#   questionniare code: consent-wallet-questionnaire
+#   questionniare code: shl-configure-privacy-settings
+#   questionniare code: shl-configure-privacy-settings
+# Found Unique User Tasks:
+#   questionniare code: shl-configure-privacy-settings
+#   questionniare code: consent-wallet-questionnaire
+#   questionniare code: shl-configure-privacy-settings
+#   questionniare code: shl-configure-privacy-settings
 # Looking at actors
 # Unique actor: Counselor
 
@@ -76,7 +86,7 @@ Description: Counselor from origin country supporting Hajj pilgrim during inital
 
 
 EOF
-	    
+	
 # Unique actor: Pilgrim
 
 #  Found actorType (person) for role (Pilgrim) with code (pilgrim) 
@@ -93,7 +103,7 @@ Description: The Hajj pilgrim
 
 
 EOF
-	    
+	
 # Unique actor: Origin Country  Wallet
 
 #  Found actorType (system) for role (Origin Country  Wallet) with code (ochw) 
@@ -110,7 +120,7 @@ Description: The pilgrim's origin country's digital health wallet
 
 
 EOF
-	    
+	
 # Unique actor: Origin Country  HIE
 
 #  Found actorType (system) for role (Origin Country  HIE) with code (ochie) 
@@ -127,7 +137,7 @@ Description: The pilgrim's origin country's HIE or national system
 
 
 EOF
-	    
+	
 # Processing collab process: health-check-wallet-consent-and-shl-issuance-2
 # Check process: (Health Check and SHL Issuance, Wallet Consent) - (health-check-wallet-consent-and-shl-issuance-2)
 # Send/Receive task pairs: (generate-shl)->(display-shl) 
