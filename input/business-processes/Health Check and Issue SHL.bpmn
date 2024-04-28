@@ -56,7 +56,7 @@
             <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="ig-actor-type" value="person" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="counselor" />
               </zeebe:properties>
@@ -72,7 +72,7 @@
             <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="ig-actor-type" value="person" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="pilgrim" />
               </zeebe:properties>
@@ -110,7 +110,7 @@
             <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="system" />
+                <zeebe:property name="ig-actor-type" value="system" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="ochw" />
               </zeebe:properties>
@@ -128,7 +128,7 @@
             <bpmn:documentation>The pilgrim's origin country's HIE or national system</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="system" />
+                <zeebe:property name="ig-actor-type" value="system" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="ochie" />
               </zeebe:properties>
@@ -476,7 +476,7 @@ https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.htm
             <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="ig-actor-type" value="person" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="counselor" />
               </zeebe:properties>
@@ -492,7 +492,7 @@ https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.htm
             <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="ig-actor-type" value="person" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="pilgrim" />
               </zeebe:properties>
@@ -520,7 +520,7 @@ https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.htm
             <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="system" />
+                <zeebe:property name="ig-actor-type" value="system" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="ochw" />
               </zeebe:properties>
@@ -533,7 +533,7 @@ https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.htm
             <bpmn:documentation>The pilgrim's origin country's HIE or national system</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="system" />
+                <zeebe:property name="ig-actor-type" value="system" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="ochie" />
               </zeebe:properties>
@@ -739,7 +739,7 @@ https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.htm
             <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="ig-actor-type" value="person" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="counselor" />
               </zeebe:properties>
@@ -755,7 +755,7 @@ https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.htm
             <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="person" />
+                <zeebe:property name="ig-actor-type" value="person" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="pilgrim" />
               </zeebe:properties>
@@ -780,7 +780,7 @@ https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.htm
             <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
-                <zeebe:property name="actorType" value="system" />
+                <zeebe:property name="ig-actor-type" value="system" />
                 <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
                 <zeebe:property name="ig-code" value="ochw" />
               </zeebe:properties>
