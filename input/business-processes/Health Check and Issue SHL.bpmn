@@ -4,11 +4,11 @@
     <bpmn:documentation>Documents the health check and SHL consent and issuance process</bpmn:documentation>
     <bpmn:extensionElements>
       <zeebe:properties>
-        <zeebe:property name="ig-slug" value="ips-pilgrimage" />
         <zeebe:property name="ig-base-url" value="http://smart.who.int/" />
-        <zeebe:property name="ig-version" value="1.1.4" />
+	<zeebe:property name="ig-slug" value="ips-pilgrimage" />
+        <zeebe:property name="ig-name" value="IPS Pilgrimage" />
+	<zeebe:property name="ig-version" value="1.1.4" />
         <zeebe:property name="ig-publisher" value="WHO" />
-        <zeebe:property name="ig-code" value="pcf-send-request-response" />
       </zeebe:properties>
     </bpmn:extensionElements>
     <bpmn:participant id="paricipant-id-on-overall-business-process-wallet-consent" name="Health Check and Counseling, Explicit Consent on Wallet" processRef="health-check-wallet-consent-and-shl-issuance-2">
