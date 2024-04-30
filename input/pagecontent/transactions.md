@@ -1,23 +1,80 @@
 These are the transactions for ips-pilgrimage
-###  record consent from wallet {#pcf-record-consent}
-{% include transaction-pcf-record-consent-preamble.md %}
-#### Trigger Events
-{% include transaction-pcf-record-consent-trigger-events.md %}
-#### Message Semantics
-{% include transaction-pcf-record-consent-message-semantics.md %}
-#### Expected Actions
-{% include transaction-pcf-record-consent-expected-actions-semantics.md %}
+###  issue SHL {#issue-shl}
 
-###  issue SHL {#shl-issue}
-{% include transaction-shl-issue-preamble.md %}
+(issue SHL)
+
+
+{% include transaction-issue-shl-preamble.md %}
 #### Trigger Events
-{% include transaction-shl-issue-trigger-events.md %}
+{% include transaction-issue-shl-trigger-events.md %}
 #### Message Semantics
-{% include transaction-shl-issue-message-semantics.md %}
+{% include transaction-issue-shl-message-semantics.md %}
 #### Expected Actions
-{% include transaction-shl-issue-expected-actions-semantics.md %}
+{% include transaction-issue-shl-expected-actions-semantics.md %}
 
 ###  request SHL from HIE {#shl-request}
+
+(request SHL from HIE)
+
+
+{% include transaction-shl-request-preamble.md %}
+#### Trigger Events
+{% include transaction-shl-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-shl-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-shl-request-expected-actions-semantics.md %}
+
+###  record consent from wallet - response {#record-consent-response}
+
+(record consent from wallet - response)
+
+
+{% include transaction-record-consent-response-preamble.md %}
+#### Trigger Events
+{% include transaction-record-consent-response-trigger-events.md %}
+#### Message Semantics
+{% include transaction-record-consent-response-message-semantics.md %}
+#### Expected Actions
+{% include transaction-record-consent-response-expected-actions-semantics.md %}
+
+###  record consent from wallet - request {#record-consent-request}
+
+(record consent from wallet - request)
+This is the IHE PCF record consent transaction
+
+See 
+   https://profiles.ihe.net/ITI/PCF/ITI-108.html
+Access Consent - Create (ITI-108)
+Access Consent - Update (ITI-108)
+https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.html
+
+{% include transaction-record-consent-request-preamble.md %}
+#### Trigger Events
+{% include transaction-record-consent-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-record-consent-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-record-consent-request-expected-actions-semantics.md %}
+
+###  issue SHL {#issue-shl}
+
+(issue SHL)
+
+
+{% include transaction-issue-shl-preamble.md %}
+#### Trigger Events
+{% include transaction-issue-shl-trigger-events.md %}
+#### Message Semantics
+{% include transaction-issue-shl-message-semantics.md %}
+#### Expected Actions
+{% include transaction-issue-shl-expected-actions-semantics.md %}
+
+###  request SHL from HIE {#shl-request}
+
+(request SHL from HIE)
+
+
 {% include transaction-shl-request-preamble.md %}
 #### Trigger Events
 {% include transaction-shl-request-trigger-events.md %}
