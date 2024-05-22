@@ -1,0 +1,1 @@
+The privacy configuration is recorded in the HIE

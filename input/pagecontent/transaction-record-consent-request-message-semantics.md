@@ -1,1 +1,1 @@
-it is a FHIR Consent resource set as PUT or POST
+It is a FHIR Consent resource set as PUT or POST

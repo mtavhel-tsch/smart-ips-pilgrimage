@@ -1,1 +1,1 @@
-the consent is stored in the consent repository
+The consent is stored in the consent repository

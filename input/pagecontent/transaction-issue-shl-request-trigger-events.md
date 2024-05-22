@@ -1,0 +1,1 @@
+A privacy configuration form has been recorded by a digital health wallet
