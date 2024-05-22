@@ -1,0 +1,14 @@
+@startuml
+
+!include ./style.iuml
+
+
+participant "Origin Country\nHealth Wallet" as HW
+participant "Origin Country\nHIE" as OCHIE
+autonumber "<b>00:</b>"
+
+HW -> OCHIE : send consent record request
+OCHIE -> OCHIE : store consent directives
+OCHIE -> HW : send consent record response
+
+@enduml

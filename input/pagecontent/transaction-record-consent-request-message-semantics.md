@@ -1,0 +1,1 @@
+it is a FHIR Consent resource set as PUT or POST

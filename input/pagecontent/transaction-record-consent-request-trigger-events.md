@@ -1,0 +1,1 @@
+A new consent directive has been recorded by a digital health wallet

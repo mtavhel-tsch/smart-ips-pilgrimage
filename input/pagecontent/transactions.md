@@ -40,15 +40,6 @@ These are the transactions for ips-pilgrimage
 
 ###  record consent from wallet - request {#record-consent-request}
 
-(record consent from wallet - request)
-This is the IHE PCF record consent transaction
-
-See 
-   https://profiles.ihe.net/ITI/PCF/ITI-108.html
-Access Consent - Create (ITI-108)
-Access Consent - Update (ITI-108)
-https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.html
-
 {% include transaction-record-consent-request-preamble.md %}
 #### Trigger Events
 {% include transaction-record-consent-request-trigger-events.md %}
