@@ -49,10 +49,10 @@ These are the transactions for ips-pilgrimage
 ### generate HCERT containing SHL {#generate-hcert}
 
 
-{% include transaction-generate-hcert-response-preamble.md %}
+{% include transaction-generate-hcert-preamble.md %}
 #### Trigger Events
-{% include transaction-generate-hcert-response-trigger-events.md %}
+{% include transaction-generate-hcert-trigger-events.md %}
 #### Message Semantics
-{% include transaction-generate-hcert-response-message-semantics.md %}
+{% include transaction-generate-hcert-message-semantics.md %}
 #### Expected Actions
-{% include transaction-generate-hcert-response-expected-actions-semantics.md %}
+{% include transaction-generate-hcert-expected-actions-semantics.md %}
