@@ -130,8 +130,8 @@ The workflows that follow depict processes that have been generalized across dif
 
 #### 4.0 Clinical Encounter for Unplanned Care  
 
-<b>TO DO: Insert diagram</b>
+
   <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+<img src="Clinical Encounter for Unplanned Care.png" alt="Clinical Encounter for Unplanned Care" style="width:85%"/>
   </div> 
 <br/> 
