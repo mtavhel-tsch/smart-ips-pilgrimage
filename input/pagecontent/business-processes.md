@@ -56,7 +56,7 @@ The following table describes the workflows of the included processes.
       <td>3.0</td>
       <td>Issuance of Health Document at Origin Country</td>
       <td>IPS.PILGRIMAGE.3.0</td>
-      <td><p>Pilgrim</p><p>National IHE</p></td>
+      <td><p>Pilgrim</p><p>Counselor</p><p>Health Wallet App</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
     <tr class="odd">
@@ -116,9 +116,15 @@ The workflows that follow depict processes that have been generalized across dif
 
 #### 3.0 Issuance of Health Document at Origin Country  
 
-<b>TO DO: Insert diagram</b>
+<b>Health Check and Counseling, Verbal Consent (brief)</b>
   <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  <img src="Health Check and Counseling, Verbal Consent (brief).png" alt="Health Check and Counseling, Verbal Consent (brief)" style="width:85%"/>
+  </div> 
+<br/> 
+
+<b>Health Check and Counseling, Explicit Consent (brief)</b>
+  <div> 
+  <img src="Health Check and Counseling, Explicit Consent (brief).png" alt="Health Check and Counseling, Explicit Consent (brief)" style="width:85%"/>
   </div> 
 <br/> 
 
@@ -129,13 +135,3 @@ The workflows that follow depict processes that have been generalized across dif
 <!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
   </div> 
 <br/> 
-
-
-#### 5.0 Break The Glass Clinical Encounter  
-
-<b>TO DO: Insert diagram</b>
-  <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
-  </div> 
-<br/> 
-

@@ -25,6 +25,12 @@ In the clinical flows, generic personas are represented using profiles of the va
       <td></td>
     </tr>
     <tr>
+      <td>Counsellor</td>
+      <td>Health worker or practitioner empanelled by the origin country National Pilgrimage Authority to conduct health assessments for pilgrims planning to go to a pilgrimage.</td>
+      <td>Health worker, Practitioner, Nurse</td>
+      <td></td>
+    </tr>
+    <tr>
       <td>Accompanying Clinician from Origin Country</td>
       <td>Clinician from Origin Country accompanying pilgrims to a pilgrimage host country.  During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker, only if the pilgrim themselves is unable to do so.</td>
       <td>Clinician, Doctor</td>
@@ -69,7 +75,7 @@ In the clinical flows, generic personas are represented using profiles of the va
     </tr>
     <tr>
       <td>National Health Wallet App</td>
-      <td>Health Wallet App linked to the National HIE that manages access to  patient summary information of a Pilgrim, particularly the IPS.   The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" scenario.</td>
+      <td>Health Wallet App linked to the National HIE that manages access to  patient summary information of a Pilgrim, particularly the IPS. The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" scenario.</td>
       <td>HIE</td>
       <td></td>
     </tr>
@@ -104,3 +110,27 @@ In the clinical flows, generic personas are represented using profiles of the va
 
 
 ### External Hardware and Devices
+
+<table class="list">
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Description</th>
+      <th>Different Names</th>
+      <th>Service Code (if applicable)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bar code scanner</td>
+      <td>Handheld scanner capable of scanning QR Codes, linked to host country EMR.</td>
+      <td>QR code scanner</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pilgrim card</td>
+      <td>Physical card for pilgrims to carry that has the QR code printed on it.</td>
+      <td></td>
+      <td></td>
+    </tr>
+</table>
