@@ -133,4 +133,5 @@ In the clinical flows, generic personas are represented using profiles of the va
       <td></td>
       <td></td>
     </tr>
+  </tbody>
 </table>
