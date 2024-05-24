@@ -116,13 +116,13 @@ The workflows that follow depict processes that have been generalized across dif
 
 #### 3.0 Issuance of Health Document at Origin Country  
 
-<b>Health Check and Counseling, Verbal Consent (brief)</b>
+##### Health Check and Counseling, Verbal Consent (brief)
   <div> 
   <img src="Health Check and Counseling, Verbal Consent (brief).png" alt="Health Check and Counseling, Verbal Consent (brief)" style="width:85%"/>
   </div> 
 <br/> 
 
-<b>Health Check and Counseling, Explicit Consent (brief)</b>
+##### Health Check and Counseling, Explicit Consent (brief)
   <div> 
   <img src="Health Check and Counseling, Explicit Consent (brief).png" alt="Health Check and Counseling, Explicit Consent (brief)" style="width:85%"/>
   </div> 

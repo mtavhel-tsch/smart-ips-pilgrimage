@@ -1,5 +1,5 @@
-<table>
-  <thead>
+<table border="1" class="dataframe table table-striped table-bordered">
+  <thead class="header">
     <td>Type</td>
     <td>Description</td>
     <td>Transactions participated in as source</td>
