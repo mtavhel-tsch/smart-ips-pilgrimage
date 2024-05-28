@@ -1,6 +1,4 @@
-This page lists and describes the human users and digital services that interact with the system, derived from the business requirements defined at the operational level (L2). For more details about end-users and related stakeholders, see the [Generic Personas](personas.html).
-
-Systems managing clinical and patient information are expected to interact with a shared health record, laboratory information system or a longitudinal health record, as appropriate, and to synchronize with data collected in a clinical encounter.
+This page lists and describes the human users and digital services that interact with the system, derived from the business requirements defined at the operational level (L2). 
 
 Integrating the Healthcare Enterprise (IHE) maintains a [repository with common actors](https://profiles.ihe.net/GeneralIntro/ch-A.html) used in IHE profiles.
 
@@ -20,7 +18,7 @@ In the clinical flows, generic personas are represented using profiles of the va
   <tbody>
     <tr>
       <td>Pilgrim</td>
-      <td>Person undergoing a pilgrimage to a pilgrimage host country.  During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker.  In case of emergency, they may have provided consent during a "break the glass" scenario.</td>
+      <td>Person undergoing a pilgrimage to a pilgrimage host country. During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker. In case of emergency, they may have provided consent during a "break the glass" scenario.</td>
       <td>Patient, client, health system user</td>
       <td></td>
     </tr>
@@ -44,7 +42,7 @@ In the clinical flows, generic personas are represented using profiles of the va
     </tr>
     <tr>
       <td>National Pilgrimage Authority</td>
-      <td>Organization that manages the application of a Pilgrim as they apply to make pilgrim to a pilgrimage host country.  Responsible for providing a Pilgrim with a Pilgrimage Registration Number and assessing health status of Pilgrim before approval is granted by the Pilgrimage Host Country. Optionally responsible for ensuring consent in case of "break the glass" scenario when a Pilgrim is not able to provide explicit consent in an emergency care setting due to, for example, unconsciousness. In this case, the National Pilgrimage Authority should collect consent from the Pilgrim for potential future "break the glass scenario", associate a Pilgrimage Registration Number to a patient summary document, and provide access means to the Host Country HIE to the patient summary document by association to the Pilgrimage Registration Number</td> 
+      <td>Organization that manages the application of a Pilgrim as they apply to make pilgrim to a pilgrimage host country. Responsible for providing a Pilgrim with a Pilgrimage Registration Number and assessing health status of Pilgrim before approval is granted by the Pilgrimage Host Country. Optionally responsible for ensuring consent in case of "break the glass" scenario when a Pilgrim is not able to provide explicit consent in an emergency care setting due to, for example, unconsciousness. In this case, the National Pilgrimage Authority should collect consent from the Pilgrim for potential future "break the glass scenario", associate a Pilgrimage Registration Number to a patient summary document, and provide access means to the Host Country HIE to the patient summary document by association to the Pilgrimage Registration Number</td> 
       <td>Pilgrimage Authority</td>
       <td></td>
     </tr>
@@ -69,13 +67,13 @@ In the clinical flows, generic personas are represented using profiles of the va
   <tbody>
     <tr>
       <td>National Health Information Exchange</td>
-      <td>Health information exchange of origin country of a Pilgrim.  Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach.</td>
+      <td>Health information exchange of origin country of a Pilgrim. Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach.</td>
       <td>HIE</td>
       <td></td>
     </tr>
     <tr>
       <td>National Health Wallet App</td>
-      <td>Health Wallet App linked to the National HIE that manages access to  patient summary information of a Pilgrim, particularly the IPS. The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" scenario.</td>
+      <td>Health Wallet App linked to the National HIE that manages access to patient summary information of a Pilgrim, particularly the IPS. The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" scenario.</td>
       <td>HIE</td>
       <td></td>
     </tr>
@@ -93,7 +91,7 @@ In the clinical flows, generic personas are represented using profiles of the va
     </tr>
     <tr>
       <td>Host Country EMR</td>
-      <td>EMR used in Host Country of the pilgrimage by the Host Country Health Worker for accessing and managing health records.  Serves as the interface utilized to view and/or ingest patient summary documents from Pilgrims.  The Host Country EMR should, at a minimum, save a rendered version (e.g. PDF) of the Pilgrim's patient summary document for audit and liability purposes.  The Host Country EMR may optionally ingest the patient summary document and transmit or otherwise make it available to the Host Country HIE for continued patient care.
+      <td>EMR used in Host Country of the pilgrimage by the Host Country Health Worker for accessing and managing health records. Serves as the interface utilized to view and/or ingest patient summary documents from Pilgrims. The Host Country EMR should, at a minimum, save a rendered version (e.g. PDF) of the Pilgrim's patient summary document for audit and liability purposes. The Host Country EMR may optionally ingest the patient summary document and transmit or otherwise make it available to the Host Country HIE for continued patient care.
       In the optional scenario of a "break the glass" scenario, the Host Country EMR should retrieve the patient summary of the Pilgrim from the Host Country HIE via the association of that document to the Pilgrim Registration Number.</td>
       <td>Host EMR, EMR, Electronic Medical Records System</td>
       <td></td>

@@ -3,7 +3,7 @@ This implementation guide is meant to facilitate operationalization of the IPS f
 - [Global Digital Health Certification Network](https://www.who.int/initiatives/global-digital-health-certification-network)
 - [SMART Trust](https://smart.who.int/smart-trust)
 - [International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/)
-- [Smart Health Links](https://docs.smarthealthit.org/smart-health-links/)
+- [Smart Health Links](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/index.html)
 
 
 For additional resources, see the <a href="dependencies.html">Dependencies</a>.

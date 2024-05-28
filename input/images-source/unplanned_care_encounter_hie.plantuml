@@ -21,7 +21,7 @@ HW --> Scanner: uses scanner to scan QR code
 HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
 destroy OC
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys
-HCEMR  -> OCHIE : retrieves health document (IPS)\n(document might be pregenerated\n or generated on request)
+HCEMR  -> OCHIE : retrieves health document (IPS)\n(document might be pregenerated\n or generated on request)\n(retrieve by predefined passcode for Malaysia, retrieved via whitelist IP for Indonesia)
 destroy OCHIE
 
 

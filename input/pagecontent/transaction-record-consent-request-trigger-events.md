@@ -1,1 +1,1 @@
-A new consent directive has been recorded by a digital health wallet
+- A new consent directive has been recorded by a <a href="actor-ochw.html">Digital Health Wallet</a>.

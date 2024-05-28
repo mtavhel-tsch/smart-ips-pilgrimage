@@ -4,6 +4,8 @@ Measures included in this implementation guide are listed in the [Artifact Inde
 
  Summary indicator content from the DAK is also represented in the <a href="indicators.html">Indicators and Performance Metrics</a> page. 
 
+**No measures or indicators have been defined for IPS-pilgrimage**
+
 
 
 

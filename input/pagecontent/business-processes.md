@@ -63,14 +63,14 @@ The following table describes the workflows of the included processes.
       <td>4.0</td>
       <td>Clinical Encounter for Unplanned Care</td>
       <td>IPS.PILGRIMAGE.4.0</td>
-      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
+      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
    <tr class="even">
       <td>5.0</td>
       <td>Break The Glass Clinical Encounter (not in scope for phase 1) </td>
       <td>IPS.PILGRIMAGE.5.0</td>
-      <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
+      <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for an emergency unplanned clinical encounter</td>
     </tr>
     <tr class="even">
