@@ -158,6 +158,6 @@ skinparam {
     'NoteBackgroundColor STYLE_BGC
 
 }
-
+skinparam backgroundcolor transparent
 
 @enduml
