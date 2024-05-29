@@ -12,8 +12,8 @@
     <td>Transactions participated in as source</td>
     <td>The health wallet initiates the following transactions: 
        <ul>
-        <li><a href="transaction-record-consent-request.html">record consent from wallet - request (record-consent-request)</a></li>
-        <li><a href="transaction-shl-request.html">request SHL from HIE (shl-request)</a></li>
+        <li><a href="transactions.html#record-consent-request">record consent from wallet - request (record-consent-request)</a></li>
+        <li><a href="transaction.html#issue-shl-request">issue SHL request (issue-shl-request)</a></li>
        </ul>
     </td>
   </tr>
