@@ -14,7 +14,7 @@
       <ul>
         <li><a href="transaction-record-consent-response.html">record consent from wallet - response (record-consent-response)</a></li>
         <li><a href="transaction-issue-shl.html">issue SHL (issue-shl)</a></li>
-      </ul>
+      </ul></td>
     </tr>
   </tbody>
 </table>
