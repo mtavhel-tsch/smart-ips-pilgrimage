@@ -1,13 +1,4 @@
-These are the actors for ips-pilgrimage
-###  Counselor {#counselor}
-
-{% include actor-counselor.md %}
-	
-
-###  Pilgrim {#pilgrim}
-
-{% include actor-pilgrim.md %}
-	 
+This page describes the system actors for IPS-pilgrimage that participate in transactions documented for this Implementation Guide.
 
 ###  Origin Country  Wallet {#ochw}
 

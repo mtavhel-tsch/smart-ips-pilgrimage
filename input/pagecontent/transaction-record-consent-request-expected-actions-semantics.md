@@ -1,1 +1,1 @@
-- The consent is stored in the consent repository. Please see here for Capability statements for the [Consent Registry actor] (https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.html)
+- The consent is stored in the consent repository. Please see here for Capability statements for the <a href="https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.html">Consent Registry actor</a>

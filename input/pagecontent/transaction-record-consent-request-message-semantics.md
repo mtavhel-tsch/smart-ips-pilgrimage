@@ -1,3 +1,5 @@
+
+
 ##### Message Semantics Request
 - The message semantics for Record Consent Request utilizes a FHIR Consent resource set as PUT or POST http request.
 
@@ -9,5 +11,5 @@
     - Access Consent - Update (ITI-108)
 
 ##### Message Semantics Response
-See the ITI 108 Create and Update sections. The success or failure of the create/ update interaction is indicated by the http response code (e.g., 400, 200, etc.).
+- See the ITI 108 for Create and Update sections. The success or failure of the create/ update interaction is indicated by the http response code (e.g., 400, 200, etc.).
 
