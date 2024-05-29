@@ -1,6 +1,6 @@
-The Issue SHL Request Event transaction is initiated by a Origin Country Health Wallet against the Origin Country HIE.
+The Retrieve IPS Request Event transaction is initiated by the <a href="system-actors.html#hcemr">Host Country EMR</a> against the Origin Country HIE.
 
 
 <figure>
-{% include issue_shl_request.svg %}
+{% include retrieve_IPS_request.svg %}
 </figure>

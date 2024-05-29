@@ -1,11 +1,1 @@
-The following are the expected actions for the [Origin Country HIE](system-actors.html#ochie) once it receives the privacy configuration:
-- The [SHL specifications](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html)shall be followed to create a [HCERT](https://www.smart.who.int/trust/StructureDefinition-Hcert.html) wrapped within a [CWT structure](https://www.smart.who.int/trust/StructureDefinition-CWT.html)
-- Establish a SMART Health Link Manifest URL
-- Build SHL manifest json that points to digital health IPS PDF content
-- Generate SHLink URL for Manifest
-- Construct SHLink Payload
-  - Minified
-  - Base64urlencoded
-  - Prefixed with shlink:/
-  - Build HCERT containing SHL 
-  - Build CWT with header payload and signature
+- The recipient OCHIE checks responds with the IPS Json.

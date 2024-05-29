@@ -22,3 +22,25 @@ These are the transactions defined for ips-pilgrimage
 {% include transaction-issue-shl-request-message-semantics.md %}
 #### Expected Actions
 {% include transaction-issue-shl-request-expected-actions-semantics.md %}
+
+
+###  retrieve SHL manifest - request {#retrieve-SHL-manifest-request}
+
+{% include transaction-retrieve-SHL-manifest-request-preamble.md %}
+#### Trigger Events
+{% include transaction-retrieve-SHL-manifest-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-retrieve-SHL-manifest-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-retrieve-SHL-manifest-request-expected-actions-semantics.md %}
+
+
+###  retrieve IPS - request {#retrieve-IPS-request}
+
+{% include transaction-retrieve-IPS-request-preamble.md %}
+#### Trigger Events
+{% include transaction-retrieve-IPS-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-retrieve-IPS-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-retrieve-IPS-request-expected-actions-semantics.md %}

@@ -1,12 +1,8 @@
 
 
 ##### Message Semantics Request
-- The message semantics for Issue SHL Request shall include parameters that are required to construct a [SMART Health Link Payload](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#construct-a-smart-health-link-payload), specifically
-  - flag for Passcode
-  - expiration time
-Record Consent Request utilizes a FHIR Consent resource set as PUT or POST http request.
+- The message semantics for retrieve IPS Request shall be a GET request for the IPS json.
 
 
 ##### Message Semantics Response
-- The Issue SHL Request - Response shall include a serialized CWT via a QR Code Image as specified in the Expected Actions section.
-
+- The message semantics for retrieve IPS Request-response shall send the IPS as a Json file.
