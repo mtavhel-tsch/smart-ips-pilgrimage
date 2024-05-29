@@ -7,6 +7,9 @@ This page describes the system actors for IPS-pilgrimage that participate in tra
 
 ###  Origin Country HIE {#ochie}
 
-Description: The pilgrim's origin country's HIE or national system
 {% include actor-ochie.md %}
 
+
+### Host Country EMR {#hcemr}
+
+{% include actor-hcemr.md %}
