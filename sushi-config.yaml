@@ -86,6 +86,8 @@ pages:
       title: Testing
     test-data.md: 
       title: Test Data
+    test-cases.md:
+      title: Test Cases
     reference-implementations.md: 
       title: Reference Implementations
     trust_domain.md:
