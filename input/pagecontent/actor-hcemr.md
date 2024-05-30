@@ -15,6 +15,7 @@
         <li><a href="transactions.html#retrieve-SHL-manifest-request">retrieve SHL Manifest request</a></li>
         <li><a href="transactions.html#retrieve-IPS-request">retrieve IPS request</a></li>
       </ul>
+      </td>
     </tr>
   </tbody>
 </table>
