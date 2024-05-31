@@ -14,37 +14,30 @@ Feature: Record Consent
 
 Scenario: Consent is provided and saved successfully
 GIVEN an IPS is generated
-WHEN a new consent directive has been recorded by a origin country Digital Health Wallet
-THEN the origin country Health wallet initiates a record consent request as a PUT/POST request along with FHIR consent resource compliant with ITI-108 Create request
-AND the origin country HIE stores the consent resource in the consent registry
+WHEN a new consent directive has been recorded by a Origin Country Health Wallet
+THEN the Origin Country Health wallet initiates a record consent request as a PUT/POST request along with FHIR consent resource compliant with ITI-108 Create request
+AND the Origin Country HIE stores the consent resource in the consent registry
 AND sends a success response as indicated by http response code
 
 Scenario: Consent is provided but fails to save
 GIVEN an IPS is generated
-WHEN a new consent directive has been recorded by a origin country Digital Health Wallet
-THEN the origin country Health wallet initiates a record consent request as a PUT/POST request along with FHIR consent resource compliant with ITI-108 Create request
-AND the origin country HIE attempts to store the consent resource in the consent registry and fails
+WHEN a new consent directive has been recorded by a Origin Country Health Wallet
+THEN the Origin Country Health wallet initiates a record consent request as a PUT/POST request along with FHIR consent resource compliant with ITI-108 Create request
+AND the Origin Country HIE attempts to store the consent resource in the consent registry and fails
 AND sends a failure response as indicated by http response code
 
-Scenario: Consent is denied
-GIVEN an IPS is generated
-WHEN a new negative consent directive has been recorded by a origin country Digital Health Wallet
-THEN
-AND 
-AND 
-
 ```
 
-##### Issue SHL
+##### Issue Verifiable SHL
 
 ```
-Feature: Issue SHL
+Feature: Issue Verifiable SHL
 
 Scenario: QR Code with HCERT containing SHL is generated
 GIVEN an IPS is generated
 AND consent is provided
 AND a Passcode and time limit is set
-WHEN the origin country Digital Health Wallet sends a issue-shl-request to Origin Country HIE
+WHEN the Origin Country Digital Health Wallet sends a issue-verifiable-shl-request to Origin Country HIE
 THEN the Origin Country HIE constructs a SHL payload
 AND embeds the SHL in HCERT
 AND constructs COSE payload
@@ -110,7 +103,7 @@ THEN the server returns an error response using 404 HTTP status code
 
 ```
 
-##### Retrieve IPS JSON
+##### Retrieve IPS
 
 ```
 
@@ -121,6 +114,10 @@ GIVEN SHL Manifest is obtained
 WHEN the Host Country EMR sends a GET request for the IPS JSON
 THEN the server responds with the IPS as a JSON
 
+Scenario: Retrieve IPS PDF request is sent
+GIVEN SHL Manifest is obtained
+WHEN the Host Country EMR sends a GET request for the IPS PDF
+THEN the server responds with the IPS as a PDF
 
 ```
 

@@ -8,5 +8,5 @@
 
 
 ##### Message Semantics Response
-- The Issue SHL Request - Response shall include a serialized CWT via a QR Code Image as specified in the Expected Actions section.
+- The issue verifiable SHL Request - Response shall include a serialized CWT via a QR Code Image as specified in the Expected Actions section.
 
