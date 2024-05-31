@@ -1,10 +1,6 @@
 <table border="1" class="dataframe table table-striped table-bordered">
   <tbody>
     <tr>
-      <td>Type</td>
-      <td>System</td>
-    </tr>
-    <tr>
       <td>Description</td>
       <td>Health information exchange of origin country of a Pilgrim.  Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach.</td>
     </tr>
