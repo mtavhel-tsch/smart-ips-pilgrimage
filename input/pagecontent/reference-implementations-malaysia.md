@@ -31,76 +31,69 @@ Standard Passcode and No Time Validity:
 
 <u>For Issuance (Malaysia using MySejahtera):</u>
 1.	Obtain Consent:
-    a.	Users provide consent to generate the Health Certificate QR code.
-    b.	Consent details are stored, including acceptance to share health records as IPS on GDHCN to KSA officials
+
+    a. Users provide consent to generate the Health Certificate QR code.
+
+    b. Consent details are stored, including acceptance to share health records as IPS on GDHCN to KSA officials
 
 2.	Set Passcode:
-    a.	A standard passcode is set for all Malaysian IPS for this year’s Hajj
-    b.	No user input required
+
+    a. A standard passcode is set for all Malaysian IPS for this year’s Hajj
+
+    b. No user input required
 
 3.	Generate Smart Health Link (SHL):
-    a.	SHL is created as a manifest URL based on user preferences and supports JSON and PDF content types.
+
+    a. SHL is created as a manifest URL based on user preferences and supports JSON and PDF content types.
 
 4.	Embed SHL into HCert:
-    a.	SHL is embedded into a Health Certificate (HCert) following WHO's smart trust specification.
+
+    a. SHL is embedded into a Health Certificate (HCert) following WHO's smart trust specification.
 
 5.	Prepare COSE Message:
-    a.	HCert is inserted into the COSE message, signed with GDHCN key, and the Key ID (KID) is added to the header.
+
+    a. HCert is inserted into the COSE message, signed with GDHCN key, and the Key ID (KID) is added to the header.
 
 6.	Generate CWT:
-    a.	COSE message is wrapped into a CBOR Web Token (CWT).
+
+    a. COSE message is wrapped into a CBOR Web Token (CWT).
 
 7.	Serialize CWT and Generate QR Code:
-    a.	CWT is base64 encoded and converted into a QR code.
 
-For Receiving (Saudi Arabia using Care Ware):
-
-1.	Scan and Decode QR Code:
-    a.	QR code is scanned and the base64 encoded CWT is obtained.
-
-2.	Extract COSE Message and Verify Signature:
-    a.	COSE message is extracted from the CWT.
-    b.	COSE signature is verified using Malaysia’s public key from the GDHCN public registry. Malaysia’s country code is “MY”
-
-3.	Decode HCert and Extract SHL:
-    a.	HCert is decoded from base64.
-    b.	SHL JSON is extracted from the HCert payload.
-
-4.	Retrieve and Decode SHL Manifest:
-    a.	POST request is sent to the SHL manifest URL to retrieve the base64 encoded SHL manifest JSON.
-    b.	SHL manifest JSON is decoded from base64.
-
-5.	Retrieve IPS:
-    a.	GET request is made for the IPS in the preferred file type (PDF).
-    b.	IPS JSON file is decrypted using the encryption key from the HCert response.
-
-6.	Download and Save IPS:
-    a.	IPS PDF file is downloaded and saved for further use by healthcare workers.
+    a. CWT is base64 encoded and converted into a QR code
 
 <u>For Receiving (Saudi Arabia using Care Ware):</u>
+
 1.	Scan and Decode QR Code:
-    a.	QR code is scanned and the base64 encoded CWT is obtained.
+
+    a. QR code is scanned and the base64 encoded CWT is obtained.
 
 2.	Extract COSE Message and Verify Signature:
-    a.	COSE message is extracted from the CWT.
-    b.	COSE signature is verified using Malaysia’s public key from the GDHCN public registry. Malaysia’s country code is “MY”
+
+    a. COSE message is extracted from the CWT.
+    b. COSE signature is verified using Malaysia’s public key from the GDHCN public registry. Malaysia’s country code is “MY”
 
 3.	Decode HCert and Extract SHL:
-    a.	HCert is decoded from base64.
-    b.	SHL JSON is extracted from the HCert payload.
+
+    a. HCert is decoded from base64.
+    b. SHL JSON is extracted from the HCert payload.
 
 4.	Retrieve and Decode SHL Manifest:
-    a.	POST request is sent to the SHL manifest URL to retrieve the base64 encoded SHL manifest JSON.
-    b.	SHL manifest JSON is decoded from base64.
+
+    a. POST request is sent to the SHL manifest URL to retrieve the base64 encoded SHL manifest JSON.
+    b. SHL manifest JSON is decoded from base64.
 
 5.	Retrieve IPS:
-    a.	GET request is made for the IPS in the preferred file type (PDF).
-    b.	IPS JSON file is decrypted using the encryption key from the HCert response.
+
+    a. GET request is made for the IPS in the preferred file type (PDF).
+    b. IPS JSON file is decrypted using the encryption key from the HCert response.
 
 6.	Download and Save IPS:
-    a.	IPS PDF file is downloaded and saved for further use by healthcare workers.
 
-<u>**Background Information**</u>
+    a. IPS PDF file is downloaded and saved for further use by healthcare workers.
+
+
+### Background Information
 
 #### About MySejahtera
 
@@ -128,8 +121,9 @@ This expanded guide should provide a thorough understanding of the project, its 
 
 ***Card on the home page, FAQ/Awareness on the pilgrimage***
 
-<img src="MySejahtera_userflow.png" alt ="MySejahtera User Flow"></img>
+<img src="MySejahtera_userflow.png" alt ="MySejahtera User Flow">
+
 
 ***Consent, Generating QR and previewing the IPS***
 
-<img src ="MySejahtera_qr.png" alt="Consent, generating QR and previewing IPS"></img>
+<img src ="MySejahtera_qr.png" alt="Consent, generating QR and previewing IPS">
