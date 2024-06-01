@@ -90,6 +90,8 @@ pages:
       title: Test Cases
     reference-implementations.md: 
       title: Reference Implementations
+    reference-implementations-malaysia.md:
+      title: Reference Implementation in Malaysia
     trust_domain.md:
       title: Trust Domains
     downloads.md: 
