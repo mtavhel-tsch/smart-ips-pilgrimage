@@ -124,6 +124,7 @@ This expanded guide should provide a thorough understanding of the project, its 
 <img src="MySejahtera_userflow.png" alt ="MySejahtera User Flow">
 
 
+<\br>
 ***Consent, Generating QR and previewing the IPS***
 
 <img src ="MySejahtera_qr.png" alt="Consent, generating QR and previewing IPS">
