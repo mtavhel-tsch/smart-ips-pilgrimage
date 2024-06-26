@@ -41,5 +41,5 @@ Usage: #definition
     * insert Question(URL, Please provide a link to the Digital Health Solution's website,	URL, false)
     * insert Question(language,Which languages are currently supported by the Digital Health Solution?	, choice,false)
     * item[=].answerValueSet = Canonical(Language)
-    * insert Question(description,Please provide a short description of the problem solved, and value proposition of the Digital Health Solution, string, false)
+    * insert Question(description,Please provide a short description of the problem solved\, and value proposition of the Digital Health Solution, string, false)
     * insert Question(purpose, Please provide details about the intended purpose of the Digital Health Solution and manner of use, string, false)
