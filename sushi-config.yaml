@@ -21,6 +21,8 @@ dependencies:
   ihe.iti.mcsd: current
   ihe.iti.pcf: current
   hl7.fhir.uv.ips: current
+  hl7.fhir.uv.sdc: 3.0.0
+
 #  who.base: current
 
   
