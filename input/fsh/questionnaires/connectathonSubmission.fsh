@@ -38,7 +38,7 @@ Usage: #definition
     * item[=].answerValueSet = Canonical(DistributionModel)
     * insert Question(licensingModel, What is the licensing model for the Digital Health Solution?, choice, false)
     * item[=].answerValueSet = Canonical(LicensingModel)
-    * insert Question(URL, Please provide a link to the Digital Health Solution's website,	URL, false)
+    * insert Question(URL, Please provide a link to the Digital Health Solution's website,	string, false)
     * insert Question(language,Which languages are currently supported by the Digital Health Solution?	, choice,false)
     * item[=].answerValueSet = Canonical(Language)
     * insert Question(description,Please provide a short description of the problem solved\, and value proposition of the Digital Health Solution, string, false)
