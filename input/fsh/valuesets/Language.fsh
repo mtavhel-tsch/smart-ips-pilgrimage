@@ -1,5 +1,5 @@
 Alias: $Language =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/ValueSet/Language
-CodeSystem: Language
+ValueSet: Language
 Id:         Language
 Title:     "Language"
 Description: "Language"

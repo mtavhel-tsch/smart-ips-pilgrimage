@@ -1,5 +1,5 @@
 Alias: $LicensingModel =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/ValueSet/LicensingModel
-CodeSystem: LicensingModel
+ValueSet: LicensingModel
 Id:         LicensingModel
 Title:     "Licensing Model"
 Description: "Licensing Model"

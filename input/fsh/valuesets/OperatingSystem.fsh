@@ -1,5 +1,5 @@
 Alias: $OperatingSystem =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/ValueSet/OperatingSystem
-CodeSystem: OperatingSystem
+ValueSet: OperatingSystem
 Id:         OperatingSystem
 Title:     "Operating System"
 Description: "Operating System"
