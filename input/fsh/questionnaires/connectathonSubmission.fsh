@@ -1,6 +1,6 @@
-RuleSet: Question(linkId, string, type, repeats)
+RuleSet: Question(linkId, text, type, repeats)
 * item[+].linkId = "{linkId}"
-* item[=].string = "{string}"
+* item[=].text = "{text}"
 * item[=].type = #{type}
 * item[=].repeats = {repeats}
 
