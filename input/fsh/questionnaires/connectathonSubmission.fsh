@@ -23,6 +23,7 @@ Usage: #definition
 * contained[+] = DistributionModel
 * contained[+] = LicensingModel
 * contained[+] = Language
+* contained[+] = IPS.HAJJ.ACTOR.SYSTEM
  
 //Header
 * insert Question(orgProdDetails,Organization and Product Details,group,false)
@@ -53,4 +54,4 @@ Usage: #definition
 * item[=]
 //Interoperability details
   * insert Question(actor, Which actors does your service participate as? (Select all that apply \), choice, true)
-  * item[=].answerValueSet = Canonical(IPS.HAJJ.ACTOR)
+  * item[=].answerValueSet = Canonical(IPS.HAJJ.ACTOR.SYSTEM)
