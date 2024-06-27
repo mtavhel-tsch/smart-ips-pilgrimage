@@ -52,5 +52,5 @@ Usage: #definition
 * insert Question(interopDetails,Interoperability,group,false)
 * item[=]
 //Interoperability details
-  * insert Question(actor, Which actors does your service pasticipate as? (Select all that apply \), choice, true)
+  * insert Question(actor, Which actors does your service participate as? (Select all that apply \), choice, true)
   * item[=].answerValueSet = Canonical(IPS.HAJJ.ACTOR)
