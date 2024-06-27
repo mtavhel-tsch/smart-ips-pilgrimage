@@ -6,4 +6,4 @@ Description: "Licensing Model"
 
 * ^status = #draft
 
-* include codes from system $LicensingModel
+* include codes from system $LicensingModelCs

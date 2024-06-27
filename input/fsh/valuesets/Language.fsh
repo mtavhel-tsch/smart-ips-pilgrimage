@@ -7,4 +7,4 @@ Description: "Language"
 
 * ^status = #draft
 
-* include codes from system $Language
+* include codes from system $LanguageCs

@@ -18,6 +18,12 @@ Usage: #definition
 * language = #en
 * status = #draft
 
+* contained[+] = Canonical(OperatingSystem)
+* contained[+] = Canonical(Browser)
+* contained[+] = Canonical(DistributionModel)
+* contained[+] = Canonical(LicensingModel)
+* contained[+] = Canonical(Language)
+ 
 //Header
 * insert Question(orgProdDetails,Organization and Product Details,group,false)
 * item[=]
