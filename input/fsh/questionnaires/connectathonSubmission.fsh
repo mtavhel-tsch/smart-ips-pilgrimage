@@ -49,3 +49,8 @@ Usage: #definition
     * item[=].answerValueSet = Canonical(Language)
     * insert Question(description,Please provide a short description of the problem solved\, and value proposition of the Digital Health Solution, string, false)
     * insert Question(purpose, Please provide details about the intended purpose of the Digital Health Solution and manner of use, string, false)
+* insert Question(interopDetails,Interoperability,group,false)
+* item[=]
+//Interoperability details
+  * insert Question(actor, Which actors does your service pasticipate as? (Select all that apply \), choice, true)
+  * item[=].answerValueSet = Canonical(IPS.HAJJ.ACTOR)
