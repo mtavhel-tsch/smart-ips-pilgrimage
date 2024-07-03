@@ -11,7 +11,8 @@ Parent: BundleUvIps
 * entry ^comment = "Must contain the IPS Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource.  Additional constraints are specified in the IPS Composition profile."
 * entry contains
     consent 0..1
-
+* entry[consent].resource 1..
+* entry[consent].resource only Consent
 
 
 Profile: HajjIPS-Composition
