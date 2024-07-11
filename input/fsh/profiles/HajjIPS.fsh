@@ -35,5 +35,5 @@ Parent: CompositionUvIps
 // * section[sectionConsent].title ^short = "Consent section"
 // * section[sectionConsent].title ^definition = "The label for this particular section.  This will be part of the rendered content for the document, and is often used to build a table of contents.\r\n\r\nMedication Summary "
 // * section[sectionConsent].code =  http://loinc.org#59284-0
-* section[sectionAdvanceDirectives].entry only Reference(HajjConsent)
+//* section[sectionAdvanceDirectives].entry only Reference(HajjConsent)
 //* section[sectionConsent].entry MS
