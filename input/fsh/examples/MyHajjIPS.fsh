@@ -73,7 +73,8 @@ Usage: #example
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad4d
 InstanceOf: Composition
-Usage: #inline
+Usage: #example
+* meta.profile = "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS-Composition"
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "3f69e0a5-2177-4540-baab-7a5d0877428f"
 * status = #final
@@ -82,6 +83,8 @@ Usage: #inline
 * date = "2017-12-11T14:30:00+01:00"
 * author = Reference(urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef)
 * title = "Patient Summary as of December 11, 2017 14:30"
+* text.div =   "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot;30551ce1-5a28-4356-b684-1e639094ad4d&quot; </p></div><p><b>identifier</b>: id: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2017-12-11 02:30:00+0100</p><p><b>author</b>: Beetje van Hulp, MD</p><p><b>title</b>: Patient Summary as of December 11, 2017 14:30</p><p><b>confidentiality</b>: N</p><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Beetje van Hulp, MD</p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Anorg Aniza Tion BV</p></blockquote><p><b>custodian</b>: Anorg Aniza Tion BV</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td>id: c2277753-9f90-4a95-8ddb-a0b3f6e7d292</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>care provision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActClass.html\">ActClass</a>#PCPR)</span></td><td>?? --&gt; 2017-12-11 02:30:00+0100</td></tr></table></div>"
+* text.status = #generated
 * confidentiality = #N
 * attester[0].mode = #legal
 * attester[=].time = "2017-12-11T14:30:00+01:00"
@@ -130,6 +133,8 @@ Usage: #inline
 * section[=].entry[+] = Reference(urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572)
 * section[+].title = "Consent"
 * section[=].code = $loinc#59284-0 "Consent Document"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent</div>"
 * section[=].entry = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
 
 Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e8
@@ -385,13 +390,13 @@ Usage: #inline
 * patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 
 Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c7
-InstanceOf: Consent
-Usage: #inline
-* meta.profile = "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent"
-* extension[0].url = "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod"
-* extension[=].valuePeriod.start = "2022"
-* extension[+].url = "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy"
-* extension[=].valueReference.display = "Verifier"
+InstanceOf: HajjConsent
+Usage: #example
+* meta.profile = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition-HajjConsent"
+//* extension[0].url = "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod"
+* extension[ConsentPeriod].valuePeriod.start = "2022"
+//* extension[+].url = "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy"
+//* verification.extension[verifiedBy].valueReference.display = "Verifier"
 * status = #active
 * scope = $consentscope#patient-privacy
 * category.coding.code = #CONSENT-KSA
