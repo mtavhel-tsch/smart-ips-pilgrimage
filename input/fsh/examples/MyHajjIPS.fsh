@@ -66,15 +66,15 @@ Usage: #example
 * entry[=].resource = cc354e00-a419-47ea-8b6c-1768b2a01646
 * entry[+].fullUrl = "urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572"
 * entry[=].resource = 26bee0a9-5997-4557-ab9d-c6adbb05b572
-* entry[+].fullUrl = "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5"
-* entry[=].resource = c7781f44-6df8-4a8b-9e06-0b34263a47c5
+//* entry[+].fullUrl = "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5"
+//* entry[=].resource = c7781f44-6df8-4a8b-9e06-0b34263a47c5
 * entry[+].fullUrl = "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7"
 * entry[=].resource = c7781f44-6df8-4a8b-9e06-0b34263a47c7
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad4d
-InstanceOf: Composition
+InstanceOf: HajjIPS-Composition
 Usage: #example
-* meta.profile = "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS-Composition"
+* meta.profile = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition"
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "3f69e0a5-2177-4540-baab-7a5d0877428f"
 * status = #final
@@ -83,7 +83,7 @@ Usage: #example
 * date = "2017-12-11T14:30:00+01:00"
 * author = Reference(urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef)
 * title = "Patient Summary as of December 11, 2017 14:30"
-* text.div =   "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot;30551ce1-5a28-4356-b684-1e639094ad4d&quot; </p></div><p><b>identifier</b>: id: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2017-12-11 02:30:00+0100</p><p><b>author</b>: Beetje van Hulp, MD</p><p><b>title</b>: Patient Summary as of December 11, 2017 14:30</p><p><b>confidentiality</b>: N</p><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Beetje van Hulp, MD</p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Anorg Aniza Tion BV</p></blockquote><p><b>custodian</b>: Anorg Aniza Tion BV</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td>id: c2277753-9f90-4a95-8ddb-a0b3f6e7d292</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>care provision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActClass.html\">ActClass</a>#PCPR)</span></td><td>?? --&gt; 2017-12-11 02:30:00+0100</td></tr></table></div>"
+* text.div =   "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot;30551ce1-5a28-4356-b684-1e639094ad4d&quot; </p></div><p><b>identifier</b>: id: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2017-12-11 02:30:00+0100</p><p><b>author</b>: Beetje van Hulp, MD</p><p><b>title</b>: Patient Summary as of December 11, 2017 14:30</p><p><b>confidentiality</b>: N</p><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Beetje van Hulp, MD</p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Anorg Aniza Tion BV</p></blockquote><p><b>custodian</b>: Anorg Aniza Tion BV</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td>id: c2277753-9f90-4a95-8ddb-a0b3f6e7d292</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>care provision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ActClass#PCPR)</span></td><td>?? --&gt; 2017-12-11 02:30:00+0100</td></tr></table></div>"
 * text.status = #generated
 * confidentiality = #N
 * attester[0].mode = #legal
@@ -98,44 +98,39 @@ Usage: #example
 * relatesTo.targetIdentifier.value = "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
 * event.code = $v3-ActClass#PCPR
 * event.period.end = "2017-12-11T14:30:00+01:00"
-* section[0].title = "Active Problems"
-* section[=].code = $loinc#11450-4 "Problem list - Reported"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
-* section[=].entry = Reference(urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80)
-* section[+].title = "Medication"
-* section[=].code = $loinc#10160-0 "History of Medication use Narrative"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Medication</th><th>Strength</th><th>Form</th><th>Dosage</th><th>Comment</th></tr></thead><tbody><tr><td>Anastrozole</td><td>1 mg</td><td>tablet</td><td>once daily</td><td>treatment for breast cancer</td></tr><tr><td>Black Cohosh Extract</td><td></td><td>pil</td><td></td><td>herbal supplement</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6)
-* section[=].entry[+] = Reference(urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e)
-* section[+].title = "Allergies and Intolerances"
-* section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active No known food allergies</div>"
-* section[=].entry[0] = Reference(urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132)
-* section[=].entry[+] = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5)
-* section[+].title = "History of Past Illness"
-* section[=].code = $loinc#11348-0 "History of Past illness Narrative"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
-* section[=].entry = Reference(urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6)
-* section[+].title = "Plan of Treatment"
-* section[=].code = $loinc#18776-5 "Plan of care note"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</div>"
-* section[+].title = "Results"
-* section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th colspan=\"3\">Blood typing</th></tr></thead><tbody><tr><td>Blood group</td><td>A+</td><td/></tr><tr><td>C Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>E Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>Little c Ab [Presence] in Serum or Plasma</td><td>Negative</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Hemoglobin A1c monitoring</th></tr></thead><tbody><tr><td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td><td>7.5 %</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Bacteriology</th></tr></thead><tbody><tr><td colspan=\"3\">Methicillin resistant Staphylococcus aureus</td></tr><tr><td colspan=\"3\">Healthy carrier of MRSA</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94)
-* section[=].entry[+] = Reference(urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646)
-* section[=].entry[+] = Reference(urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572)
-* section[+].title = "Consent"
-* section[=].code = $loinc#59284-0 "Consent Document"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent</div>"
-* section[=].entry = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
+* section[sectionProblems].title = "Active Problems"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
+* section[sectionProblems].entry = Reference(Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80)
+* section[sectionMedications].title = "Medication"
+* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Medication</th><th>Strength</th><th>Form</th><th>Dosage</th><th>Comment</th></tr></thead><tbody><tr><td>Anastrozole</td><td>1 mg</td><td>tablet</td><td>once daily</td><td>treatment for breast cancer</td></tr><tr><td>Black Cohosh Extract</td><td></td><td>pil</td><td></td><td>herbal supplement</td></tr></tbody></table></div>"
+* section[sectionMedications].entry[0] = Reference(urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6)
+* section[sectionMedications].entry[+] = Reference(urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e)
+* section[sectionAllergies].title = "Allergies and Intolerances"
+* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAllergies].text.status = #generated
+* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality</div>"
+* section[sectionAllergies].entry[0] = Reference(urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132)
+* section[sectionPastIllnessHx].title = "History of Past Illness"
+* section[sectionPastIllnessHx].code = $loinc#11348-0 "History of Past illness Narrative"
+* section[sectionPastIllnessHx].text.status = #generated
+* section[sectionPastIllnessHx].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
+* section[sectionPastIllnessHx].entry = Reference(Condition/c4597aa2-688a-401b-a658-70acc6de28c6)
+* section[sectionPlanOfCare].title = "Plan of Treatment"
+* section[sectionPlanOfCare].code = $loinc#18776-5 "Plan of care note"
+* section[sectionPlanOfCare].text.status = #generated
+* section[sectionPlanOfCare].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</div>"
+* section[sectionResults].title = "Results"
+* section[sectionResults].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
+* section[sectionResults].text.status = #generated
+* section[sectionResults].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th colspan=\"3\">Blood typing</th></tr></thead><tbody><tr><td>Blood group</td><td>A+</td><td/></tr><tr><td>C Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>E Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>Little c Ab [Presence] in Serum or Plasma</td><td>Negative</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Hemoglobin A1c monitoring</th></tr></thead><tbody><tr><td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td><td>7.5 %</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Bacteriology</th></tr></thead><tbody><tr><td colspan=\"3\">Methicillin resistant Staphylococcus aureus</td></tr><tr><td colspan=\"3\">Healthy carrier of MRSA</td></tr></tbody></table></div>"
+* section[sectionResults].entry[0] = Reference(urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94)
+* section[sectionResults].entry[+] = Reference(urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646)
+* section[sectionResults].entry[+] = Reference(urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572)
+
 
 Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e8
 InstanceOf: Patient
@@ -195,7 +190,7 @@ Usage: #inline
 
 Instance: c64139e7-f02d-409c-bf34-75e8bf23bc80
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"
 * clinicalStatus = $condition-clinical#active
@@ -263,19 +258,23 @@ Instance: 72884cad-ebe6-4f43-a51a-2f978275f132
 InstanceOf: AllergyIntolerance
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
-* identifier.value = "3a462598-009c-484a-965c-d6b24a821424"
+* identifier.value = "72884cad-ebe6-4f43-a51a-2f978275f132"
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #medication
 * criticality = #high
+* extension.url = "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement"
+* extension.valueDateTime = "2010"
 * code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"
 * patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
-* onsetDateTime = "2010"
+* onsetDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* onsetDateTime.extension.valueCode = #unknown
+//* onsetDateTime = "2010"
 
 Instance: c4597aa2-688a-401b-a658-70acc6de28c6
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "66d4a8c7-9081-43e0-a63f-489c2ae6edd6"
 * clinicalStatus = $condition-clinical#remission
@@ -382,12 +381,6 @@ Usage: #inline
 * valueCodeableConcept = $sct#115329001 "Methicillin resistant Staphylococcus aureus"
 * note.text = "Healthy carrier of MRSA"
 
-Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c5
-InstanceOf: AllergyIntolerance
-Usage: #inline
-* clinicalStatus = $allergyintolerance-clinical#active
-* code = $absent-unknown-uv-ips#no-known-food-allergies
-* patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 
 Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c7
 InstanceOf: HajjConsent
