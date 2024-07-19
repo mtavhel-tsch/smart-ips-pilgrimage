@@ -130,6 +130,11 @@ Usage: #example
 * section[sectionResults].entry[0] = Reference(urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94)
 * section[sectionResults].entry[+] = Reference(urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646)
 * section[sectionResults].entry[+] = Reference(urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572)
+* section[sectionAdvanceDirectives].title = "Advance Directives"
+* section[sectionAdvanceDirectives].code = $loinc#42348-3
+* section[sectionAdvanceDirectives].text.status = #generated
+* section[sectionAdvanceDirectives].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent MYS for pilgrimage</div>"
+* section[sectionAdvanceDirectives].entry = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
 
 
 Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e8
