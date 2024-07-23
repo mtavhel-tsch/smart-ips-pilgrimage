@@ -104,7 +104,7 @@ Usage: #example
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
-* section[sectionProblems].entry = Reference(urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80)
+* section[sectionProblems].entry = Reference(Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80)
 * section[sectionMedications].title = "Medication"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
@@ -115,12 +115,12 @@ Usage: #example
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality</div>"
-* section[sectionAllergies].entry[0] = Reference(urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132)
+* section[sectionAllergies].entry[0] = Reference(AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132)
 * section[sectionPastIllnessHx].title = "History of Past Illness"
 * section[sectionPastIllnessHx].code = $loinc#11348-0 "History of Past illness Narrative"
 * section[sectionPastIllnessHx].text.status = #generated
 * section[sectionPastIllnessHx].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
-* section[sectionPastIllnessHx].entry = Reference(urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6)
+* section[sectionPastIllnessHx].entry = Reference(Condition/c4597aa2-688a-401b-a658-70acc6de28c6)
 * section[sectionPlanOfCare].title = "Plan of Treatment"
 * section[sectionPlanOfCare].code = $loinc#18776-5 "Plan of care note"
 * section[sectionPlanOfCare].text.status = #generated
