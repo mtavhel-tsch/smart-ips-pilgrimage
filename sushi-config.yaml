@@ -130,6 +130,7 @@ menu:
     Artifact Index: artifacts.html
     Mappings: maps.html
 
+
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
@@ -265,4 +266,5 @@ dependencies:
   hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.uv.cpg: current
+  ihe.iti.pcf: 1.1.0
 #  who.base: current
