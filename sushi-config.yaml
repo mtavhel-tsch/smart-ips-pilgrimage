@@ -16,12 +16,6 @@ publisher:
   url: http://who.int
   email: smart@who.int
 
-dependencies:
-  who.base: current
-  ihe.iti.mcsd: current
-  ihe.iti.pcf: current
-  hl7.fhir.uv.ips: current
-#  who.base: current
 
   
 meta:
