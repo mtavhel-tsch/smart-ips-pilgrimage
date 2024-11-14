@@ -8,7 +8,7 @@
 
 
 # WHO SMART IPS PILGRIMAGE
-
+ 
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: https://WorldHealthOrganization.github.io/smart-ips-pilgrimage
