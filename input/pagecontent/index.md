@@ -1,20 +1,31 @@
 This Implementation Guide is intended to support the utilization of variable International Patient Summary (IPS)  documents during pilgrimage leveraging  [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network) global public health infrastructure.
 
-<div>
-<p> This implementation guide and set of artifacts are still undergoing development. </p>
-<p> Content is for demonstration purposes only. </p>
+
+<div style="float: left; width: 100%">
+This implementation guide and set of artifacts are still undergoing development. 
 </div>{:.stu-note}
 
-
+<br/>
 ### Summary 
+
+<div style="width:100%; float:left">
+  <div style="float: left; width: 62%; min-height:450px;">
 This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Implementation Guide leverages the [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network).
+
 
 The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines) to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology.
 
 Supporting guidance, recommendations, resources, and standards are included in the <a href="references.html">References</a> and <a href="dependencies.html">Dependencies</a>.
 
-Eligible Participants may request to join through the <a href ="Letter_of_Application_IPS_Pilgrimage.docx">The Letter of Application</a>
+Eligible Participants may request to join through the <a href ="Letter_of_Application_IPS_Pilgrimage_1.0.docx">The Letter of Application</a>
+<br/>
+  </div>
+  <div style="float: right; width: 38%">
+    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%"/>
+  </div>
+</div>
 
+<br/>
 ### About this implementation guide
 
 This implementation guide is broken into the following levels of [knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
@@ -34,5 +45,7 @@ This guide assumes use of the following resources:
 - This guide utilizes the [International Patient Summary(IPS)](https://hl7.org/fhir/uv/ips/) as a base for defining immunizations and expects that most data captured will be presented in conformance with the resources defined as part of that implementation guide. 
 - This Implementation Guide makes use of [Clinical Quality Language](https://cql.hl7.org/) for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Specification, and other helpful resources can be found in the Support dropdown.
 
+
+<br/>
 ### Disclaimer
 The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.

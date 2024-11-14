@@ -1,0 +1,1 @@
+The technical specifications are captured in this FHIR Implementation Guide (IG). Please review the <a href="transactions.html">transactions</a> page for detailed specifications about the transactions defined by this IG.

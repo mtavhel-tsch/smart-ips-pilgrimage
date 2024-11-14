@@ -1,5 +1,5 @@
 Instance: Pilgrim
-InstanceOf: ActorDefinition
+InstanceOf: $SGActor
 Usage: #example
 * meta.profile = "http://smart.who.int/smart-trust/StructureDefinition/Credential.Holder"
 * type = #person
@@ -9,3 +9,4 @@ Usage: #example
 * title = "Pilgrim"
 * experimental = false
 * description = "Pilgrim"
+* extension[code].valueCoding = $IPSHajjActor#pilgrim

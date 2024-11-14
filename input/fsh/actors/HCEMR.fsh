@@ -1,5 +1,5 @@
 Instance: HCEMR
-InstanceOf: ActorDefinition
+InstanceOf: $SGActor
 Usage: #example
 * meta.profile = "http://smart.who.int/smart-base/StructureDefinition/SGPersona"
 * type = #system
@@ -9,3 +9,4 @@ Usage: #example
 * title = "Host Country EMR"
 * experimental = false
 * description = "Host Country EMR"
+* extension[code].valueCoding = $IPSHajjActor#hcemr

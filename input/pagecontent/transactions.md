@@ -1,24 +1,85 @@
-This page describes the specific transactions that are referenced in the [sequence diagrams](sequence-diagrams.html) defined by this implementatio guide.
+These are the transactions for ips-pilgrimage
+###  issue SHL {#issue-shl}
 
-Other transactions utilized by this implementaiton guide my be found:
-- [Publish Verification Keys](https://smart.who.int/trust/transactions.html#put_keys)
-- [Retreive Verification Keys](https://smart.who.int/trust/transactions.html#get_keys)
-
+(issue SHL)
 
 
+{% include transaction-issue-shl-preamble.md %}
+#### Trigger Events
+{% include transaction-issue-shl-trigger-events.md %}
+#### Message Semantics
+{% include transaction-issue-shl-message-semantics.md %}
+#### Expected Actions
+{% include transaction-issue-shl-expected-actions-semantics.md %}
 
-<h3 id="sign_shl">Sign Smart Health Link</h3>
+###  request SHL from HIE {#shl-request}
 
-<h3 id="sign_ips">Sign IPS</h3>
-
-
-<h3 id="ips_view">Retrieve SHL IPS Viewer</h3>
-
-<h3 id="ips_manifest">Retrieve SHL IPS Manifest</h3>
+(request SHL from HIE)
 
 
-<h3 id="consent">Record Consent</h3>
-Consent can be recorded based on a post counseling based on a blanket jusridicational policy  or based on a individual's interaction with their digitaal health wallet
-<h4 id="consent-post-counseling">Record Consent - Post-Counseling </h4>
-<h4 id="consent-wallet">Record Consent - Digital Health Wallet </h4>
+{% include transaction-shl-request-preamble.md %}
+#### Trigger Events
+{% include transaction-shl-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-shl-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-shl-request-expected-actions-semantics.md %}
+
+###  record consent from wallet - response {#record-consent-response}
+
+(record consent from wallet - response)
+
+
+{% include transaction-record-consent-response-preamble.md %}
+#### Trigger Events
+{% include transaction-record-consent-response-trigger-events.md %}
+#### Message Semantics
+{% include transaction-record-consent-response-message-semantics.md %}
+#### Expected Actions
+{% include transaction-record-consent-response-expected-actions-semantics.md %}
+
+###  record consent from wallet - request {#record-consent-request}
+
+(record consent from wallet - request)
+This is the IHE PCF record consent transaction
+
+See 
+   https://profiles.ihe.net/ITI/PCF/ITI-108.html
+Access Consent - Create (ITI-108)
+Access Consent - Update (ITI-108)
+https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.html
+
+{% include transaction-record-consent-request-preamble.md %}
+#### Trigger Events
+{% include transaction-record-consent-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-record-consent-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-record-consent-request-expected-actions-semantics.md %}
+
+###  issue SHL {#issue-shl}
+
+(issue SHL)
+
+
+{% include transaction-issue-shl-preamble.md %}
+#### Trigger Events
+{% include transaction-issue-shl-trigger-events.md %}
+#### Message Semantics
+{% include transaction-issue-shl-message-semantics.md %}
+#### Expected Actions
+{% include transaction-issue-shl-expected-actions-semantics.md %}
+
+###  request SHL from HIE {#shl-request}
+
+(request SHL from HIE)
+
+
+{% include transaction-shl-request-preamble.md %}
+#### Trigger Events
+{% include transaction-shl-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-shl-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-shl-request-expected-actions-semantics.md %}
 

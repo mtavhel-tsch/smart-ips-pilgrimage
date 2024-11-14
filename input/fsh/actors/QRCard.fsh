@@ -1,5 +1,5 @@
 Instance: QRCard
-InstanceOf: ActorDefinition
+InstanceOf: $SGActor
 Usage: #example
 * meta.profile = "http://smart.who.int/smart-base/StructureDefinition/SGPersona"
 * type = #system
@@ -9,3 +9,4 @@ Usage: #example
 * title = "QRCard"
 * experimental = false
 * description = "Pilgrim Card containing QR code of SMART Health Link"
+* extension[code].valueCoding = $IPSHajjActor#qrcode
