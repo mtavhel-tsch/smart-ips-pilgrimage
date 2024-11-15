@@ -20,7 +20,7 @@ publisher:
   
 meta:
   profile:
-    - SMARTImplementationGuide
+    - SGImplementationGuide
 
 pages:
   index.md:
