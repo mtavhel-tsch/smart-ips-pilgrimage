@@ -67,6 +67,7 @@ Usage: #example
 
 Instance: Martha
 InstanceOf: Patient
+Description: "Example Patient"
 Usage: #example
 * id = "2b90dd2b-2dab-4c75-9bb9-a355e07401e7"
 * identifier.system = "urn:oid:2.16.840.1.113883.2.4.6.3"
@@ -96,6 +97,7 @@ Usage: #example
 
 Instance: 1c616b24-3895-48c4-9a02-9a64110351ee
 InstanceOf: Practitioner
+Description: "Example Practitioner"
 Usage: #example
 * identifier.system = "urn:oid:2.16.528.1.1007.3.1"
 * identifier.value = "129854633"
@@ -108,6 +110,7 @@ Usage: #example
 
 Instance: 890751f4-2924-4636-bab7-efffc7f3cf14
 InstanceOf: Organization
+Description: "Example Organization"
 Usage: #example
 * identifier.system = "urn:oid:2.16.528.1.1007.3.3"
 * identifier.value = "564738757"
@@ -124,6 +127,7 @@ Usage: #example
 
 Instance: c64139e7-f02d-409c-bf34-75e8bf23bc89
 InstanceOf: Condition
+Description: "Example Condition"
 Usage: #example
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"
@@ -144,6 +148,7 @@ Usage: #example
 
 Instance: c220e36c-eb67-4fc4-9ba1-2fabc52acec5
 InstanceOf: MedicationStatement
+Description: "Example MedicationStatement"
 Usage: #example
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "b75f92cb-61d4-469a-9387-df5ef70d25f0"
@@ -159,6 +164,7 @@ Usage: #example
 
 Instance: 47524493-846a-4a26-bae2-4ab03e60f02d
 InstanceOf: MedicationStatement
+Description: "Example MedicationStatement"
 Usage: #example
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
@@ -170,6 +176,7 @@ Usage: #example
 
 Instance: 976d0804-cae0-45ae-afe3-a19f3ceba6bb
 InstanceOf: Medication
+Description: "Example Medication"
 Usage: #example
 * code.coding[0] = $sct#108774000 "Product containing anastrozole (medicinal product)"
 * code.coding[+] = urn:oid:2.16.840.1.113883.2.4.4.1#99872 "ANASTROZOL 1MG TABLET"
@@ -178,6 +185,7 @@ Usage: #example
 
 Instance: 8adc0999-9468-4ac9-9557-680fa133d625
 InstanceOf: Medication
+Description: "Example Medication"
 Usage: #example
 * code.coding[0] = $sct#412588001 "Cimicifuga racemosa extract (substance)"
 * code.coding[=].display.extension.extension[0].url = "lang"
@@ -190,6 +198,7 @@ Usage: #example
 
 Instance: 72884cad-ebe6-4f43-a51a-2f978275f131
 InstanceOf: AllergyIntolerance
+Description: "Example AllergyIntolerance"
 Usage: #example
 //* identifier.system = "urn:oid:1.2.3.999"
 //* identifier.value = "72884cad-ebe6-4f43-a51a-2f978275f132"
@@ -208,6 +217,7 @@ Usage: #example
 
 Instance: c4597aa2-688a-401b-a658-70acc6de28c5
 InstanceOf: Condition
+Description: "Example Condition"
 Usage: #example
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "66d4a8c7-9081-43e0-a63f-489c2ae6edd6"
@@ -228,6 +238,7 @@ Usage: #example
 
 Instance: 45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6
 InstanceOf: Organization
+Description: "Example Organization"
 Usage: #example
 * active = true
 * type = $organization-type#other
@@ -235,6 +246,7 @@ Usage: #example
 
 Instance: aa11a2be-3e36-4be7-b58a-6fc3dace2740
 InstanceOf: Observation
+Description: "Example Observation"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory
@@ -246,6 +258,7 @@ Usage: #example
 
 Instance: 6e39ccf3-f997-4a2b-8f28-b4b71c778c79
 InstanceOf: Observation
+Description: "Example Observation"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory
@@ -257,6 +270,7 @@ Usage: #example
 
 Instance: b4916505-a06b-460c-9be8-011609282456
 InstanceOf: Observation
+Description: "Example Observation"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory
@@ -268,6 +282,7 @@ Usage: #example
 
 Instance: a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3
 InstanceOf: Observation
+Description: "Example Observation"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory
@@ -279,6 +294,7 @@ Usage: #example
 
 Instance: 2639657a-c19a-48e2-82cc-471e13b8ad93
 InstanceOf: Observation
+Description: "Example Observation"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory
@@ -293,6 +309,7 @@ Usage: #example
 
 Instance: cc354e00-a419-47ea-8b6c-1768b2a01645
 InstanceOf: Observation
+Description: "Example Observation"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory
@@ -305,6 +322,7 @@ Usage: #example
 
 Instance: 26bee0a9-5997-4557-ab9d-c6adbb05b571
 InstanceOf: Observation
+Description: "Example Observation"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory

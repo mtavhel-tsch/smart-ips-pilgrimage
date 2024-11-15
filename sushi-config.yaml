@@ -20,7 +20,7 @@ publisher:
   
 meta:
   profile:
-    - SGImplementationGuide
+    - http://smart.who.int/base/StructureDefinition/SGImplementationGuide
 
 pages:
   index.md:
