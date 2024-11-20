@@ -80,8 +80,12 @@ pages:
       title: Testing
     test-data.md: 
       title: Test Data
+    test-cases.md:
+      title: Test Cases
     reference-implementations.md: 
       title: Reference Implementations
+    reference-implementations-malaysia.md:
+      title: Reference Implementation in Malaysia
     trust_domain.md:
       title: Trust Domains
     downloads.md: 
@@ -131,6 +135,9 @@ menu:
     Artifact Index: artifacts.html
     Mappings: maps.html
 
+parameters:
+  path-pages:
+    - input/testing
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
