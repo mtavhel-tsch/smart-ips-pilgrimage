@@ -4,6 +4,11 @@ This is the technical package containing the artifacts in this Implementation Gu
 
 * [IG Package](package.tgz)
 
+### Validator Pack
+
+The following file contains all value sets, profiles, extensions, pages, etc. in this Implementation Guide:
+
+* [Validator Pack](validator.pack)
 
 ### Definitions
 

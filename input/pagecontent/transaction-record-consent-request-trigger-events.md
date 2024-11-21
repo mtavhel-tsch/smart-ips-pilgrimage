@@ -1,0 +1,1 @@
+- A new consent directive has been recorded by a <a href="system-actors.html#ochw">Digital Health Wallet</a>.  

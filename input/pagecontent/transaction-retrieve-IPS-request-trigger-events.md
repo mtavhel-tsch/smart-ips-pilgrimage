@@ -1,0 +1,1 @@
+- The retrieve IPS request transaction is initiated when the host country EMR has extracted a SHL manifest and is now requesting for retrieving the IPS in JSON format.

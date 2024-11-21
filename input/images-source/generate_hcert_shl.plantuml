@@ -1,0 +1,11 @@
+@startuml
+
+!include ./style.iuml
+
+
+participant "Origin Country\nHIE" as OCHIE
+autonumber "<b>00:</b>"
+
+OCHIE -> OCHIE : generate HCERT containing the SHL
+
+@enduml

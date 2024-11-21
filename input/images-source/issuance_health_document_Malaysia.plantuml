@@ -6,7 +6,7 @@ title Health Assessment, Consent Counselling,  and Issuance of Smart Health Link
 actor "Hajj Counselor" as C
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet\nMySejahtera" as HW
-participant "Origin Country\nHIE" as OCHIE
+participant "Origin Country\nHajj Health Screening Repository" as OCHIE
 participant "QR Code" as QR
 autonumber "<b>00:</b>"
 
@@ -28,7 +28,7 @@ group Issue Smart Health Link
 	  generate digital signature\ncapture signed SHL as HCERT claim
 	  HCERT is rendered as QR code
 	end note
-   P -> HW : generate IPS from the FHIR resource through MySejhatera app\n set disclosure & timelimit
+   P -> HW : generate IPS from the FHIR resource through MySejhatera app\n standard disclosure & timelimit is set by system
    HW -> HW : display Consent Questionniare as\n FHIR Questionnaire resource for UI
    HW -> OCHIE:  Consent stored as QuestionnaireResponse
    OCHIE -> OCHIE: Consent QuestionnaireResponse extracted and \nCreate Consent resource with codes\n#CONSENT-KSA and #CONSENT-MYS

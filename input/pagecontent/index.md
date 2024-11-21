@@ -10,10 +10,10 @@ This implementation guide and set of artifacts are still undergoing development.
 
 <div style="width:100%; float:left">
   <div style="float: left; width: 62%; min-height:450px;">
-This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Implementation Guide leverages the [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network).
+This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Implementation Guide leverages the <a href="https://www.who.int/initiatives/global-digital-health-certification-network">WHO Global Digital Health Certification Network (GDHCN)</a>.
 
 
-The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines) to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology.
+The guide is part of the <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">WHO SMART Guidelines approach</a> to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology.
 
 Supporting guidance, recommendations, resources, and standards are included in the <a href="references.html">References</a> and <a href="dependencies.html">Dependencies</a>.
 
@@ -38,6 +38,7 @@ This guide assumes use of the following resources:
 * [IPS Patient](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
 * [IPS Immunization](http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips)
 * [CPG ActivityDefinitions](https://hl7.org/fhir/uv/cpg/artifacts.html#activitydefinition-index)
+* [CPG ImmunizationRecommendation](http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation)
 
 - For a complete listing of the artifacts defined in this implementation guide, refer to the [Artifact Index](artifacts.html).
 - A complete offline copy of this implementation guide can be found on the [Downloads](downloads.html) page.
@@ -48,9 +49,3 @@ This guide assumes use of the following resources:
 <br/>
 ### Disclaimer
 The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
-
-
-{{ include ip-statements.xhtml }}
-{{ include cross-version-analysis.xhtml }}
-{{ include dependency-table.xhtml }}
-{{ include globals-table.xhtml }}

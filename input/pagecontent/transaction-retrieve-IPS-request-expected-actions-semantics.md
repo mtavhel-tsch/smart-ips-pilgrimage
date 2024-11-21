@@ -1,0 +1,1 @@
+- The recipient OCHIE responds with the IPS Json.

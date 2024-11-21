@@ -5,6 +5,5 @@ Description:  "ValueSet of codes for consent policies for Hajj pilgrims"
 * ^status = #active
 * ^experimental = true
 * ^name = "IPS_HAJJ_CONSENT"
-
 * include codes from system $IPSHajjConsent
 

@@ -1,5 +1,5 @@
 Profile: HajjConsent
-Parent: IntermediateConsent
+Parent: Consent
 Description: "A profile of the consent resource to track consent of a pilgrim to participate
 
 FHIR R5 upgrade notes (need this implemented as a structure map):
@@ -9,16 +9,6 @@ FHIR R5 upgrade notes (need this implemented as a structure map):
  * the Consent.patient should be replaced by Consent.subject
  * Consent.verification.verifiedBy should be used instead of Consent.organization
 "
-
-* provision 1..1
-* provision.purpose 1..*
-* provision.purpose from  IPS.HAJJ.CONSENT
-* provision.period 1..1 MS
-
-* patient 1..
-* organization only Reference(HajjOrganization)
-
-/*
 * category 1.. MS
 * category from IPS.HAJJ.CONSENT
 
@@ -48,9 +38,7 @@ FHIR R5 upgrade notes (need this implemented as a structure map):
 // in FHIR R5 Consent.verification.verifiedBy should be used instead of Consent.organization
 // * verification.verifiedBy only Reference(HajjOrganization)
 // * verification.verifiedBy 1..
-//* verification contains
-   // ConsentVerifiedBy named verifiedBy 1..* MS
+* verification.extension contains ConsentVerifiedBy named verifiedBy 1..* MS
 
-* verification.ve* verificationrifiedWith 1..
+* verification.verifiedWith 1..
 * verification.verificationDate 1..
-*/

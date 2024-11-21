@@ -11,7 +11,16 @@ and collaboration among users, stakeholders and engineers.
 The Trust Domain for IPS Pilgrimage focuses on key business processes that are
 part of providing care for pilgrims during a pilgrimage.
 
+### Overview of key process flows
+The diagram here denotes the key process flows at a high level, which are further described in details as various business processes.
+
+  <div> 
+    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%"/>
+  </div>
+<br/>
+
 ### Overview of Key Business Processes 
+
 The following table describes the workflows of the included processes. 
 
 <table border="1" class="dataframe table table-striped table-bordered">
@@ -56,21 +65,21 @@ The following table describes the workflows of the included processes.
       <td>3.0</td>
       <td>Issuance of Health Document at Origin Country</td>
       <td>IPS.PILGRIMAGE.3.0</td>
-      <td><p>Pilgrim</p><p>National IHE</p></td>
+      <td><p>Pilgrim</p><p>Counselor</p><p>Health Wallet App</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
     <tr class="odd">
       <td>4.0</td>
       <td>Clinical Encounter for Unplanned Care</td>
       <td>IPS.PILGRIMAGE.4.0</td>
-      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
+      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
    <tr class="even">
       <td>5.0</td>
       <td>Break The Glass Clinical Encounter (not in scope for phase 1) </td>
       <td>IPS.PILGRIMAGE.5.0</td>
-      <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
+      <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for an emergency unplanned clinical encounter</td>
     </tr>
     <tr class="even">
@@ -87,17 +96,9 @@ The following table describes the workflows of the included processes.
 ### Workflows
 The workflows that follow depict processes that have been generalized across different contexts and may not reflect the variability and nuances across different settings. The simplicity of the workflow may not adequately illustrate the nonlinear steps that may occur.
 
-#### Overview of key process flows
-
-  <div> 
-    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%"/>
-  </div>
-<br/>
-
-
 <br clear="all"/>
 
-#### 1.0 Publication of National Public Keys for Verification   
+#### Publication of National Public Keys for Verification   
 
 <b>TO DO: Insert diagram</b>
   <div> 
@@ -106,7 +107,7 @@ The workflows that follow depict processes that have been generalized across dif
 <br/> 
 
 
-#### 2.0 Publication of National Terminologies  
+#### Publication of National Terminologies  
 
 <b>TO DO: Insert diagram</b>
   <div> 
@@ -114,28 +115,24 @@ The workflows that follow depict processes that have been generalized across dif
   </div> 
 <br/> 
 
-#### 3.0 Issuance of Health Document at Origin Country  
+#### Issuance of Health Document at Origin Country  
 
-<b>TO DO: Insert diagram</b>
+##### Health Check and Counseling, Verbal Consent (brief)
   <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  <img src="Health Check and Counseling, Verbal Consent (brief).png" alt="Health Check and Counseling, Verbal Consent (brief)" style="width:85%"/>
   </div> 
 <br/> 
 
-#### 4.0 Clinical Encounter for Unplanned Care  
-
-<b>TO DO: Insert diagram</b>
+##### Health Check and Counseling, Explicit Consent (brief)
   <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  <img src="Health Check and Counseling, Explicit Consent (brief).png" alt="Health Check and Counseling, Explicit Consent (brief)" style="width:85%"/>
   </div> 
 <br/> 
 
+#### Clinical Encounter for Unplanned Care  
 
-#### 5.0 Break The Glass Clinical Encounter  
 
-<b>TO DO: Insert diagram</b>
   <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+<img src="Clinical Encounter for Unplanned Care.png" alt="Clinical Encounter for Unplanned Care" style="width:85%"/>
   </div> 
 <br/> 
-
