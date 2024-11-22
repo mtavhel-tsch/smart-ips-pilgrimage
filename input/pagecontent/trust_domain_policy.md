@@ -1,1 +1,1 @@
-This Trust Domain leverages enables data exchange as mediated by the pilgrim based on obtaining consent. A consent code system has been established and can be viewed <a href="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ">here</a>.
+This Trust Domain leverages enables data exchange as mediated by the pilgrim based on obtaining consent. A consent code system has been established and can be viewed <a href="StructureDefinition-HajjConsent.html">here</a>.
