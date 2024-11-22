@@ -1,4 +1,4 @@
-Alias: $OperatingSystemCs =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/OperatingSystem
+Alias: $OperatingSystemCs =  http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs
 CodeSystem: OperatingSystemCs
 Id:         OperatingSystemCs
 Title:     "Operating System"

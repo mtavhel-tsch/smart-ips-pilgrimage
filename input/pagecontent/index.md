@@ -38,7 +38,6 @@ This guide assumes use of the following resources:
 * [IPS Patient](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
 * [IPS Immunization](http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips)
 * [CPG ActivityDefinitions](https://hl7.org/fhir/uv/cpg/artifacts.html#activitydefinition-index)
-* [CPG ImmunizationRecommendation](http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation)
 
 - For a complete listing of the artifacts defined in this implementation guide, refer to the [Artifact Index](artifacts.html).
 - A complete offline copy of this implementation guide can be found on the [Downloads](downloads.html) page.
@@ -49,3 +48,9 @@ This guide assumes use of the following resources:
 <br/>
 ### Disclaimer
 The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
+
+
+{{ include ip-statements.xhtml }}
+{{ include cross-version-analysis.xhtml }}
+{{ include dependency-table.xhtml }}
+{{ include globals-table.xhtml }}

@@ -1,6 +1,6 @@
 ValueSet:     IPS.HAJJ.TRANSACTION
-Title:        "IPS.HAJJ.TRANSACTION ValueSet of transaction "
-Description:  "ValueSet of codes for transaction for Hajj "
+Title:        "IPS.HAJJ.TRANSACTION ValueSet of transaction"
+Description:  "ValueSet of codes for transaction for Hajj"
 
 * ^status = #active
 * ^experimental = true

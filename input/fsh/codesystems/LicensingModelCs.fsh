@@ -1,4 +1,4 @@
-Alias: $LicensingModelCs =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/LicensingModel
+Alias: $LicensingModelCs =  http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs
 CodeSystem: LicensingModelCs
 Id:         LicensingModelCs
 Title:     "Licensing Model"

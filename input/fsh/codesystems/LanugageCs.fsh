@@ -1,4 +1,4 @@
-Alias: $LanguageCs =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/Language
+Alias: $LanguageCs = http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs
 CodeSystem: LanguageCs
 Id:         LanguageCs
 Title:     "Language"

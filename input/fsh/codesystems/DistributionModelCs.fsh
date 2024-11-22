@@ -1,4 +1,4 @@
-Alias: $DistributionModelCs =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel
+Alias: $DistributionModelCs =  http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs
 CodeSystem: DistributionModelCs
 Id:         DistributionModelCs
 Title:     "Distribution Model"

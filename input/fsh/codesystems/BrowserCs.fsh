@@ -1,4 +1,4 @@
-Alias: $BrowserCs =  http://worldhealthorganization.github.io/smart-ips-pilgrimage/Browser
+Alias: $BrowserCs =  http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs
 CodeSystem: BrowserCs
 Id:         BrowserCs
 Title:     "Browser"
