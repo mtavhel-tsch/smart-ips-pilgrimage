@@ -28,7 +28,7 @@ FHIR R5 upgrade notes (need this implemented as a structure map):
 // NOTE:
 // in FHIR R5 the period extenion should be replaced by Consent.period
 // * period 1..
-* extension contains ConsentPeriod named period 1..* MS
+//* extension contains ConsentPeriod named period 1..* MS
 
 // NOTE:
 // in FHIR R5 the Consent.patient should be replaced by Consent.subject
