@@ -13,10 +13,8 @@ FHIR R5 upgrade notes (need this implemented as a structure map):
 * provision.purpose 1..*
 * provision.purpose from  IPS.HAJJ.CONSENT
 * provision.period 1..1 MS
-* patient 1..
 * organization only Reference(HajjOrganization)
-* category 1.. MS
-* category from IPS.HAJJ.CONSENT
+
 
 // NOTE:
 // in FHIR R5 should  make cardinality of decision 1..
