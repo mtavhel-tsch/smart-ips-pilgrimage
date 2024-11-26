@@ -2,7 +2,7 @@ Profile: HajjIPS
 Parent: BundleUvIps
 Title: "Bundle - IPS for Hajj"
 Description: "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for the Hajj Pilgrimage."
-* entry MS
+/* entry MS
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.discriminator[+].type = #profile
@@ -14,7 +14,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry.fullUrl 1.. MS
 * entry.search ..0
 * entry.request ..0
-* entry.response ..0
+* entry.response ..0 */
+* entry[composition].resource only HajjIPS-Composition
 * entry contains
     consent 1..*
 * entry[consent].resource only HajjConsent
