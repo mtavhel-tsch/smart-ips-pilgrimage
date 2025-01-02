@@ -34,6 +34,8 @@ Usage: #example
 * type.coding.code = #60591-5
 * type.coding.system = "http://loinc.org"
 * type.coding.display = "Patient Summary Document"
+* content.format.code = #http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
+* content.format.system = "urn:ietf:rfc:3986"
 * content.attachment.contentType = #text/plain
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/Bundle-MyIPS.json"
 
@@ -52,6 +54,8 @@ Usage: #example
 * type.coding.code = #60591-5
 * type.coding.system = "http://loinc.org"
 * type.coding.display = "Patient Summary Document"
+* content.format.code = #urn:ihe:iti:xds:2017:mimeTypeSufficient
+* content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
 * content.attachment.contentType = #text/plain
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MyIPS.pdf"
 
@@ -68,6 +72,8 @@ Usage: #example
 * identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f12e"
 * identifier[entryUUID].use = #official
 * status = #current
+* content.format.code = #urn:ihe:iti:dsg:detached:2014
+* content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
 * content.attachment.contentType = #text/plain
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MySignedIPS.json"
 
@@ -84,5 +90,7 @@ Usage: #example
 * identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f13e"
 * identifier[entryUUID].use = #official
 * status = #current
+* content.format.code = #urn:ihe:iti:dsg:detached:2014
+* content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
 * content.attachment.contentType = #text/plain
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MySignedIPSPDF.json"
