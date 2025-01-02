@@ -15,33 +15,74 @@ Usage: #example
 * code = MHDlistTypes#folder
 * entry[0].item = Reference(DocumentReference/FHIRIPSDocumentReference)
 * entry[1].item = Reference(DocumentReference/IPSPDFDocumentReference)
+* entry[2].item = Reference(DocumentReference/FHIRIPSSignedDocumentReference)
+* entry[3].item = Reference(DocumentReference/IPSSignedPDFDocumentReference)
+
 
 Instance:   FHIRIPSDocumentReference
 InstanceOf: IHE.MHD.Minimal.DocumentReference
 Title:      "FHIR IPS json reference"
-Description: "Example of a minimal DocumentReference resource. This is very unlikely to be acceptable anywhere, but it is the minimum required."
+Description: "Example of FHIR IPS JSON for pilgrimage, as a document reference."
 Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * masterIdentifier.system = "urn:ietf:rfc:3986"
-* masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62012"
+* masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62002"
 * identifier[entryUUID].system = "urn:ietf:rfc:3986"
-* identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f09d"
+* identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f10e"
 * identifier[entryUUID].use = #official
 * status = #current
+* type.coding.code = #60591-5
+* type.coding.system = "http://loinc.org"
+* type.coding.display = "Patient Summary Document"
 * content.attachment.contentType = #text/plain
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/Bundle-MyIPS.json"
 
 Instance:   IPSPDFDocumentReference
 InstanceOf: IHE.MHD.Minimal.DocumentReference
-Title:      "FHIR IPS json reference"
-Description: "Example of a minimal DocumentReference resource. This is very unlikely to be acceptable anywhere, but it is the minimum required."
+Title:      "IPS PDF reference"
+Description: "Example of FHIR IPS PDF for pilgrimage, as a document reference."
 Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * masterIdentifier.system = "urn:ietf:rfc:3986"
-* masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62012"
+* masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62003"
 * identifier[entryUUID].system = "urn:ietf:rfc:3986"
-* identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f09d"
+* identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f11e"
+* identifier[entryUUID].use = #official
+* status = #current
+* type.coding.code = #60591-5
+* type.coding.system = "http://loinc.org"
+* type.coding.display = "Patient Summary Document"
+* content.attachment.contentType = #text/plain
+* content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MyIPS.pdf"
+
+
+Instance:   FHIRIPSSignedDocumentReference
+InstanceOf: IHE.MHD.Minimal.DocumentReference
+Title:      "FHIR IPS JSON Signed"
+Description: "Example of FHIR IPS Signed using DSGj for pilgrimage, as a document reference."
+Usage: #example
+* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* masterIdentifier.system = "urn:ietf:rfc:3986"
+* masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62004"
+* identifier[entryUUID].system = "urn:ietf:rfc:3986"
+* identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f12e"
 * identifier[entryUUID].use = #official
 * status = #current
 * content.attachment.contentType = #text/plain
-* content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MyIPS.pdf"
+* content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MySignedIPS.json"
+
+
+Instance:   IPSSignedPDFDocumentReference
+InstanceOf: IHE.MHD.Minimal.DocumentReference
+Title:      "IPS PDF Signed"
+Description: "Example of FHIR IPS Signed PDF JSON using DSGj for pilgrimage, as a document reference."
+Usage: #example
+* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* masterIdentifier.system = "urn:ietf:rfc:3986"
+* masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62005"
+* identifier[entryUUID].system = "urn:ietf:rfc:3986"
+* identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f13e"
+* identifier[entryUUID].use = #official
+* status = #current
+* content.attachment.contentType = #text/plain
+* content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MySignedIPSPDF.json"
