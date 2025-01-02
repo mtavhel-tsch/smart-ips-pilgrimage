@@ -1,4 +1,7 @@
 The following are the expected actions for the [Origin Country HIE](system-actors.html#ochie) once it receives the privacy configuration:
+- The Origin Country HIE creates a [Folder](https://profiles.ihe.net/ITI/MHD/StructureDefinition-IHE.MHD.Minimal.Folder.html) for the pilgrim that includes the pilgrim's 
+  - IPS document in FHIR or PDF or both
+  - Signed IPS document as DSG jws JSON object for each document included in the folder
 - The [SHL specifications](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html)shall be followed to create a SMART Health Link which is then wrapped in [HCERT structure](https://www.smart.who.int/trust/StructureDefinition-Hcert.html) and shared as a [CWT structure](https://www.smart.who.int/trust/StructureDefinition-CWT.html), by following the below steps:
   - Establish a SMART Health Link Manifest URL
   - Build SHL manifest json that points to the health document (IPS) content

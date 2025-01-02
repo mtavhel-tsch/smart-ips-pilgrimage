@@ -1,0 +1,1 @@
+- The retrieve MHD folder docs request transaction is initiated when the host country EMR has extracted a SHL manifest and is now requesting for retrieving the documentReference within the MHD folder in JSON format.

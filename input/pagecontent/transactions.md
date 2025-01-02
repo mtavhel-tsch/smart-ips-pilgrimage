@@ -34,6 +34,15 @@ These are the transactions defined for ips-pilgrimage
 #### Expected Actions
 {% include transaction-retrieve-SHL-manifest-request-expected-actions-semantics.md %}
 
+###  retrieve MHD folder docs - request {#retrieve-MHD-folder-docs-request}
+
+{% include transaction-retrieve-MHD-folder-request-preamble.md %}
+#### Trigger Events
+{% include transaction-retrieve-MHD-folder-request-trigger-events.md %}
+#### Message Semantics
+{% include transaction-retrieve-MHD-folder-request-message-semantics.md %}
+#### Expected Actions
+{% include transaction-retrieve-MHD-folder-request-expected-actions-semantics.md %}
 
 ###  retrieve IPS - request {#retrieve-IPS-request}
 
