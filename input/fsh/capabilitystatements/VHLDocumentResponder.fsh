@@ -26,7 +26,6 @@ Usage: #definition
     // * interaction[0].code = #read
     // * interaction[+].code = #search-type
     * searchParam[0]
-      * name = "_include"
-      * definition = "http://hl7.org/fhir/build/SearchParameter/Resource-_list"
+      * name = "_list"
       * type = #special
       * documentation = "A server compatible with the VHLDocumentResponder SHALL support searches using the _list search parameter as defined in the core FHIR specification."
