@@ -1,1 +1,1 @@
-- The recipient OCHIE responds with the documentReference as a FHIR bundle Json.
+- The recipient OCHIE checks if the SHL request is valid and responds with the documentReference as a FHIR bundle Json.
