@@ -1,7 +1,7 @@
 Instance: VHLDocumentResponder
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://smart.who.int/smart-pilgrimage/CapabilityStatement/VHLDocumentResponder"
+* url = "https://smart.who.int/smart-ips-pilgrimage/CapabilityStatement/VHLDocumentResponder"
 * name = "VHL DocumentResponder"
 * title = "VHL Document Responder (server)"
 * status = #active
