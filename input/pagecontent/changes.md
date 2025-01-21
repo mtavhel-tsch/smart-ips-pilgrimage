@@ -17,4 +17,6 @@ This page provides a list of changes to the Implementation Guide since its initi
     <li>Updated Example Artifacts for Pilgrim Folder</li>
     <li>Added a Capability Statement for Host Country EMRs</li>
     <li>Page Content changes in following pages: index, dependencies</li>
+    <li>Corrected Health Check and Counseling, Verbal Consent (brief) diagram</li>
+    <li>All bpmn files for business processes available in GitHub</li>
   </ul>
