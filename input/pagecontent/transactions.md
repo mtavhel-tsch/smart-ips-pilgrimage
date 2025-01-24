@@ -13,7 +13,7 @@ These are the transactions defined for ips-pilgrimage
 
 
 
-###  issue Verifiable SHL - request {#issue-verifiable-shl-request}
+###  issue VHL - request {#issue-verifiable-shl-request}
 
 {% include transaction-issue-verifiable-shl-request-preamble.md %}
 #### Trigger Events

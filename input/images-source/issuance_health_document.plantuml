@@ -1,6 +1,6 @@
 @startuml
 
-title Health Assessment, Consent Counselling,  and Issuance of Smart Health Link at Malaysia
+title Health Assessment, Consent Counselling,  and Issuance of Smart Health Link
 !include ./style.iuml
 
 actor "Hajj Counselor" as C
@@ -19,10 +19,10 @@ group Counseling and Consent
   	C -> P : explain utilization of digital health wallet\nduring Hajj including consent policy 
 end
 
-group Issue Smart Health Link
+group Issue Verifiable Health Link
 	note left of QR #aqua
-   	  Verifiable Smart Health Links:
-	  create Smart Health Link for the IPS
+   	  Verifiable Health Links:
+	  create Verifiable Health Link for the IPS
 	  generate digital signature\ncapture signed SHL as HCERT claim
 	  HCERT is rendered as QR code
 	end note
@@ -31,7 +31,7 @@ group Issue Smart Health Link
    OCHIE -> OCHIE: Consent QuestionnaireResponse extracted and \nCreate Consent resource with codes defined [ITI-108]
    OCHIE -> OCHIE: Add the consent FHIR resource to IPS
    OCHIE -> OCHIE: Generate MHD Folder for Pilgrim
-   OCHIE -> OCHIE : generate Verifiable Smart Health Link as QR Code
+   OCHIE -> OCHIE : generate Verifiable Health Link as QR Code
 end
 
 
