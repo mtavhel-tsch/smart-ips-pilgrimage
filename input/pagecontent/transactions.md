@@ -24,7 +24,7 @@ These are the transactions defined for ips-pilgrimage
 {% include transaction-issue-verifiable-shl-request-expected-actions-semantics.md %}
 
 
-###  retrieve MHD folder docs - request {#retrieve-MHD-folder-docs-request}
+###  retrieve folder docs - request {#retrieve-folder-docs-request}
 
 {% include transaction-retrieve-MHD-folder-request-preamble.md %}
 #### Trigger Events
