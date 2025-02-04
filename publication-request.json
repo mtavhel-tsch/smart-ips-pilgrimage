@@ -9,6 +9,6 @@
     "path" : "http://smart.who.int/ips-pilgrimage/v2.0.2",
     "ci-build": "http://worldhealthorganization.github.io/smart-ips-pilgrimage",    
     "first": false,
-    "status" : "draft",
+    "status" : "release",
     "sequence" : "Releases"
   }
