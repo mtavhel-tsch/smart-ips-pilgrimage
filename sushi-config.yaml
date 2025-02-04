@@ -271,10 +271,10 @@ parameters:
 #   setId: always # always | standalone-only
 dependencies:
   smart.who.int.base: 0.1.0
-  ihe.iti.mcsd: current
+  ihe.iti.mcsd: 3.8.0
   hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.uv.sdc: 3.0.0
-  hl7.fhir.uv.cpg: current
+  hl7.fhir.uv.cpg: 2.0.0
   ihe.iti.pcf: 1.1.0
   ihe.iti.mhd: 4.2.2
 #  who.base: current
