@@ -1,5 +1,5 @@
 Instance: ExampleComposition
-InstanceOf: HajjIPS-Composition
+InstanceOf: HajjIPSComposition
 Title : "Hajj IPS Composition"
 Description: "Hajj IPS Composition Example"
 Usage: #example

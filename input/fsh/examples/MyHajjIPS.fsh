@@ -16,6 +16,8 @@ Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-t
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
+Alias: $consent = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT
+
 Instance: MyIPS
 InstanceOf: HajjIPS
 Title: "My IPS"
@@ -386,7 +388,7 @@ Description: "Example HajjConsent"
 Usage: #inline
 * status = #active
 * scope = $consentscope#patient-privacy
-* provision.purpose.code = #CONSENT-KSA
+* provision.purpose.code = $consent#CONSENT-KSA
 * provision.type = #permit
 * patient.display = "patient1"
 * dateTime = "2016-05-11"

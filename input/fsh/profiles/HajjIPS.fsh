@@ -15,13 +15,26 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry.search ..0
 * entry.request ..0
 * entry.response ..0 */
-* entry[composition].resource only HajjIPS-Composition
+* entry[composition].resource only HajjIPSComposition
 * entry contains
     consent 1..*
 * entry[consent].resource only HajjConsent
-Profile: HajjIPS-Composition
+Profile: HajjIPSComposition
 Parent: CompositionUvIps
 Title: "Composition (IPS) for Hajj"
 Description: "Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage" 
-* section[sectionAdvanceDirectives] 1..1
+* section[sectionAdvanceDirectives] obeys hajj-consents
+
 * section[sectionAdvanceDirectives].entry only Reference(HajjConsent)
+
+Invariant: hajj-consents
+Description: "Check that there are at least two HajjConsent resources, one of which is is for KSA and the other not KSA (but represents the origin country of the pilgrim)"
+Severity: #warning
+Expression: "
+%hcvs = 'http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT'
+
+
+entry.provision.purpose.exists(code.memberOf($hcvs) and code.value = 'CONSENT-KSA')
+and
+entry.provision.purpose.exists(code.memberOf($hcvs) and not (code.value = 'CONSENT-KSA'))
+"
