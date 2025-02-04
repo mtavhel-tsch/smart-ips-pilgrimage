@@ -28,10 +28,10 @@ AND sends a failure response as indicated by http response code
 
 ```
 
-##### Issue Verifiable SHL
+##### Issue VHL
 
 ```
-Feature: Issue Verifiable SHL
+Feature: Issue VHL
 
 Scenario: QR Code with HCERT containing SHL is generated
 GIVEN an IPS is generated
