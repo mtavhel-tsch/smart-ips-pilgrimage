@@ -68,7 +68,8 @@ Usage: #example
 * entry[=].resource = 26bee0a9-5997-4557-ab9d-c6adbb05b572
 * entry[+].fullUrl = "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7"
 * entry[=].resource = c7781f44-6df8-4a8b-9e06-0b34263a47c7
-* entry[+].resource = ex-documentreference
+
+
 Instance: 30551ce1-5a28-4356-b684-1e639094ad4d
 InstanceOf: Composition
 Title : "Hajj IPS Composition"
