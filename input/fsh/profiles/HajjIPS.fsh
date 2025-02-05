@@ -24,19 +24,19 @@ Parent: CompositionUvIps
 Title: "Composition (IPS) for Hajj"
 Description: "Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage" 
 * section[sectionAdvanceDirectives] 1..1
-* section[sectionAdvanceDirectives] obeys hajj-consents
+//* section[sectionAdvanceDirectives] obeys hajj-consents
 
 
 
-Invariant: hajj-consents
-Description: "Check that there are at least two HajjConsent resources, one of which is is for KSA and the other not KSA (but represents the origin country of the pilgrim)"
-Severity: #warning
-Expression: "
-entry.select(resource as Consent).provision.purpose.exists(
-   code.memberOf('http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT') and code.value = 'CONSENT-KSA'
- )
-and
-entry.select(resource as Consent).provision.purpose.exists(
-   code.memberOf('http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT') and code.value != 'CONSENT-KSA'
- )
-"
+// Invariant: hajj-consents
+// Description: "Check that there are at least two HajjConsent resources, one of which is is for KSA and the other not KSA (but represents the origin country of the pilgrim)"
+// Severity: #warning
+// Expression: "
+// entry.select(resource as Consent).provision.purpose.exists(
+//    code.memberOf('http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT') and code.value = 'CONSENT-KSA'
+//  )
+// and
+// entry.select(resource as Consent).provision.purpose.exists(
+//    code.memberOf('http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT') and code.value != 'CONSENT-KSA'
+//  )
+// "
