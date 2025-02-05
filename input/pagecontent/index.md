@@ -1,15 +1,14 @@
 This Implementation Guide is intended to support the utilization of variable International Patient Summary (IPS)  documents during pilgrimage leveraging  [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network) global public health infrastructure.
 
 
-<div style="float: left; width: 100%">
+<div style="float: left;">
 This implementation guide and set of artifacts are still undergoing development. 
-</div>{:.stu-note}
+</div>
+{:.stu-note}
 
-<br/>
+<br clear="all"/>
 ### Summary 
 
-<div style="width:100%; float:left">
-  <div style="float: left; width: 62%; min-height:450px;">
 This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Implementation Guide leverages the <a href="https://www.who.int/initiatives/global-digital-health-certification-network">WHO Global Digital Health Certification Network (GDHCN)</a>.
 
 
@@ -20,18 +19,14 @@ Supporting guidance, recommendations, resources, and standards are included in t
 Eligible Participants may request to join through the <a href ="Letter_of_Application_IPS_Pilgrimage_1.0.docx">The Letter of Application</a>
 <br/>
 
-</div>
-  <div style="float: left; width: 60%">
-    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%"/>
-  </div>
-</div>
+<img src="workflow.png" alt="Overview of key clinical process flows" style="width:60%"/>
+<br clear="all"/>
 
-<br/>
 ### About this implementation guide
 
 This implementation guide is broken into the following levels of [knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
 - <a href="index.html">Home</a> - contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide.
-- <a href="business-requirements.html">Business Requirements</a> - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.      
+- <a href="business-requirements.html">Business Requirements</a> - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.       
 - <a href="data-models-and-exchange.html">Data Models and Exchange</a> - contains the data models and data exchange protocols with actors and transactions defined.
 - <a href="deployment.html">Deployment Guidance </a> - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.
 
@@ -51,8 +46,14 @@ This guide assumes use of the following resources:
 ### Disclaimer
 The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
 
+### IP statements
+{% include ip-statements.xhtml %}
 
-{ include ip-statements.xhtml }
-{ include cross-version-analysis.xhtml }
-{ include dependency-table.xhtml }
-{ include globals-table.xhtml }
+### Cross-version analysis
+{% include cross-version-analysis.xhtml %}
+
+### Dependencies
+{% include dependency-table.xhtml %}
+
+## Globals
+{% include globals-table.xhtml %}
