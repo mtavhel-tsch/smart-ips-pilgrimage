@@ -5,6 +5,6 @@
     "mode" : "milestone",    
     "path" : "http://smart.who.int/ips-pilgrimage/2.0.1",
     "first": false,
-    "status" : "draft",
+    "status" : "release",
     "sequence" : "Releases"
   }
