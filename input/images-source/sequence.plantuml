@@ -1,5 +1,7 @@
 @startuml
 skinparam svgDimensionStyle false
+hide footbox
+
 
 title Overall Sequence Diagram for Religious Pilgrimage and IPS
 
@@ -7,27 +9,43 @@ actor "Hajj Counselor" as C
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
-participant "WHO GDHCN" as WHO
+participant "WHO\nGDHCN" as WHO
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
 
 autonumber "<b>00:</b>"
 
 
-OCHIE -> WHO: perform routine synchronization of keys
-HCEMR -> WHO : perform routine synchronization of keys
+OCHIE -> WHO: perform routine\nsynchronization\nof keys
+'activate OCHIE
+activate WHO
+HCEMR -> WHO : perform routine\nsynchronization\nof keys
+deactivate WHO
 destroy WHO
+deactivate OCHIE
 
-C -> P : Conducts health assessment, counsels the pilgrim and collects consent
-P -> OC : Request for Patient Summary as QR Code
-OCHIE -> OC : Issue Verifiable Health Link as QR Code
+C -> P : Conducts health assessment,\ncounsels the pilgrim and collects consent
+activate P
+P -> OC : Request for\nPatient Summary\nas QR Code
+activate OC
+OCHIE -> OC : Issue\nVerifiable Health Link\nas QR Code
+deactivate OC
+...
+P --> HW: Travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via VHL)
+activate HW
 
-P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via VHL)
+activate OC
 HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via VHL)
+deactivate OC
 destroy OC
+
+activate OCHIE
 HCEMR  -> OCHIE : retrieves health document (IPS)
+deactivate OCHIE
 destroy OCHIE
  
 HW --> P: provides appropriate care
+deactivate HW
+deactivate P
 
 @enduml
