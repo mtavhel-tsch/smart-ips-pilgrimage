@@ -171,8 +171,6 @@ InstanceOf: Medication
 Description: "Example Medication"
 Usage: #example
 * code.coding[0] = $sct#108774000 "Product containing anastrozole (medicinal product)"
-* code.coding[+] = urn:oid:2.16.840.1.113883.2.4.4.1#99872 "ANASTROZOL 1MG TABLET"
-* code.coding[+] = urn:oid:2.16.840.1.113883.2.4.4.7#2076667 "ANASTROZOL CF TABLET FILMOMHULD 1MG"
 * code.coding[+] = $atc#L02BG03 "anastrozole"
 Instance: 8adc0999-9468-4ac9-9557-680fa133d625
 InstanceOf: Medication
