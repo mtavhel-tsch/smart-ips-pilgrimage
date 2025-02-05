@@ -20,10 +20,10 @@ destroy WHO
 
 C -> P : Conducts health assessment, counsels the pilgrim and collects consent
 P -> OC : Request for Patient Summary as QR Code
-OCHIE -> OC : Issue Verifiable Smart Health Link as QR Code
+OCHIE -> OC : Issue Verifiable Health Link as QR Code
 
-P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via SHL)
-HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
+P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via VHL)
+HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via VHL)
 destroy OC
 HCEMR  -> OCHIE : retrieves health document (IPS)
 destroy OCHIE

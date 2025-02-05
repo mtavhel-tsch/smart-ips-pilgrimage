@@ -388,7 +388,7 @@ Description: "Example HajjConsent"
 Usage: #inline
 * status = #active
 * scope = $consentscope#patient-privacy
-* provision.purpose.code = $consent#CONSENT-KSA
+* provision.purpose.code = IPS.HAJJ.CONSENT#CONSENT-KSA
 * provision.type = #permit
 * patient.display = "patient1"
 * dateTime = "2016-05-11"
