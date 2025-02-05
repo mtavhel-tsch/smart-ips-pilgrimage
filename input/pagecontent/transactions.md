@@ -13,7 +13,7 @@ These are the transactions defined for ips-pilgrimage
 
 
 
-###  issue VHL - request {#issue-verifiable-shl-request}
+###  issue VHL - request {#issue-vhl-request}
 
 {% include transaction-issue-verifiable-shl-request-preamble.md %}
 #### Trigger Events
@@ -24,7 +24,7 @@ These are the transactions defined for ips-pilgrimage
 {% include transaction-issue-verifiable-shl-request-expected-actions-semantics.md %}
 
 
-###  retrieve folder docs - request {#retrieve-folder-docs-request}
+###  retrieve VHL folder docs - request {#retrieve-VHL-manifest-request}
 
 {% include transaction-retrieve-MHD-folder-request-preamble.md %}
 #### Trigger Events

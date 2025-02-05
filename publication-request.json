@@ -1,13 +1,9 @@
 {
     "package-id" : "smart.who.int.ips-pilgrimage",
-    "title" : "SMART Verifiable IPS for Pilgrimage", 
-    "category" : "base",
-    "introduction" : "SMART Verifiable IPS for Pilgrimage",
-    "version" : "2.0.2",
-    "descmd" : "2.0.2  release",
+    "version" : "2.0.1",
+    "descmd" : "2.0.1  release",
     "mode" : "milestone",    
-    "path" : "http://smart.who.int/ips-pilgrimage/v2.0.2",
-    "ci-build": "http://worldhealthorganization.github.io/smart-ips-pilgrimage",    
+    "path" : "http://smart.who.int/ips-pilgrimage/2.0.1",
     "first": false,
     "status" : "release",
     "sequence" : "Releases"

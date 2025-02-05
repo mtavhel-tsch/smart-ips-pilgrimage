@@ -23,7 +23,7 @@ group Issue Verifiable Health Link
 	note left of QR #aqua
    	  Verifiable Health Links:
 	  create Verifiable Health Link for the IPS
-	  generate digital signature\ncapture signed SHL as HCERT claim
+	  generate digital signature\ncapture signed VHL as HCERT claim
 	  HCERT is rendered as QR code
 	end note
    P -> HW : requests generation of IPS\n and provide consent\noptionally sets selective disclosure & timelimit

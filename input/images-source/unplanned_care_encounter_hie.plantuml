@@ -12,13 +12,13 @@ participant "Bar code scanner" as Scanner
 
 autonumber "<b>00:</b>"
 HCEMR -> HCEMR: Upload pilgrims demographic information few weeks before Hajj
-P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via SHL)
+P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via VHL)
 HW --> HCEMR: identifies pilgrim with demographics and registers patient with pilgrimage number
 HW --> Scanner: uses scanner to scan QR code
 
 
 
-HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
+HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via VHL)
 destroy OC
 HCEMR -> OCHIE: mTLS authentication node [ITI-19]
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys
