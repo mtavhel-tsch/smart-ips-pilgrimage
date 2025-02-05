@@ -23,7 +23,7 @@ Profile: HajjIPSComposition
 Parent: CompositionUvIps
 Title: "Composition (IPS) for Hajj"
 Description: "Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage" 
-* section[sectionAdvanceDirectives] 2..
+* section[sectionAdvanceDirectives] 1..1
 * section[sectionAdvanceDirectives] obeys hajj-consents
 
 
