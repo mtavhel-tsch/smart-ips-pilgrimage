@@ -7,7 +7,7 @@ This page includes sequence diagrams that describe interactions between actors a
 
 
 <h3 id="routine_sync">Routine Synchronization</h3>
-<figure>
+<figure style="width:70%">
  {% include routine_sync.svg %}
 </figure>
 
