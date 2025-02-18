@@ -36,7 +36,7 @@ Usage: #example
 * type.coding.display = "Patient Summary Document"
 * content.format.code = #http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
 * content.format.system = "urn:ietf:rfc:3986"
-* content.attachment.contentType = #text/plain
+* content.attachment.contentType = #application/fhir+json
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/Bundle-MyIPS.json"
 
 Instance:   IPSPDFDocumentReference
@@ -56,7 +56,7 @@ Usage: #example
 * type.coding.display = "Patient Summary Document"
 * content.format.code = #urn:ihe:iti:xds:2017:mimeTypeSufficient
 * content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
-* content.attachment.contentType = #text/plain
+* content.attachment.contentType = #application/pdf
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MyIPS.pdf"
 
 
@@ -74,7 +74,7 @@ Usage: #example
 * status = #current
 * content.format.code = #urn:ihe:iti:dsg:detached:2014
 * content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
-* content.attachment.contentType = #text/plain
+* content.attachment.contentType = #application/json
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MySignedIPS.json"
 
 
@@ -92,5 +92,5 @@ Usage: #example
 * status = #current
 * content.format.code = #urn:ihe:iti:dsg:detached:2014
 * content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
-* content.attachment.contentType = #text/plain
+* content.attachment.contentType = #application/json
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/MySignedIPSPDF.json"
