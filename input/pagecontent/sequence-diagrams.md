@@ -1,5 +1,13 @@
 This page includes sequence diagrams that describe interactions between actors and participants described in this Implementation Guide.
+
+
  
+<h3 id="overall_workflow">Initaite Secture Connection</h3>
+<figure>
+ {% include initiate_secure_connection.svg %}
+</figure>
+
+
 <h3 id="overall_workflow">Overall Sequence Diagram for Religious Pilgrimage and IPS</h3>
 <figure>
  {% include sequence.svg %}
