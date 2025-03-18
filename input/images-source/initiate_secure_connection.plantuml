@@ -22,7 +22,7 @@ HP -> HP : generate public-private key pairs\nfor mTLS connection\n(Data Exchang
 HP  -> TA: send public keys\nfor DESCs
 
 
-note left
+note right
 	Onboarding:All DESCs should be generated subordinate to a
 	Data Exchange Certificate Authority (DECA) prior
 	to uploading to the Trust Anchor
@@ -35,7 +35,7 @@ OCHIE -> OCHIE : generate public-private key pairs\nfor singnture verificaiton\n
 OCHIE -> TA: send public keys\nfor DESCs and DSCs
 
 
-note left
+note right
 	Onboarding: All DSCs should be generated subordinate to a
 	Document Signing Certificate Authority (DSCA) prior
 	to uploading to the Trust Anchor
