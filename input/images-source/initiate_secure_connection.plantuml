@@ -18,8 +18,8 @@ autonumber "<b>00:</b>"
 
 
 == Key Generation Host Country ==
-HP -> HP : generate public-private key pairs\nfor mTLS connection\n(Data Exchange Signing Certficate - DESC)
-HP  -> TA: send public keys\nfor DESCs
+HCP -> HCP : generate public-private key pairs\nfor mTLS connection\n(Data Exchange Signing Certficate - DESC)
+HCP  -> TA: send public keys\nfor DESCs
 
 
 note right
@@ -64,9 +64,9 @@ HCP -> HCP : Determine Origin Country of VHL
 HCP -> HCP : Retrieve DESC(s) from Origin Country
 HCP -> OCHIE : Initiate connection to URL in VHL payload\nproviding DESC
 OCHIE -> OCHIE : Validate Host Country DESC
-OCHIE -> HP : Respond to connection request\nproviding DESC
-HP -> HP : Validate Origin Country DESC
-HP -> HCEMR : Forward OCHIE response
+OCHIE -> HCP : Respond to connection request\nproviding DESC
+HCP -> HCP : Validate Origin Country DESC
+HCP -> HCEMR : Forward OCHIE response
 
 
 @enduml
