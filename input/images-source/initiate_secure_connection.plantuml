@@ -50,7 +50,7 @@ end note
 
 == Utiliztion of VHL ==
 
-OCIE -> P : Issue VHL
+OCHIE -> P : Issue VHL
 P -> HCEMR : Provide (show) VHL
 HCEMR -> HCEMR : Extract VHL payload
 HCEMR -> HCEMR : Validate VHL signature\nusing DESC associated to\nVHL key ID (kid)
@@ -58,11 +58,11 @@ HCEMR -> HCEMR : Validate VHL signature\nusing DESC associated to\nVHL key ID (k
 
 == Proxy Request ==
 
-HCEMR -> HP : Send VHL payload
-HP -> HP : Extract URL from VHL Payload
-HP -> HP : Determine Origin Country of VHL
-HP -> HP : Retrieve DESC(s) from Origin Country
-HP -> OCHIE : Initiate connection to URL in VHL payload\nproviding DESC
+HCEMR -> HCP : Send VHL payload
+HCP -> HCP : Extract URL from VHL Payload
+HCP -> HCP : Determine Origin Country of VHL
+HCP -> HCP : Retrieve DESC(s) from Origin Country
+HCP -> OCHIE : Initiate connection to URL in VHL payload\nproviding DESC
 OCHIE -> OCHIE : Validate Host Country DESC
 OCHIE -> HP : Respond to connection request\nproviding DESC
 HP -> HP : Validate Origin Country DESC
