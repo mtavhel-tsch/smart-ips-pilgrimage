@@ -5,6 +5,38 @@ The testing artifacts in this implementation guide are not intended to be used t
 
 ### IPS-Pilgrimage End to End Workflow
 
+#### Routine Synchronization
+
+##### Routine synchronization using DID trustlist v2
+
+```
+Feature: Routine Synchronization
+
+Scenario: Participant B identifies key material
+GIVEN participant A has published key material for a specific domain
+WHEN participant B fetches key material during routine synchronization from CDN trustlist
+THEN participant B can identify the key material of participant A in the fetched key material using kid
+
+Example Testdata:
+| participant A | participant B | domain         | CDN trustlist
+| XXA           | XXB           | IPS-PILGRIMAGE | https://tng-cdn-dev.who.int/v2/trustlist/did.json
+
+
+Scenario: Key Material Synchronization with Expired Keys
+GIVEN participant A has published key material for a specific domain
+AND participant B has previously cached an older key for this domain
+WHEN participant B fetches key material during routine synchronization from the CDN trustlist
+AND the newly retrieved key is different from the cached key
+THEN participant B updates its cache with the latest valid key material
+AND removes the expired key from the cache
+
+Example Testdata:
+| participant A | participant B | domain         | Cached expired key (kid) | Newly retrieved key (kid) | CDN trustlist
+| XXA           | XXB           | IPS-PILGRIMAGE |                          |                           | https://tng-cdn-dev.who.int/v2/trustlist/did.json
+
+```
+
+
 #### Issuance of verifiable health document (IPS)
 
 ##### Record Consent
