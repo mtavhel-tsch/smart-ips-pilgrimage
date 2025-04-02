@@ -7,7 +7,7 @@
 
 ### Purpose
 
-
+hallo hallo hallo
 Testing of this specification is done by running the test cases defined in [Test Cases](test-cases.html).
 These test cases are designed to verify the interoperability and conformance of GDHCN participants within the IPS Pilgrimage E2E Workflow.
 
