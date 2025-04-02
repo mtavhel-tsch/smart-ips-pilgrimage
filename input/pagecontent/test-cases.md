@@ -36,6 +36,31 @@ Example Testdata:
 
 ```
 
+#### Participant system establishes mTLS connection to other participant system
+
+```
+Feature: Participant system establishes mTLS connection to other participant system
+
+Scenario: Client certificate whitelisted for trusted access
+GIVEN participant A has whitelisted participant B on its server infrastructure
+WHEN participant B makes a request that uses the client certificate of participant B to establish TLS connection
+THEN the server infrastructure accepts the client's connection and responds to the request
+
+Example Testdata:
+| participant A | participant B | 
+| XXA           | XXB           | 
+
+
+Scenario: Client certificate is not whitelisted and access is denied
+GIVEN participant A has not whitelisted participant C on its server infrastructure
+WHEN participant C makes a request that uses the client certificate of participant C to establish TLS connection
+THEN the server infrastructure rejects the client's connection or responds with an error
+
+Example Testdata:
+| participant A | participant C | 
+| XXA           | XXC           | 
+
+```
 
 #### Issuance of verifiable health document (IPS)
 
